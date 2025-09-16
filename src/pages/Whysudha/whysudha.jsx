@@ -141,48 +141,48 @@ const accordionData1 = [
   {
     title: "Why choose Sudha Multispecialty Hospital Erode?  ",
     img: imgone,
-    content:(<p className="text-[14px]">
-Sudha Multispeciality Hospital is recognised as the best multispeciality hospital in Erode, offering advanced medical care across multiple specialties, at an affordable cost, supported by expert consultants, modern infrastructure, and a strong commitment to patient well-being.
+    content: (<p className="text-[14px]">
+      Sudha Multispeciality Hospital is recognised as the best multispeciality hospital in Erode, offering advanced medical care across multiple specialties, at an affordable cost, supported by expert consultants, modern infrastructure, and a strong commitment to patient well-being.
     </p>)
-      ,
+    ,
   },
   {
     title: "How is Sudha Hospital Different from other Hospitals? ",
     img: imgtwo,
-    content: 
-    (<p className="text-[14px]">
-    "What sets Sudha Multispeciality Hospital apart is its combination of clinical excellence, affordable treatments, and personalised care. With specialised departments, advanced technology, and highly skilled doctors, it provides comprehensive healthcare under one roof. </p>),
+    content:
+      (<p className="text-[14px]">
+        "What sets Sudha Multispeciality Hospital apart is its combination of clinical excellence, affordable treatments, and personalised care. With specialised departments, advanced technology, and highly skilled doctors, it provides comprehensive healthcare under one roof. </p>),
   },
   {
     title: "How can I book an appointment at Sudha Hospitals in Erode? ",
     img: imgthree,
     content:
-    (<p className="text-[14px]">
-      Appointments at Sudha Multispeciality Hospital in Erode can be booked easily through the “Book Appointment” button on the official website, by calling the helpline at 0424-2454545, or by visiting the hospital directly. The process is designed to be simple and accessible for patients’ convenience</p>),
+      (<p className="text-[14px]">
+        Appointments at Sudha Multispeciality Hospital in Erode can be booked easily through the “Book Appointment” button on the official website, by calling the helpline at 0424-2454545, or by visiting the hospital directly. The process is designed to be simple and accessible for patients’ convenience</p>),
   },
   {
     title: "How do Sudha Hospitals ensure patient care and comfort? ",
     img: imgfour,
     content:
-    (<p className="text-[14px]">
-      Sudha Multispeciality Hospital focuses on patient-centred care, with personalised treatment plans, modern facilities, and dedicated support staff. Comfort is prioritised through well-equipped rooms, 24/7 assistance, and compassionate medical services.</p>),
-    
+      (<p className="text-[14px]">
+        Sudha Multispeciality Hospital focuses on patient-centred care, with personalised treatment plans, modern facilities, and dedicated support staff. Comfort is prioritised through well-equipped rooms, 24/7 assistance, and compassionate medical services.</p>),
+
   },
   {
     title: "Which hospital is accredited or certified in Erode? ",
     img: imgfive,
     content:
-     (<p className="text-[14px]">
-      Sudha Multispeciality Hospital is a government-accredited hospital in Erode, recognised for maintaining the highest standards of patient safety, medical quality, and ethical healthcare practices. This accreditation highlights the hospital’s commitment to delivering reliable and trusted medical care.</p>),
-    
+      (<p className="text-[14px]">
+        Sudha Multispeciality Hospital is a government-accredited hospital in Erode, recognised for maintaining the highest standards of patient safety, medical quality, and ethical healthcare practices. This accreditation highlights the hospital’s commitment to delivering reliable and trusted medical care.</p>),
+
   },
   {
     title: "Does Sudha Multispecialty Hospital have advanced facilities and technology? ",
     img: imgfive,
     content:
-    (<p className="text-[14px]">
-      Sudha Multispeciality Hospital in Erode is equipped with state-of-the-art diagnostic tools, modern surgical theatres, intensive care units, and advanced treatment technologies, ensuring precision and excellence in patient care.</p>),
-      
+      (<p className="text-[14px]">
+        Sudha Multispeciality Hospital in Erode is equipped with state-of-the-art diagnostic tools, modern surgical theatres, intensive care units, and advanced treatment technologies, ensuring precision and excellence in patient care.</p>),
+
   },
 ];
 
@@ -292,7 +292,7 @@ function Whysudha() {
               transition={{ duration: 0.5 }}
               className="text-[40px] mb-4"
             >
-              Why Sudha?
+              Why Choose Sudha Hospitals?
             </motion.h1>
 
             {/* Subtitle */}
@@ -357,7 +357,9 @@ function Whysudha() {
             <h6 className="inline-block mb-2 px-6 py-2 rounded-full text-md font-bold bg-white text-[#2B3990]">
               About us
             </h6>
-            <h2 className="text-[30px]  mb-4">Sudha Overview?</h2>
+            <h2 className="text-[30px]  mb-4">Why Choose Sudha Multispeciality Hospital? </h2>
+
+            <p className="text-black font-bold mb-4">Sudha - Motherly Care from the Heart </p>
             <p>
               Sudha Multispeciality Hospital holds a record of serving more than four decades in the healthcare industry yearning the trust of lakhs of families. With the motherly care from the heart, we serve every people visit our doors with the best treatments for their healthcare needs. We don’t just treat people with medicines; we serve them with kind and compassionate care along with advanced treatments to help people recover quickly.
             </p>
@@ -399,14 +401,16 @@ function Whysudha() {
 
           {/* Removed duplicate px-4 wrapper and kept padding responsive here */}
           <div className="mt-10">
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col md:flex-row gap-6 items-start">
               {/* Left Side - Image */}
               <div className="w-full md:w-1/2">
-                <Image
-                  src={roboticSurgery}
-                  alt="Hospital Robotics"
-                  className="w-full h-full object-cover rounded-3xl"
-                />
+                <div className="sticky top-20"> {/* keeps it stable */}
+                  <Image
+                    src={roboticSurgery}
+                    alt="Hospital Robotics"
+                    className="w-full h-[560px] object-cover rounded-3xl"
+                  />
+                </div>
               </div>
 
               {/* Right Side - Accordion */}
@@ -444,6 +448,7 @@ function Whysudha() {
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
