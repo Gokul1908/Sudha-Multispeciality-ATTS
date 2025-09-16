@@ -553,7 +553,7 @@ function Home() {
                 choice and the best hospital in Erode.
               </p>
 
-              <Link href="/why-sudha">
+              <Link href="/about-us/why-choose-sudha-hospital">
                 <motion.div
                   className="btn-diagonal "
                 >

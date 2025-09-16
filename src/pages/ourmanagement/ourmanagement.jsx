@@ -96,7 +96,7 @@ const Ourmanagement = () => {
               transition={{ duration: 0.5 }}
               className="text-[40px] mb-4"
             >
-              Our Management
+              Board of Management
             </motion.h1>
 
             {/* Subtitle */}
@@ -106,7 +106,7 @@ const Ourmanagement = () => {
               transition={{ duration: 0.6 }}
               className="text-[16px] text-white max-w-xl mb-6 tracking-wide"
             >
-              The Visionaries behind the Quality Healthcare Service
+              The Visionaries behind the Quality Healthcare Service 
             </motion.p>
           </div>
 

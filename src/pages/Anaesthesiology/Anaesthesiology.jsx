@@ -23,7 +23,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Specialities", href: "/specialities" },
-  { label: "Anaestheiology", href: "/specialities/anaesthesiology" },
+  { label: "Anaesthesiology", href: "/specialities/anaesthesiology" },
 ];
 
 function Anaesthesiology() {
