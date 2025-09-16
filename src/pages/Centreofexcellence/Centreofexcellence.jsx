@@ -239,7 +239,7 @@ const Centreofexcellence = () => {
                 <div className="mt-8">
                     {/*Cardiology-card  */}
                     <Link href="/specialities/cardiology" className="block">
-                        <section className="bg-white rounded-3xl p-8 mb-p mb-m max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start  transition cursor-pointer">
+                        <section className="bg-white rounded-3xl p-8 mb-p mb-m max-w-7xl text-left mx-auto flex flex-col md:flex-row gap-6 items-start  transition cursor-pointer">
                             <div className="w-full md:w-1/3">
                                 <Image
                                     src={Heart}
@@ -273,7 +273,7 @@ const Centreofexcellence = () => {
 
                     {/* Pulmonology-card */}
                     <Link href="/specialities/pulmonology" className="block">
-                        <section className="bg-white rounded-3xl p-8 mb-p mb-m max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8  cursor-pointer transition">
+                        <section className="bg-white rounded-3xl p-8 text-left mb-p mb-m max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8  cursor-pointer transition">
                             <div className="w-full md:w-1/3">
                                 <Image
                                     src={Lungs}
@@ -307,7 +307,7 @@ const Centreofexcellence = () => {
 
                     {/*Neurology-card  */}
                     <Link href="/specialities/neurology" className="block">
-                        <section className="bg-white rounded-3xl mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8  cursor-pointer transition">
+                        <section className="bg-white rounded-3xl mb-p text-left mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8  cursor-pointer transition">
                             <div className="w-full md:w-1/3">
                                 <Image
                                     src={Brain}
@@ -341,7 +341,7 @@ const Centreofexcellence = () => {
 
                     {/*Mother And Child Care -card  */}
                     <Link href="/mother-and-childcare" className="block">
-                        <section className="bg-white rounded-3xl mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8  cursor-pointer transition">
+                        <section className="bg-white rounded-3xl text-left mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8  cursor-pointer transition">
                             <div className="w-full md:w-1/3">
                                 <Image
                                     src={Motherchild}
@@ -375,7 +375,7 @@ const Centreofexcellence = () => {
 
                     {/*Cancer Center-card  */}
                     <Link href="https://sudhacancercentre.com/" className="block">
-                        <section className="bg-white rounded-3xl mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8 cursor-pointer transition">
+                        <section className="bg-white rounded-3xl text-left mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-6 items-start ml-18 mt-8 cursor-pointer transition">
                             <div className="w-full md:w-1/3">
                                 <Image
                                     src={Cancercentre}
@@ -409,7 +409,7 @@ const Centreofexcellence = () => {
 
                     {/*Sudha Fertility Centre -card  */}
                     <Link href="https://sudhafertilitycentre.com/" className="block">
-                        <section className="bg-white rounded-3xl mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8   cursor-pointer transition">
+                        <section className="bg-white rounded-3xl text-left mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8   cursor-pointer transition">
                             <div className="w-full md:w-1/3">
                                 <Image
                                     src={Mother}
