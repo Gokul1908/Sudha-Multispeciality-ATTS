@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Checklight from "@/assets/home/check-light.svg";
 import Frame from "@/assets/about/frame.png";
 import doctorImg from "@/assets/about/doctorImg.png";
+import Link from "next/link";
 
 import Accordion from "../../components/Accordion";
 import aboutOverview from "@/assets/alliedhealthservice/psychology/psychology-inner.webp";
