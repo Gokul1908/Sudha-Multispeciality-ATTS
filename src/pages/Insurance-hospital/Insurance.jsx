@@ -65,7 +65,7 @@ const breadcrumbItems = [
 
   { label: "Facilities", href: "" },
 
-  { label: "Insurance", href: "/insurance" },
+  { label: "Insurance", href: "/facilities/insurance" },
 ];
 
 const Companies = [Icici, Sbi, Bajaj, Niva, Tata, Hdfc];
@@ -78,7 +78,7 @@ const Insurance = () => {
     "Railway Scheme",
     "ESI ",
     "Government Employees/Pensioners",
-    "Discharge Process",
+
   ];
 
 
@@ -112,7 +112,7 @@ const Insurance = () => {
         (
           <>
             <h3 className="text-[26px] text-black mb-3"> ECHS </h3>
-            <p className="mb-3">ECHS patients must come with a valid referral form issued by their respective polyclinic. It is compulsory to carry their ECHS medical ID card at the time of consultation or treatment. The referral and ID card together confirm their eligibility under the scheme. Without these, services cannot be extended. Patients are advised to ensure all documents are up to date and presented for smooth and uninterrupted medical care at the hospital. </p>
+            <p className="mb-3">ECHS patients must come with a valid referral form issued by their respective polyclinic. It is compulsory to carry their ECHS medical ID card at the time of consultation or treatment. The referral and ID card together confirm their eligibility under the scheme. Without these, services cannot be extended. Patients are advised to ensure all documents are up to date and presented for smooth and uninterrupted medical care at the hospital.  </p>
 
           </>
         ),
@@ -129,7 +129,7 @@ const Insurance = () => {
       image: hospitalize, description: (
         <>
           <h3 className="text-[26px] text-black mb-3"> ESI </h3>
-          <p className="mb-3">ESI patients are required to present their official medical ID card whenever they visit the hospital for treatment. This card serves as proof of enrollment under the Employees’ State Insurance scheme and confirms their entitlement to healthcare benefits. Without this ID card, patients may face delays in availing services. They are advised to carry the card at every visit, ensuring smooth verification and quick access to the necessary consultations, procedures, or treatments provided under ESI. </p>
+          <p className="mb-3">ESI patients are required to present their official medical ID card whenever they visit the hospital for treatment. This card serves as proof of enrollment under the Employees’ State Insurance scheme and confirms their entitlement to healthcare benefits. Without this ID card, patients may face delays in availing services. They are advised to carry the card at every visit, ensuring smooth verification and quick access to the necessary consultations, procedures, or treatments provided under ESI.  </p>
         </>
       ),
     },
@@ -137,20 +137,20 @@ const Insurance = () => {
       image: Preauth, description: (
         <>
           <h3 className="text-[26px] text-black mb-3"> Government Employees/Pensioners </h3>
-          <p className="mb-3">Government employees and pensioners should carry either their medical ID card or Annexure form during their hospital visit. Along with this, the Aadhaar card of the primary insured person is mandatory. Employees still in service must also submit their last two months’ payslips to validate eligibility. These documents are essential for availing benefits under the scheme. Carrying all required papers ensures smooth processing, faster verification, and access to entitled medical care without unnecessary delays or rejections.   </p>
+          <p className="mb-3">Government employees and pensioners should carry either their medical ID card or Annexure form during their hospital visit. Along with this, the Aadhaar card of the primary insured person is mandatory. Employees still in service must also submit their last two months’ payslips to validate eligibility. These documents are essential for availing benefits under the scheme. Carrying all required papers ensures smooth processing, faster verification, and access to entitled medical care without unnecessary delays or rejections.    </p>
         </>
       ),
     },
-    {
-      image: Discharge, description: (
-        <>
-          <h3 className="text-[26px] text-black mb-3">Discharge Process</h3>
-          <p className="mb-3">After the successful completion of treatment, the discharge process begins. The medical team prepares a discharge summary, including post-treatment instructions.   </p>
-          <p className="mb-3">After the successful completion of treatment, the discharge process begins. The medical team prepares a discharge summary, including post-treatment instructions.   </p>
-          <p className="mb-3">Once the approval is received, the patient is discharged. Any follow-up advice or medication details are clearly explained to ensure a smooth transition from hospital to home.   </p>
-        </>
-      ),
-    },
+    // {
+    //   image: Discharge, description: (
+    //     <>
+    //       <h3 className="text-[26px] text-black mb-3">Discharge Process</h3>
+    //       <p className="mb-3">After the successful completion of treatment, the discharge process begins. The medical team prepares a discharge summary, including post-treatment instructions.   </p>
+    //       <p className="mb-3">After the successful completion of treatment, the discharge process begins. The medical team prepares a discharge summary, including post-treatment instructions.   </p>
+    //       <p className="mb-3">Once the approval is received, the patient is discharged. Any follow-up advice or medication details are clearly explained to ensure a smooth transition from hospital to home.   </p>
+    //     </>
+    //   ),
+    // },
   ];
 
   const Activeindex = buttons.indexOf(active);
@@ -285,24 +285,25 @@ const Insurance = () => {
 
         {/* Admission procedure under cashless scheme */}
         <section className="py-12 px-4 bg-white rounded-3xl">
-          <div className=" flex flex-col justify-center items-center text-center pb-10">
-            <h6 className=" font-semibold bg-blue text-[14px] inline-block px-6 py-3 rounded-full mb-4">
+          <div className="flex flex-col justify-center items-center text-center pb-10">
+            {/* Heading */}
+            <h6 className="font-semibold bg-blue text-[14px] inline-block px-6 py-3 rounded-full mb-4">
               Government Scheme
             </h6>
             <h2 className="text-[30px] pb-5">
               Cashless Treatment Process Under <br /> Sudha
             </h2>
 
-
+            {/* Buttons */}
             <div className="flex justify-center w-full px-4">
-              <div className="flex flex-wrap justify-center gap-3 bg-[#F0F7FD] p-3   max-w-7xl rounded-2xl">
+              <div className="flex flex-wrap justify-center gap-3 bg-[#F0F7FD] p-3 max-w-7xl rounded-2xl">
                 {buttons.map((label) => (
                   <button
                     key={label}
                     onClick={() => setActive(label)}
-                    className={`px-4 py-2 text-sm rounded-xl font-semibold whitespace-nowrap ${active === label
-                      ? "bg-[#2B3990] text-white"
-                      : "text-black hover:bg-blue-100"
+                    className={`px-4 py-2 text-sm rounded-xl font-semibold whitespace-nowrap transition ${active === label
+                        ? "bg-[#2B3990] text-white"
+                        : "text-black hover:bg-blue-100"
                       }`}
                   >
                     {label}
@@ -310,43 +311,26 @@ const Insurance = () => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-start gap-6 rounded-xl px-6 mt-12">
-              <div className="flex w-full md:w-1/2 ">
+
+            {/* Content Section */}
+            <div className="flex flex-col md:flex-row items-center gap-6 rounded-xl px-6 mt-12 w-full max-w-7xl">
+              {/* Left: Image */}
+              <div className="flex w-full md:w-1/2">
                 <Image
                   src={Activecontent.image}
                   alt="Discharge Process"
                   className="rounded-xl w-full h-[340px] object-cover"
-
                 />
-                {/* <Image
-                src={Scheme}
-                alt="Discharge Process"
-                className="rounded-xl w-full h-auto object-cover"
-                style={{height:"300px",width:"450px"}}
-              /> */}
               </div>
 
-              <div className="w-full md:w-1/2 text-start space-y-4 ">
+              {/* Right: Text */}
+              <div className="w-full md:w-1/2 text-start space-y-4 text-[#444] text-sm tracking-[0.03em]">
                 <div>{Activecontent.description}</div>
-
               </div>
             </div>
-
-            {/* <div className="w-full md:w-1/2">
-              <Image
-                src={Scheme}
-                alt="Discharge Process"
-                className="rounded-xl w-full h-auto object-cover"
-                style={{height:"300px",width:"550px"}}
-              />
-            </div>
-
-            <div className="w-full md:w-1/2 text-[#444] text-sm text-start space-y-4 tracking-[0.03em]">
-             <p>De</p>
-            </div>
-          </div> */}
           </div>
         </section>
+
 
 
         {/* Comprehensive Health Insurance Scheme (CMCHIS - PMJAY) */}

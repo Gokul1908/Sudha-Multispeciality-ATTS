@@ -92,7 +92,7 @@ const hospitalscards = [
     icon: hospitalTwo,
   },
   {
-    number: <h3 className="text-[48px] text-[#2B3990]">26+</h3>,
+    number: <h3 className="text-[48px] text-[#2B3990]">30+</h3>,
     title: <p className="text-md font-bold text-black">Departments</p>,
     link: "/specialities",
     icon: hospitalThree,
@@ -302,7 +302,7 @@ function Whysudha() {
               transition={{ duration: 0.6 }}
               className="text-lg md:text-xl max-w-xl mb-6 text-white"
             >
-              Your Health is our Priority At Every Step
+             Your Trusted Healthcare Partner for Generations
             </motion.p>
           </div>
 

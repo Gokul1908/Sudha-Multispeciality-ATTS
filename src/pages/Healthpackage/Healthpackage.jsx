@@ -347,13 +347,13 @@ const Healthpackage = () => {
                     {/* Left Text */}
                     <div className="md:w-7/12  ">
                         <h2 className="text-[30px]  mb-4">
-                            Executive Health Check–Up at Sudha Multispeciality Hospital
+                            Executive Health Check-Up at Sudha Multispeciality Hospital 
                         </h2>
                         <p className="">
-                            Sudha Hospital offers a range of preventive health checkup packages designed to support early detection, timely intervention, and overall wellness.
-                            From basic screenings to comprehensive evaluations, each package includes essential diagnostic tests, specialist consultations, and personalized counselling.
-                            These health checkups are tailored to meet the needs of individuals across all age groups and health conditions, ensuring a proactive approach to
-                            long-term well-being. With expert medical support and advanced diagnostic tools, Sudha Hospital helps you take charge of your health with confidence.
+                            Sudha Hospital offers a range of preventive and affordable health packages designed to support early detection, timely intervention, and overall wellness. From basic screenings to comprehensive evaluations, each package includes essential diagnostic tests, specialist consultations, and personalised counselling. 
+                        </p>
+                        <p className="">
+                            These health checkups are tailored to meet the needs of individuals across all age groups and health conditions, ensuring a proactive approach to long-term well-being. With expert medical support and advanced diagnostic tools, Sudha Multispeciality Hospital, the best hospital for master health checkup in Erode, helps you take charge of your health with confidence. 
                         </p>
                     </div>
 

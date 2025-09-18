@@ -18,7 +18,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Facilities", href: "" },
-  { label: "Ambulance", href: "/ambulance-services" },
+  { label: "Ambulance", href: "/facilities/ambulance-services" },
 ];
 
 const Slides = [Slide1, Slide2, Slide3];

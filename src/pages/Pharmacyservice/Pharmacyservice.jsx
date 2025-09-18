@@ -21,7 +21,7 @@ const breadcrumbItems = [
 
     { label: "Facilities", href: "" },
 
-    { label: "Pharmacy", href: "/pharmacy-services" },
+    { label: "Pharmacy", href: "/facilities/pharmacy-services" },
 ];
 
 
@@ -44,8 +44,8 @@ const facilities = [
 const Pharmacyservice = () => {
     const checklist = [
         "24/7 Pharmacy Support ",
-        "Medicines for all specialties and surgeries ",
-        "Handled by certified pharmacists ",
+        "Medicines for all specialties and surgeries  ",
+        "Handled by certified pharmacists  ",
         "Quality and authenticity assured ",
         "Patient-first service and quick response "
     ]
@@ -86,7 +86,7 @@ const Pharmacyservice = () => {
                             transition={{ duration: 0.6 }}
                             className=" mb-6 text-white"
                         >
-                            Reliable Pharmacy Support, 24/7.
+                            24/7 Pharmacy Assistance for All Your Needs
                         </motion.p>
                     </div>
 
@@ -113,20 +113,17 @@ const Pharmacyservice = () => {
                         <h5 className="px-5 text-[14px]  py-2 font-semibold text-primary-blue bg-white inline-block rounded-full ">
                             Pharmacy
                         </h5>
-                        <h2 className='text-[30px] text-black '>Sudha Pharmacy </h2>
+                        <h2 className='text-[30px] text-black '>Sudha Hospital Pharmacy   </h2>
                         <p className=''>
-                            Sudha Hospital has an in house pharmacy department established in the year 1982 working 24*7 which caters to the patients with its timely and
-                            quality service under one roof.
+                            Sudha Hospital Pharmacy offers a fully equipped, in-house pharmacy, ensuring timely access to quality medicines and medical essentials. Staffed by certified pharmacists, we prioritize accuracy in dispensing and patient safety. With round-the-clock availability, we are committed to delivering trusted pharmaceutical support, ensuring convenience and care for every patient, every time.
                         </p>
 
                         <p className=''>
-                            The Pharmacy has qualified and experienced pharmacists in catering the patients' needs at the right time and with right quality meeting NABH Standards.
-                            Various advanced and improved dispensing methods are followed to avoid the waiting time and error free dispensing of medicines.
+                            We provide medications and pharmaceutical products that support all medical and surgical specialities. Each medicine is carefully sourced from approved manufacturers, ensuring compliance with hospital-grade quality standards.
                         </p>
 
                         <p className=''>
-                            We have our internal Formulary committee with experienced consultants and Pharmacists to identify good quality medicines that are available in the market
-                            and the Quality assessment technology is used for assessing the product quality in order to prescribe quality medicines to the patients.
+                            Sudha Pharmacy, the best pharmacy in Erode is also fully stocked with critical care and emergency medicines, as well as essential drugs required for surgeries and post-operative care. Whether it's intensive care support, operation theatre supplies, or immediate-response medications, our pharmacy plays a vital role in supporting clinical outcomes and emergency care efficiency.
                         </p>
 
                     </div>
@@ -149,12 +146,7 @@ const Pharmacyservice = () => {
             <section className="max-w-7xl mx-auto   relative z-10 text-white bg-center bg-no-repeat bg-cover md:bg-contain py-16">
 
                 <div className="bg-white rounded-3xl py-16">
-                    <div className=' flex flex-col justify-center items-center text-center  '>
-                        <h6 className="px-5 text-[14px]  py-2 bg-blue inline-block font-semibold rounded-full mb-3">
-                            Sudha Pharmacy
-                        </h6>
-                        <h2 className='text-[#000000] text-[30px] mb-4'>Pharmacy Service</h2>
-                    </div>
+
 
                     <div className="flex flex-col md:flex-row items-start bg-[#ffffff] gap-6 rounded-xl p-6">
 
@@ -163,11 +155,14 @@ const Pharmacyservice = () => {
                             <Image
                                 src={Medicine}
                                 alt="Medicine"
-                                className="rounded-3xl w-full h-[400px] object-cover"
+                                className="rounded-3xl w-full h-[550px] object-cover"
                             // style={{ height: "300px", width: "450px" }}
                             />
                         </div>
                         <div className="w-full md:w-1/2  text-start space-y-4">
+                            <h6 className="px-5 text-[14px]  py-2 bg-blue inline-block font-semibold rounded-full ">
+                                Sudha Pharmacy
+                            </h6>
                             <h2 className="text-[30px] text-[#000000]"> Safe, Reliable Medicines, Anytime You Need </h2>
                             <ul className="flex flex-col list-none space-y-4">
                                 {checklist.map((item, index) => (
@@ -183,9 +178,10 @@ const Pharmacyservice = () => {
                                 ))}
                             </ul>
                             <p className=''>
-                                Our hospital pharmacy serves as a vital link in the continuum of care, ensuring patients have access to the right medications at the right time.
-                                It operates in close coordination with all clinical departments to support safe and effective treatment plans. With a strong focus on patient safety,
-                                we adhere to strict storage, labelling, and dosage protocols.
+                                Our hospital pharmacy serves as a vital link in the continuum of care, ensuring patients have access to the right medications at the right time. It operates in close coordination with all clinical departments to support safe and effective treatment plans. With a strong focus on patient safety, we adhere to strict storage, labelling, and dosage protocols.
+                            </p>
+                            <p>
+                                In addition to daily dispensing, our pharmacy supports post-discharge medication counselling and prescription guidance. Patients and their families receive clear instructions and support to maintain treatment adherence at home
                             </p>
 
                         </div>

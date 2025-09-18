@@ -15,7 +15,7 @@ import Fertility from "../assets/home/centreofexcellence/fertility.svg";
 const excellenceData = [
   { id: 1, title: "Cardiology", slug: "/specialities/cardiology", description: "Comprehensive cardiac care led by experienced cardiologists and advanced diagnostic tools.", image: Heart, services: ["Coronary Angiography", "Pacemaker Implantation", "Peripheral Vascular Stenting", "Complex Heart Surgeries", "Preventive Cardiology", "Non-Invasive Cardiology", "Coronary Angioplasty", "Paediatric Cardiology"] },
   { id: 2, title: "Pulmonology", slug: "/specialities/pulmonology", description: "Advanced care and diagnosis for all your pulmonary needs, from diagnosis to recovery.", image: Lungs, services: ["Asthma", "Tuberculosis (TB)", "Pneumonia", "Interstitial Lung Disease", "Paediatric Pulmonology", "Pulmonology Surgeries", "Fungal & bacterial lung infections", "Chronic Obstructive Pulmonary Disease (COPD)"] },
-  { id: 3, title: "Mother & Child Care", slug: "/mother-and-childcare", description: "Expert-led services for mothers and babies, from prenatal assessments to delivery and neonatal care.", image: Mother, services: ["Pre-natal Care", "Post-natal Care", "Paediatrics", "Maternity Care", "Gynaecology", "Maternity", "Painless Delivery", "Dietetics"] },
+  { id: 3, title: "Mother & Child Care", slug: "/mother-and-childcare", description: "Expert-led services for mothers and babies, from prenatal assessments to delivery and neonatal care.", image: Mother, services: ["Pre-natal Care", "Post-natal Care", "Paediatrics ", "Maternity Care", "Gynaecology",  "Painless Delivery", "Dietetics"] },
   { id: 4, title: "Cancer Centre", slug: "https://sudhacancercentre.com/", description: "Comprehensive cancer diagnosis and treatment led by expert oncologists using advanced technologies in a compassionate setting.", image: Cancercentre, services: ["Brain Cancer", "Breast Cancer", "Cervical Cancer", "Colorectal Cancer", "Endometrial Cancer", "Lung Cancer", "Lymphoma Cancer", "Renal Cancer"] },
   { id: 5, title: "Neurology", slug: "/specialities/neurology", description: "Comprehensive neurological support with cutting-edge evaluation and compassionate care.", image: Brain, services: ["Skull Base Surgery", "Paediatric Neurology", "Neurosurgery", "Epilepsy Surgeries", "Stereotactic Surgery", "Stroke Evaluation", "Micro Neurosurgical Tumour Removal", "Keyhole Brain Biopsy"] },
   { id: 6, title: "Fertility Centre", slug: "https://sudhafertilitycentre.com/", description: "Advanced fertility treatments and diagnostics, supporting couples in every stage of their parenthood journey with care.", image: Fertility, services: ["IVF", "IUI", "ICSI", "Fertility Checkup", "PCOD & PCOS", "Laparoscopy", "Male Infertility", "Female Infertility"] },
@@ -47,8 +47,7 @@ export default function CentreOfExcellence() {
             Centre of Excellence
           </div>
           <h2 className="text-[30px] mb-4">
-            Personalized Comprehensive Care for Adult
-            <br /> & Paediatrics
+           Advanced & Personalized Solutions for All Your <br/>Health Needs, Under One Roof
           </h2>
         </div>
 

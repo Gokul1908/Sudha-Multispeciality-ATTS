@@ -9,7 +9,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const slides = [
   {
-    heading: "Care with Promise in Erode",
+    heading: "Sudha Multispeciality Hospital in Erode",
     btnText: "Healthcare Excellence Made Affordable",
     title: (
       <>
