@@ -68,3 +68,8 @@ content: "";
     background: transparent;
 }
 
+.slick-initialized .slick-slide {
+    display: block;
+    width: auto
+     !important;
+}

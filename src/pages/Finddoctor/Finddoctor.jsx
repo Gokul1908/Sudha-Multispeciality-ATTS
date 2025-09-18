@@ -11,7 +11,6 @@ import Link from "next/link";
 import "../Finddoctor/finddoc.css";
 import { doctorsData } from "@/constants/doctorDetails";
 import Accordion from "../../components/Accordion";
-
 import Breadcrumb from "@/components/Breadcrumb";
 import { ArrowUpRight } from "lucide-react";
 
@@ -22,100 +21,53 @@ const breadcrumbItems = [
 
 const accordionData = [
   {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Cardiothoracic Surgery" />  */}
-          Who is the best ENT specialist in Erode?
-        </div>
-      </>
-    ),
+    title: <>Who is the best ENT specialist in Erode?</>,
     content: (
-      <div className="text-sm  space-y-3">
-        <p>
-          The team of doctors in the ENT department at Sudha Multispeciality Hospital is regarded as the best ENT specialists in Erode, offering expert diagnosis and treatment for all ear, nose, and throat conditions using advanced facilities.
-        </p>
-
-
-      </div>
+      <p className="text-sm">
+        The team of doctors in the ENT department at Sudha Multispeciality
+        Hospital is regarded as the best ENT specialists in Erode, offering
+        expert diagnosis and treatment for all ear, nose, and throat conditions.
+      </p>
     ),
   },
   {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Who is the best cardiologist in Erode?
-        </div>
-      </>
-    ),
+    title: <>Who is the best cardiologist in Erode?</>,
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          The team of doctors in the cardiology department at Sudha Multispeciality Hospital is recognised as the best cardiologists in Erode, providing comprehensive heart care, including preventive, diagnostic, and interventional cardiology services.
-        </p>
-
-
-      </div>
+      <p className="text-sm">
+        The cardiology team at Sudha Multispeciality Hospital is recognised as
+        the best cardiologists in Erode, providing preventive, diagnostic, and
+        interventional heart care services.
+      </p>
     ),
   },
   {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Who is the best anesthesiologist in Erode?
-        </div>
-      </>
-    ),
+    title: <>Who is the best anesthesiologist in Erode?</>,
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          The team of doctors in the anaesthesiology department at Sudha Multispeciality Hospital is considered the best anaesthesiologists in Erode, ensuring safe and effective anaesthesia management for all types of surgical procedures.
-        </p>
-
-
-      </div>
+      <p className="text-sm">
+        The anaesthesiology team at Sudha Multispeciality Hospital is considered
+        the best anaesthesiologists in Erode, ensuring safe and effective
+        anaesthesia management for surgeries.
+      </p>
     ),
   },
   {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Who is the leading doctor for general medicine in Erode?
-        </div>
-      </>
-    ),
+    title: <>Who is the leading doctor for general medicine in Erode?</>,
     content: (
-      <div className="text-sm  space-y-3">
-        <p>
-          The team of specialists in general medicine department at Sudha Multispeciality Hospital is recognised as the leading general medicine doctors in Erode, delivering expert care for a wide range of acute and chronic medical conditions.
-        </p>
-
-      </div>
+      <p className="text-sm">
+        The general medicine specialists at Sudha Multispeciality Hospital are
+        recognised as leaders in treating acute and chronic medical conditions.
+      </p>
     ),
   },
   {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          How can I book an appointment at the Sudha Tertiary Specialty Hospital in Erode?
-        </div>
-      </>
-    ),
+    title: <>How can I book an appointment at the Sudha Hospital in Erode?</>,
     content: (
-      <div className="text-sm  space-y-3">
-        <p>
-          Appointments at Sudha Multispeciality Hospital in Erode can be booked conveniently via the hospital website using the "Book Appointment" option or by calling the dedicated helpline at 042-424-54545.
-        </p>
-
-      </div>
+      <p className="text-sm">
+        Appointments can be booked via the hospital website’s "Book Appointment"
+        option or by calling the helpline at 042-424-54545.
+      </p>
     ),
   },
-
-
 ];
 
 export default function Finddoctor() {
@@ -154,54 +106,6 @@ export default function Finddoctor() {
   const uniqueSpecialities = [
     ...new Set(doctorsData.map((doc) => doc.speciality)),
   ];
-
-  // const sliderSettings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: Math.min(filteredDoctors.length, 2),
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //       },
-  //     },
-  //   ],
-  // };
-
-
-  const sliderSettings = {
-    dots: false,
-    infinite: filteredDoctors.length > 4, // only infinite if enough slides
-    speed: 500,
-    slidesToShow: Math.min(filteredDoctors.length, 4),
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: Math.min(filteredDoctors.length, 2),
-          infinite: filteredDoctors.length > 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          infinite: filteredDoctors.length > 1,
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -264,7 +168,7 @@ export default function Finddoctor() {
 
       {/* Filter Section */}
       <div className="max-w-7xl mx-auto pt-16">
-        <div className="bg-white z-20 w-[50%] absolute p-8 rounded-3xl -mt-28">
+        <div className="bg-white z-20 w-full md:w-[70%] lg:w-[50%] absolute p-8 rounded-3xl -mt-28">
           <h5 className="mb-4 text-[20px]">
             Find top specialists by department and book your appointment now.
           </h5>
@@ -308,91 +212,145 @@ export default function Finddoctor() {
 
       {/* Doctors List */}
       <div className="max-w-7xl mx-auto pt-20 sm:py-16">
-        {selectedDoctor ? (
+        {filteredDoctors.length === 0 ? (
+          <p className="text-center text-gray-500 py-10">
+            No doctors found. Please adjust your filters.
+          </p>
+        ) : selectedDoctor ? (
           // ✅ Single doctor view
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {filteredDoctors.map((doc) => (
-              <div key={doc.id} className="rounded-3xl text-center relative">
-
+              <div key={doc.id} className="rounded-3xl w-[300px] text-start bg-white  relative">
                 <Image
                   src={doc.image}
                   alt={doc.name}
-                  width={400}
-                  height={400}
-                  className="mx-auto w-full rounded-3xl object-cover"
+
+                  className="mx-auto w-[100%] h-[300px]  rounded-t-2xl object-cover"
                 />
-                <h3 className="text-md mt-2 text-[#2B3990]">{doc.name}</h3>
-                <p className="text-sm mt-2">{doc.degrees}</p>
-                <p className="text-sm mt-2 text-gray-600">{doc.qualification}</p>
+                <div className="p-4 flex flex-col flex-grow justify-between">
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2B3990] truncate">
+                      {doc.name}
+                    </h3>
+                    <p className="text-sm mt-1 truncate">
+                      {doc.degrees}
+                    </p>
+                    <p className="text-sm mt-1 line-clamp-2">
+                      {doc.qualification}
+                    </p>
+                  </div>
 
+                  <div className="mt-4">
+                    <Link
+                      href="#contactus"
+                      className="btn-diagonal-outline px-6 w-full mt-4 inline-flex items-center justify-center"
+                    >
+                      Book an Appointment
+                      <ArrowUpRight className="w-4 h-4 ml-2" />
+                    </Link>
+                  </div>
+                </div>
 
-                <Link
+                {/* <Link
                   href={`/doctor-detail/${doc.id}`}
                   className="text-[#2B3990] text-[14px] mt-4 font-semibold inline-block"
                 >
                   Book an Appointment
-                </Link>
+                </Link> */}
               </div>
             ))}
           </div>
         ) : (
           // ✅ Grouped by speciality view
-          [...groupedBySpeciality.entries()].map(([speciality, doctors]) => (
-            <div key={speciality} className="mb-8">
-              <h2 className="text-[24px]  text-[#2B3990] mb-4 mt-16">
-                {speciality}
-              </h2>
-              <Slider {...sliderSettings}>
-                {doctors.map((doc) => (
-                  <div key={doc.id} className="pr-4">
-                    <div className="bg-white h-[520px] rounded-2xl text-start relative">
+          [...groupedBySpeciality.entries()].map(([speciality, doctors]) => {
+            const specialitySliderSettings = {
+              dots: false,
+              infinite: doctors.length > 4, // only infinite if enough doctors
+              speed: 500,
+              slidesToShow: Math.min(doctors.length, 4), // never show more than doctors available
+              slidesToScroll: 1,
+              centerMode: false, // ❌ prevents stretching single card
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: Math.min(doctors.length, 2),
+                    infinite: doctors.length > 2,
+                  },
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    infinite: doctors.length > 1,
+                  },
+                },
+              ],
+            };
 
-                      <Image
-                        src={doc.image}
-                        alt={doc.name}
-                        width={300}
-                        height={300}
-                        className="mx-auto w-[100%] h-[320px] rounded-t-2xl object-cover"
-                      />
-                      <div className="p-6 flex flex-col justify-between">
-                        <div className="">
-                          <h3 className="text-md   text-[#2B3990]">
-                            {doc.name}
-                          </h3>
-                          <p className="text-sm mt-2">{doc.degrees}</p>
-                          <p className="text-sm mt-2 ">
-                            {doc.qualification}
-                          </p>
+            return (
+              <div key={speciality} className="mb-8">
+                <h2 className="text-[24px] text-[#2B3990] mb-4 mt-16">
+                  {speciality}
+                </h2>
+                <Slider {...specialitySliderSettings}>
+                  {doctors.map((doc) => (
+                    <div key={doc.id} className="px-2">
+                      <div
+                        className="w-[300px] h-auto bg-white rounded-xl"
+                      >
+                        {/* Image Section */}
+                        <div className="w-full">
+                          <Image
+                            src={doc.image}
+                            alt={doc.name}
+                            width={300}
+                            height={300}
+                            className="mx-auto w-[100%] h-[300px]  rounded-t-2xl object-cover"
+                          />
                         </div>
 
-                        <div className="absolute bottom-6 ">
-                          <Link
-                            href="#contactus"
-                            className="btn-diagonal-outline px-8  w-full mt-8"
-                          >
-                            Book an Appointment <ArrowUpRight className="w-5 h-5" />
-                          </Link>
-                        </div>
+                        {/* Content */}
+                        <div className="p-4 flex flex-col flex-grow justify-between">
+                          <div>
+                            <h3 className="text-lg font-bold text-[#2B3990] truncate">
+                              {doc.name}
+                            </h3>
+                            <p className="text-sm mt-1 truncate">
+                              {doc.degrees}
+                            </p>
+                            <p className="text-sm mt-1 line-clamp-2">
+                              {doc.qualification}
+                            </p>
+                          </div>
 
+                          <div className="mt-4">
+                            <Link
+                              href="#contactus"
+                              className="btn-diagonal-outline px-6 w-full mt-4 inline-flex items-center justify-center"
+                            >
+                              Book an Appointment
+                              <ArrowUpRight className="w-4 h-4 ml-2" />
+                            </Link>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          ))
+                  ))}
+                </Slider>
+              </div>
+            );
+          })
         )}
       </div>
-      <section className="max-w-3xl mx-auto py-8" >
-        <div>
-          <h2 className="text-center text-[30px] mb-8">
-            Frequently Asked Questions
-          </h2>
-          <Accordion accordionData={accordionData} />
-        </div>
+
+      {/* FAQ Section */}
+      <section className="max-w-3xl mx-auto py-8">
+        <h2 className="text-center text-[30px] mb-8">
+          Frequently Asked Questions
+        </h2>
+        <Accordion accordionData={accordionData} />
       </section>
-
-
     </>
   );
 }
