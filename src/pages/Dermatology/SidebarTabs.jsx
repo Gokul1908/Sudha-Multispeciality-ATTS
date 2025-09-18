@@ -420,34 +420,36 @@ export default function SidebarTabs() {
 
         {/* Find a Doctor Box */}
 
+        <Link href="/find-a-doctor" >
 
+          <div
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            style={{
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
 
-        {/* Find a Doctor Box */}
-        <div
-          className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-          style={{
-            background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-          }}
-        >
-          {/* Text Section */}
-          <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-            <Link
-              href="/find-a-doctor"
-              className="text-[22px] sm:text-xl  font-bold leading-snug"
-            >
-              Find a <br className="hidden sm:block" /> Doctor?
-            </Link>
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
+            </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
           </div>
+        </Link>
 
-          {/* Image Section */}
-          <div className="">
-            <Image
-              src={doctorImg}
-              alt="Doctor"
-              className="rounded-lg w-full customposition  h-auto object-cover"
-            />
-          </div>
-        </div>
+
       </aside>
 
       {/* Content Sections */}

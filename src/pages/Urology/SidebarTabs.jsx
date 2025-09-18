@@ -29,9 +29,9 @@ const faq = [
       </>
     ),
     content: (
-       <p>
-          Sudha Multispeciality Hospital is regarded as the best urology hospital in Erode, offering expert consultations, advanced diagnostic facilities, and comprehensive treatment for all urology and kidney-related conditions. 
-        </p>
+      <p>
+        Sudha Multispeciality Hospital is regarded as the best urology hospital in Erode, offering expert consultations, advanced diagnostic facilities, and comprehensive treatment for all urology and kidney-related conditions.
+      </p>
     ),
   },
   {
@@ -39,7 +39,7 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-         What are the most common urology problems? 
+          What are the most common urology problems?
         </div>
       </>
     ),
@@ -50,7 +50,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          What is the most common procedure performed in urology? 
+          What is the most common procedure performed in urology?
         </div>
       </>
     ),
@@ -61,7 +61,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          How long does a urology procedure usually take? 
+          How long does a urology procedure usually take?
         </div>
       </>
     ),
@@ -72,7 +72,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          How long does it take for the urethra to heal after treatment? 
+          How long does it take for the urethra to heal after treatment?
         </div>
       </>
     ),
@@ -83,7 +83,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          Is urethroplasty considered a minor or major surgery? 
+          Is urethroplasty considered a minor or major surgery?
         </div>
       </>
     ),
@@ -94,7 +94,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-         What is the first stage of urethroplasty? 
+          What is the first stage of urethroplasty?
         </div>
       </>
     ),
@@ -323,32 +323,34 @@ export default function SidebarTabs() {
           </button>
         </div>
 
-        {/* Find a Doctor Box */}
-        <div
-          className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-          style={{
-            background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-          }}
-        >
-          {/* Text Section */}
-          <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-            <Link
-              href="/find-a-doctor"
-              className="text-[22px] sm:text-xl  font-bold leading-snug"
-            >
-              Find a <br className="hidden sm:block" /> Doctor?
-            </Link>
-          </div>
+        <Link href="/find-a-doctor" >
 
-          {/* Image Section */}
-          <div className="">
-            <Image
-              src={doctorImg}
-              alt="Doctor"
-              className="rounded-lg w-full customposition  h-auto object-cover"
-            />
+          <div
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            style={{
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
+
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
+            </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
           </div>
-        </div>
+        </Link>
       </aside>
 
       {/* Content Sections */}
@@ -373,7 +375,7 @@ export default function SidebarTabs() {
 
 
             {id === "facilities" && (
-             <div className="space-y-2 ">
+              <div className="space-y-2 ">
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">

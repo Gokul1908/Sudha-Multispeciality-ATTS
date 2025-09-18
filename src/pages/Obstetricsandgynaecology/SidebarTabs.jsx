@@ -40,7 +40,7 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          Which hospital in Erode is best for obstetrics and gynecology? 
+          Which hospital in Erode is best for obstetrics and gynecology?
         </div>
       </>
     ),
@@ -51,7 +51,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          How to choose the right gynecologist in Erode? 
+          How to choose the right gynecologist in Erode?
         </div>
       </>
     ),
@@ -73,7 +73,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-         Which is more painful, a C-section or natural childbirth? 
+          Which is more painful, a C-section or natural childbirth?
         </div>
       </>
     ),
@@ -84,7 +84,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          What is the recovery time after a cesarean section? 
+          What is the recovery time after a cesarean section?
         </div>
       </>
     ),
@@ -95,7 +95,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-         What are the common signs of labor pain?
+          What are the common signs of labor pain?
         </div>
       </>
     ),
@@ -118,7 +118,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our fertility centre offers advanced reproductive solutions with state-of-the-art technology and a compassionate approach. From basic testing to complex ART procedures, we’re committed to helping couples fulfil their dreams of parenthood with the best fertility treatments available. 
+          Our fertility centre offers advanced reproductive solutions with state-of-the-art technology and a compassionate approach. From basic testing to complex ART procedures, we’re committed to helping couples fulfil their dreams of parenthood with the best fertility treatments available.
         </p>
 
         <div>
@@ -207,7 +207,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          We specialise in managing complex pregnancies and emergencies with 24x7 care. From eclampsia to haemorrhage, our expert team ensures safe delivery and recovery, even in the most critical scenarios. 
+          We specialise in managing complex pregnancies and emergencies with 24x7 care. From eclampsia to haemorrhage, our expert team ensures safe delivery and recovery, even in the most critical scenarios.
         </p>
 
         <div>
@@ -236,7 +236,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          We perform advanced laparoscopic and hysteroscopic surgeries for a wide range of gynaecological conditions. These techniques are safer, less painful, and promote quicker recovery for women of all ages. 
+          We perform advanced laparoscopic and hysteroscopic surgeries for a wide range of gynaecological conditions. These techniques are safer, less painful, and promote quicker recovery for women of all ages.
         </p>
 
         <div>
@@ -263,7 +263,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          We offer complete care during and after pregnancy, focusing on the health of the mother and baby. Regular check-ups, counselling, and personalised guidance help ensure a safe and stress-free journey into motherhood. 
+          We offer complete care during and after pregnancy, focusing on the health of the mother and baby. Regular check-ups, counselling, and personalised guidance help ensure a safe and stress-free journey into motherhood.
         </p>
 
         <div>
@@ -290,7 +290,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          With modern birthing suites and 24x7 staff, we provide safe and memorable delivery experiences. Whether it’s a normal delivery or a painless delivery, our team ensures optimal outcomes for both mother and newborn. 
+          With modern birthing suites and 24x7 staff, we provide safe and memorable delivery experiences. Whether it’s a normal delivery or a painless delivery, our team ensures optimal outcomes for both mother and newborn.
         </p>
 
         <div>
@@ -441,32 +441,34 @@ export default function SidebarTabs() {
           </button>
         </div>
 
-        {/* Find a Doctor Box */}
-        <div
-          className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-          style={{
-            background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-          }}
-        >
-          {/* Text Section */}
-          <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-            <Link
-              href="/find-a-doctor"
-              className="text-[22px] sm:text-xl  font-bold leading-snug"
-            >
-              Find a <br className="hidden sm:block" /> Doctor?
-            </Link>
-          </div>
+        <Link href="/find-a-doctor" >
 
-          {/* Image Section */}
-          <div className="">
-            <Image
-              src={doctorImg}
-              alt="Doctor"
-              className="rounded-lg w-full customposition  h-auto object-cover"
-            />
+          <div
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            style={{
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
+
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
+            </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
           </div>
-        </div>
+        </Link>
       </aside>
 
       {/* Content Sections */}
@@ -477,10 +479,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[360px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-2 mt-4">
-                  Advanced Women’s Health Care by the Best Gynaecologist in  <span className="text-[#2B3990]"> Erode</span>  
+                  Advanced Women’s Health Care by the Best Gynaecologist in  <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className=" mb-3">
-                  Recognized as the best Obstetrics & Gynaecology hospital in Erode, Sudha Multispeciality Hospital offers advanced and compassionate care for women at every stage of life. With the expertise of the best gynecologist in Erode, the department provides a complete range of services, including high-risk pregnancy management, advanced fertility treatments, minimally invasive surgeries, and gynaecological care for complex conditions. 
+                  Recognized as the best Obstetrics & Gynaecology hospital in Erode, Sudha Multispeciality Hospital offers advanced and compassionate care for women at every stage of life. With the expertise of the best gynecologist in Erode, the department provides a complete range of services, including high-risk pregnancy management, advanced fertility treatments, minimally invasive surgeries, and gynaecological care for complex conditions.
                 </p>
                 <p className=" mb-3">Equipped with cutting-edge technology and modern facilities, the hospital ensures safe normal deliveries, painless labour, and specialised treatments tailored to individual needs. A patient-centric approach, clinical excellence, and personalised support make it a trusted destination for comprehensive women’s healthcare in Erode. </p>
 

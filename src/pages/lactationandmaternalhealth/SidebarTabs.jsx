@@ -190,8 +190,8 @@ const faq = [
     ),
     content: (
       <p>
-          Breastmilk should be fed directly from the breast, ensuring proper latching for effective feeding and comfort. In cases where direct breastfeeding is not possible, expressed milk can be given using a sterilized spoon, cup, or bottle. Sudha Multispeciality Hospital, a trusted Mother and Child Care Hospital in Erode, has lactation & maternal health consultants and specialists who guide new mothers in correct feeding techniques. 
-        </p>
+        Breastmilk should be fed directly from the breast, ensuring proper latching for effective feeding and comfort. In cases where direct breastfeeding is not possible, expressed milk can be given using a sterilized spoon, cup, or bottle. Sudha Multispeciality Hospital, a trusted Mother and Child Care Hospital in Erode, has lactation & maternal health consultants and specialists who guide new mothers in correct feeding techniques.
+      </p>
     ),
   },
   {
@@ -199,7 +199,7 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-         What is the first stage of lactation? 
+          What is the first stage of lactation?
         </div>
       </>
     ),
@@ -210,7 +210,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          What is the normal color of breast milk? 
+          What is the normal color of breast milk?
         </div>
       </>
     ),
@@ -221,7 +221,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-         What food to avoid when breastfeeding? 
+          What food to avoid when breastfeeding?
         </div>
       </>
     ),
@@ -232,7 +232,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          What food to eat when breastfeeding? 
+          What food to eat when breastfeeding?
         </div>
       </>
     ),
@@ -243,7 +243,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          How to increase maternal nutrition? 
+          How to increase maternal nutrition?
         </div>
       </>
     ),
@@ -254,7 +254,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          What are the major health concerns during pregnancy? 
+          What are the major health concerns during pregnancy?
         </div>
       </>
     ),
@@ -364,27 +364,34 @@ export default function SidebarTabs() {
         </div>
 
         {/* Find a Doctor Box */}
-        <div
-          className="mt-2 rounded-2xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-white"
-          style={{
-            background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-          }}
-        >
-          <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[22px]  font-bold">
-              Find a <br />
-              Doctor?
-            </h3>
-          </div>
+        <Link href="/find-a-doctor" >
 
-          <div className="w-24 sm:w-32 md:w-40">
-            <Image
-              src={doctorImg}
-              alt="Doctor"
-              className="rounded-lg w-full customposition h-auto object-cover"
-            />
+          <div
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            style={{
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
+
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
+            </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
           </div>
-        </div>
+        </Link>
       </aside>
 
       {/* Content Sections */}

@@ -394,31 +394,34 @@ export default function SidebarTabs() {
         </div>
 
         {/* Find a Doctor Box */}
-        <div
-          className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-          style={{
-            background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-          }}
-        >
-          {/* Text Section */}
-          <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-            <Link
-              href="/find-a-doctor"
-              className="text-[22px] sm:text-xl  font-bold leading-snug"
-            >
-              Find a <br className="hidden sm:block" /> Doctor?
-            </Link>
-          </div>
+        <Link href="/find-a-doctor" >
 
-          {/* Image Section */}
-          <div className="">
-            <Image
-              src={doctorImg}
-              alt="Doctor"
-              className="rounded-lg w-full customposition  h-auto object-cover"
-            />
+          <div
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            style={{
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
+
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
+            </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
           </div>
-        </div>
+        </Link>
       </aside>
 
       {/* Content Sections */}
@@ -441,7 +444,7 @@ export default function SidebarTabs() {
 
 
             {id === "facilities" && (
-             <div className="space-y-2 ">
+              <div className="space-y-2 ">
                 <h2 className="text-[24px] mt-5 ">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
