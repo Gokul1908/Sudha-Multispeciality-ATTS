@@ -12,6 +12,7 @@ import aboutOverview from "@/assets/alliedhealthservice/maternal/maternal-inner.
 import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
 import one from "@/assets/about/1.svg";
+import Link from "next/link";
 
 
 
