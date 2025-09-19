@@ -145,7 +145,7 @@ const BannerSlider = () => {
                       {slide.btnText}
                     </h6>
 
-                    <h1 className="text-[40px]   mb-4">
+                    <h1 className="md:text-[40px] text-[30px] mb-4">
                       {slide.heading}
                     </h1>
 
