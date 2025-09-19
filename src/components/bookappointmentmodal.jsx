@@ -48,7 +48,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
 
         {/* Right Side Form */}
         <div className="p-6 sm:p-8 md:p-12 bg-white relative">
-          <h2 className="text-[22px] font-extrabold mb-6 sm:mb-8 text-center md:text-left">
+          <h2 className="text-[22px] font-extrabold mb-6 md:mt-0 mt-4 sm:mb-8 text-center md:text-left">
             Book an Appointment for Comprehensive Medical Care
           </h2>
 
@@ -143,7 +143,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
                   <option>Laryngology</option>
                 </select>
                 <svg
-                  className="w-4 h-4 absolute top-10 right-3 pointer-events-none "
+                  className="w-4 h-4 absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none text-gray-500"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"

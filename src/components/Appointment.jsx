@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 const RegistrationForm = () => {
   return (
     <div>
-      <h2 className="text-[24px] pb-5 ">Make An Appointment</h2>
+      <h2 className="text-[20px] pb-5 ">Make an Appointment</h2>
 
       <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Preferred Date */}
@@ -70,31 +70,31 @@ const RegistrationForm = () => {
             focus:outline-none focus:ring-1 focus:ring-[#2B3990] appearance-none"
           >
             <option>Select a department</option>
-                  <option>Anaesthesiology</option>
-                  <option>Cardiology</option>
-                  <option>Cardiothoracic Surgery</option>
-                  <option>Dentistry and Oral Surgery</option>
-                  <option>Dermatology</option>
-                  <option>ENT</option>
-                  <option>Emergency Care</option>
-                  <option>Gastroenterology</option>
-                  <option>Radiology</option>
-                  <option>General Medicine</option>
-                  <option>General Surgery</option>
-                  <option>ICU</option>
-                  <option>Urology</option>
-                  <option>Orthopaedics</option>
-                  <option>Nephrology</option>
-                  <option>Neurology</option>
-                  <option>Diagnostics</option>
-                  <option>Obstetrics & Gynaecology</option>
-                  <option>Pulmonology</option>
-                  <option>Paediatrics</option>
-                  <option>Neonatology</option>
-                  <option>Pain Medicine</option>
-                  <option>Plastic Surgery</option>
-                  <option>Oncology</option>
-                  <option>Laryngology</option>
+            <option>Anaesthesiology</option>
+            <option>Cardiology</option>
+            <option>Cardiothoracic Surgery</option>
+            <option>Dentistry and Oral Surgery</option>
+            <option>Dermatology</option>
+            <option>ENT</option>
+            <option>Emergency Care</option>
+            <option>Gastroenterology</option>
+            <option>Radiology</option>
+            <option>General Medicine</option>
+            <option>General Surgery</option>
+            <option>ICU</option>
+            <option>Urology</option>
+            <option>Orthopaedics</option>
+            <option>Nephrology</option>
+            <option>Neurology</option>
+            <option>Diagnostics</option>
+            <option>Obstetrics & Gynaecology</option>
+            <option>Pulmonology</option>
+            <option>Paediatrics</option>
+            <option>Neonatology</option>
+            <option>Pain Medicine</option>
+            <option>Plastic Surgery</option>
+            <option>Oncology</option>
+            <option>Laryngology</option>
             {/* ...rest */}
           </select>
           <svg
@@ -104,7 +104,11 @@ const RegistrationForm = () => {
             strokeWidth="2"
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
           </svg>
         </div>
 
@@ -128,7 +132,11 @@ const RegistrationForm = () => {
             strokeWidth="2"
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19 9l-7 7-7-7"
+            />
           </svg>
         </div>
 
