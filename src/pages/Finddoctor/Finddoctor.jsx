@@ -345,7 +345,7 @@ export default function Finddoctor() {
       </div>
 
       {/* FAQ Section */}
-      <section className="max-w-3xl mx-auto py-8">
+      <section className="max-w-3xl mx-auto py-8 px-0 px-4">
         <h2 className="text-center text-[30px] mb-8">
           Frequently Asked Questions
         </h2>

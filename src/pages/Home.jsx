@@ -807,7 +807,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto py-16" >
+      <section className="max-w-3xl mx-auto py-16 md-px-0 px-4" >
         <div>
           <h2 className="text-center text-[30px] mb-8">
             Frequently Asked Questions

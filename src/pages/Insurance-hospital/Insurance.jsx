@@ -389,7 +389,7 @@ const Insurance = () => {
 
       <section className="" ref={sectionRef}>
         <div>
-          <div className="max-w-3xl mx-auto py-16">
+          <div className="max-w-3xl mx-auto py-16 px-0 px-4">
             <h2 className="text-center text-[30px] mb-6">
               Frequently Asked Questions
             </h2>
