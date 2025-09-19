@@ -215,7 +215,7 @@ function Organtransplant() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto pt-0 pb-2 ">
+      <section className="max-w-7xl mx-auto  ">
         <h2 className="text-center text-[30px]  mt-4">
           Our Transplant Co-Ordinators
         </h2>
@@ -265,7 +265,7 @@ function Organtransplant() {
       </section >
 
 
-      <section>
+      <section className="max-w-7xl mx-auto pt-0 pb-2">
         <div>
           <DonorDataTable />
         </div>

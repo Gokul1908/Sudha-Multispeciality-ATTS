@@ -89,7 +89,7 @@ export default function Sliderdoctor() {
                     alt={doc.name}
                     width={300}
                     height={300}
-                    className="w-full h-[300px] object-cover rounded-t-2xl"
+                    className="max-w-[300px] h-[300px] object-cover rounded-t-2xl"
                   />
 
                   {/* Content */}

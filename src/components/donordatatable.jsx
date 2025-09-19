@@ -26,8 +26,17 @@ const DonorDataTable = () => {
         { id: 12, shid: 'SH/24/190002', name: 'MR. Baskaran', age: '32/M', bGroup: 'B+', relationship: 'Father', organ: 'KIDNEY', committee: '8/5/2025/6846/E8/2025', status: 'STABLE', dateOfSurgery: '23-05-2025', dateOfDischarge: '29-05-2025' },
         { id: 13, shid: 'SH/24/190003', name: 'MRS. Chitra', age: '46/M', bGroup: 'O+', relationship: 'Mother', organ: 'KIDNEY', committee: '15/5/2025/7584/E8/2025', status: 'STABLE', dateOfSurgery: '31-05-2025', dateOfDischarge: '06-06-2025' },
         { id: 14, shid: 'SH/24/190004', name: 'MRS. Saranya', age: '33/F', bGroup: 'A+', relationship: 'Brother', organ: 'KIDNEY', committee: '5/6/2025/9070E8/2025', status: 'STABLE', dateOfSurgery: '	9-06-2025', dateOfDischarge: '17-06-2025' },
-        { id: 15, shid: 'SH/24/190005', name: 'MR. Chandrasekaran', age: '56/M', bGroup: 'B+', relationship: 'Swap', organ: 'KIDNEY', committee: '	12/16/2025/9514/E8/2025', status: 'STABLE', dateOfSurgery: '13-07-2025', dateOfDischarge: 'On Treatment' },
-        { id: 16, shid: 'SH/24/190001', name: 'MRS. Jagathambal', age: '44/F', bGroup: 'A+', relationship: 'Swap', organ: 'KIDNEY', committee: '	12/6/2025/9514/E8/2025', status: 'STABLE', dateOfSurgery: '13-07-2025', dateOfDischarge: 'On Treatment' },
+        { id: 15, shid: 'SH/24/190005', name: 'MR. Chandrasekaran', age: '56/M', bGroup: 'B+', relationship: 'Swap', organ: 'KIDNEY', committee: '	12/16/2025/9514/E8/2025', status: 'STABLE', dateOfSurgery: '13-07-2025', dateOfDischarge: '13-07-2025' },
+        { id: 16, shid: 'SH/24/190001', name: 'MRS. Jagathambal', age: '44/F', bGroup: 'A+', relationship: 'Swap', organ: 'KIDNEY', committee: '	12/6/2025/9514/E8/2025', status: 'STABLE', dateOfSurgery: '13-07-2025', dateOfDischarge: '13-07-2025' },
+        { id: 17, shid: 'SH/24/261556', name: 'MRS GOWHAR BEGUM', age: '52/F', bGroup: 'B+', relationship: 'CADAVER', organ: 'KIDNEY', committee: '	TNOS 42727', status: 'STABLE', dateOfSurgery: '27-07-2025', dateOfDischarge: '08-08-2025' },
+
+        { id: 18, shid: 'SH/24/283291', name: 'MRS GOWTHAM', age: '19/M', bGroup: 'A1+', relationship: 'MOTHER', organ: 'KIDNEY', committee: '17/7/2025//12197/E8/2025', status: 'STABLE', dateOfSurgery: '17-07-2025', dateOfDischarge: '08-08-2025' },
+
+         { id: 19, shid: 'SH/24/276653', name: 'Mast. Sridhar.S', age: '11/M', bGroup: 'A1+', relationship: 'CADAVER', organ: 'KIDNEY', committee: 'TNOS 45078', status: 'STABLE', dateOfSurgery: '31-08-2025', dateOfDischarge: 'On Treatment' },
+
+         { id: 20, shid: 'SH/24/258147', name: 'Ms.Kanimoyli', age: '31/F	', bGroup: 'O+', relationship: 'CADAVER', organ: 'KIDNEY', committee: '13133/E8/2025', status: 'STABLE', dateOfSurgery: '04/09/2025', dateOfDischarge: 'On Treatment' },
+
+         { id: 21, shid: 'SH/24/292912', name: 'Mr.Vellaichamy', age: '53/M	', bGroup: 'O+', relationship: 'Mother', organ: 'KIDNEY', committee: '14929/E8/2025', status: 'STABLE', dateOfSurgery: '11/09/2025', dateOfDischarge: 'On Treatment' },
 
       ]
     },
@@ -101,12 +110,12 @@ const DonorDataTable = () => {
 
 
   return (
-    <div className="p-4 md:p-8 lg:p-12 min-h-screen pt-4">
+    <div className="p-4 md:p-0  min-h-screen my-16">
       <div className=" rounded-lg  overflow-hidden">
         {/* Header */}
-        <div className=" text-black p-4">
+        <div className=" text-black ">
           <div className="flex justify-between items-center pb-8">
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Donor List</h1>
+            <h1 className="text-[24px]">Donor List</h1>
             <div className="flex gap-4">
               {/* Year Dropdown */}
               <div className="relative ">

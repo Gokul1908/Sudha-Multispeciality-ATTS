@@ -18,7 +18,7 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
   { id: "treatmentsandprocedures", label: "Treatments & Procedures" },
-  // { id: "doctors", label: "Doctors" },
+  { id: "doctors", label: "Doctors" },
   // { id: "faqs", label: "FAQs" },
 ];
 
@@ -455,14 +455,14 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {/* {id === "doctors" && (
+            {id === "doctors" && (
               <>
                 <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
-                <DoctorSlider specialty="Neurology" counter={2} />
+                <DoctorSlider specialty="Plastic Surgery" counter={2} />
               </>
             )}
 
-            {id === "faqs" && (
+            {/* {id === "faqs" && (
               <div className="mt-8">
                 <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
