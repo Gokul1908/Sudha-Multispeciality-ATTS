@@ -170,7 +170,7 @@ const Footer = () => {
   const mediaLinks = [
     { name: "Blogs", link: "" },
 
-    { name: "News & Events", link: "" },
+    { name: "News & Events", link: "/news-and-events" },
   ];
 
   const importantLinks = [
