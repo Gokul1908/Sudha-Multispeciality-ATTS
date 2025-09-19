@@ -6,7 +6,7 @@ import Vikram from "@/assets/home/doc/vikram.webp";
 import Nagendran from "@/assets/home/doc/nagendran.webp";
 import Balamurugan from "@/assets/home/doc/male-dummy.png";
 import Gnanasekaran from "@/assets/home/doc/ganasekaran.jpg";
-// import Anand from "@/assets/home/doc/anand.jpg";
+import Minnathulla from "@/assets/home/doc/minnathula.jpg";
 
 import Senthur from "@/assets/home/doc/senthur.webp";
 import Sakthi from "@/assets/home/doc/sakthi.jpg";
@@ -654,6 +654,58 @@ export const doctorsData = [
     ],
   },
 
+  // Cardiothoracic
+
+  {
+    id: 46,
+    name: "Dr.Minnathulla",
+    speciality: "Cardiothoracic",
+    qualification: "Cardiothoracic surgeon",
+    degrees: "MD, Mch",
+    image: Minnathulla,
+    doctordetail: [
+      {
+        name: "Dr.Minnathulla",
+        specialist: "Cardiothoracic",
+        image: Sudhakar,
+        menulabel: "MD, Mch",
+        role: "Cardiothoracic surgeon",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
 
   // Dental
   {
@@ -845,7 +897,7 @@ export const doctorsData = [
             "Infection control practices in ICU – VAP, CLABSI, and CAUTI prevention ",
           ],
         },
-       
+
       },
 
     ],
@@ -879,14 +931,14 @@ export const doctorsData = [
             "Emergency and trauma care management ",
             "Advanced patient handling techniques ",
             "Efficient clinical decision-making ",
-           
+
           ],
         },
         researchandpublications: {
           title: "Awards & Recognitions ",
           list: [
             "Best Medical Service Award during the COVID-19 pandemic ",
-            
+
           ],
         },
         awards: {
@@ -932,7 +984,7 @@ export const doctorsData = [
             "Team coordination in critical care settings ",
           ],
         },
-        
+
       },
 
     ],
@@ -1572,6 +1624,62 @@ export const doctorsData = [
   },
 
 
+  //Laryngology
+  {
+    id: 20,
+    name: "Dr.M.P.Kavin Kumar",
+    speciality: "Laryngology",
+    qualification: "Consultant Laryngology ",
+    degrees: "MD, DVL ",
+    image: Kavin,
+    doctordetail: [
+      {
+        name: "Dr.M.P.Kavin Kumar",
+        specialist: "Laryngology",
+        image: Kavin,
+        menulabel: "MBBS, MD, DVL ",
+        role: "Consultant Laryngology ",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "About the Doctor",
+          description:
+            "Dr. M P Kavin Kumar is an accomplished ENT surgeon of Sudha Multispeciality Hospital. He is the first formally trained Laryngologist from Tamil Nadu, having completed his Post-Doctoral Fellowship in Phono surgery at CMC, Vellore. He is known for his precision in voice and airway surgeries and his commitment to restoring patients’ quality of life. ",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Comprehensive care for professional voice users: Politicians, Teachers, VJs, RJs, Lawyers, and Singers ",
+            "Office-based laryngeal surgeries for voice disorders",
+            "Surgical treatment of vocal fold cysts and polyps ",
+            "Management of vocal fold paralysis ",
+            "Advanced voice surgeries using Blue Laser, Coblation, and Microdebrider technologies  ",
+
+          ],
+        },
+        researchandpublications: {
+          title: "Academic Roles & Contributions ",
+          list: [
+            "Faculty in various national and regional Laryngology conferences",
+            "Organizer of Voice and Larynx – Exclusive Laryngology Conference in Erode ",
+            "1st Edition: 2023",
+            "2nd Edition: 2025 ",
+          ],
+        },
+        awards: {
+          title: "Professional Milestones ",
+          list: [
+            "Life Member: Indian Medical Association (IMA) ",
+            "Member: Association of Phono surgeons of India ",
+            "Founding Member & Executive Member – Tamil Nadu Association of Phono surgeons of India",
+            "First to perform Blue Laser-Assisted Voice Surgery in Tamil Nadu ",
+          ],
+        },
+      },
+
+    ],
+  },
   // Microbiology
 
   {
@@ -1835,7 +1943,7 @@ export const doctorsData = [
           title: "Research & Publications ",
           list: [
             " Impact of coexisting lymphocytic thyroiditis in differentiated thyroid carcinoma, SNMICON, AIIMS Delhi ",
-            
+
             "Head-to-head comparison between 68Ga-Pentixafor and 18F-FDG PET/CT in diffuse large B-cell lymphoma, SNMICON-22, AIIMS Delhi ",
             "Role of 131I-MIBG in detecting precursor adrenal hyperplasia: An interesting MEN-2B syndrome case, SNMI Southern Chapter, Madurai 2022 ",
             "Assessment of renal function in PRRT treatment with co-administration of nephroprotective amino acid: a comparison with baseline renal parameters, SNMI Southern Chapter, Bangalore 2022 ",
@@ -1849,7 +1957,7 @@ export const doctorsData = [
           title: "Professional Milestones ",
           list: [
             "Life Member – Society of Nuclear Medicine India (SNMI) ",
-            
+
           ],
         },
       },
@@ -1886,7 +1994,7 @@ export const doctorsData = [
             "Management of solid cancers with chemotherapy ",
             "Advanced radiation techniques ",
             "Paediatric cancers ",
-            
+
           ],
         },
         researchandpublications: {
@@ -1920,8 +2028,8 @@ export const doctorsData = [
           ],
         },
       },
-      
-        
+
+
 
     ],
   },

@@ -94,31 +94,32 @@ function Bookappointment() {
                appearance-none hover:bg-gray-100 cursor-pointer"
                     >
                       <option>Select a department</option>
-                      <option>Anaethesiology</option>
+                      <option>Anaesthesiology</option>
+                      <option>Bariatric & Metabolic</option>
                       <option>Cardiology</option>
                       <option>Cardiothoracic Surgery</option>
                       <option>Dentistry and Oral Surgery</option>
-                      <option>Dermatology </option>
+                      <option>Dermatology</option>
+                      <option>DMO</option>
                       <option>ENT</option>
-                      <option>Emergency Care</option>
-                      <option>Gastroenterology</option>
-                      <option>Radiology</option>
+                      <option>Fetal Medicine</option>
                       <option>General Medicine</option>
-                      <option>General Surgery</option>
-                      <option>Intensive Care Unit</option>
-                      <option>Urology</option>
-                      <option>Orthopaedics</option>
+                      <option>Obstetrics & Gynaecology</option>
+                      <option>Laryngology</option>
+                      <option>Microbiology</option>
                       <option>Nephrology</option>
                       <option>Neurology</option>
-                      <option>Imaging and Diagnostic Services</option>
-                      <option>Obstetrics & Gynaecology</option>
-                      <option>Pulmonology</option>
-                      <option>Paediatrics</option>
                       <option>Neonatology</option>
-                      <option>Pain Medicine</option>
-                      <option>Plastic Surgery</option>
+                      <option>Nuclear Medicine</option>
                       <option>Oncology</option>
-                      <option>Laryngology</option>
+                      <option>Orthopaedics</option>
+                      <option>Paediatrics</option>
+                      <option>Pathologist</option>
+                      <option>Plastic Surgery</option>
+                      <option>Psychiatry</option>
+                      <option>Pulmonology</option>
+                      <option>Radiology</option>
+                      <option>Urology</option>
                     </select>
 
                     {/* Custom Dropdown Icon */}
