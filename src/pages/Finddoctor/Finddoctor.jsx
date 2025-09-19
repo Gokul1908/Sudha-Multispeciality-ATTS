@@ -326,11 +326,10 @@ export default function Finddoctor() {
 
                           <div className="mt-4">
                             <Link
-                              href="#contactus"
-                              className="btn-diagonal-outline px-6 w-full mt-4 inline-flex items-center justify-center"
+                              href={`/doctor-detail/${doc.id}`}
+                              className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2"
                             >
-                              Book an Appointment
-                              <ArrowUpRight className="w-4 h-4 ml-2" />
+                              View Profile <ArrowUpRight className="w-5 h-5" />
                             </Link>
                           </div>
                         </div>

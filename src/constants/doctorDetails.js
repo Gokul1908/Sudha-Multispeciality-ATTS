@@ -832,32 +832,20 @@ export const doctorsData = [
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Senthur Raj C is a dedicated Senior Medical Officer with over 6 years of clinical experience in emergency medicine, intensive care, and transplant coordination. He is skilled in handling critical cases, organ retrieval, and guiding medical teams with expertise and compassion.",
         },
         clinicalExpertise: {
           title: "Clinical Expertise",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Advanced Cardiac Life Support (ACLS) and Advanced Trauma Life Support (ATLS) protocol management",
+            "Emergency and trauma care with rapid patient assessment and resuscitation ",
+            "ICU management – airway establishment, invasive line placement, and arterial BP monitoring",
+            "Renal transplant organ retrieval, perfusion, and transplant coordination ",
+            "Grief counselling and family support during organ donation ",
+            "Infection control practices in ICU – VAP, CLABSI, and CAUTI prevention ",
           ],
         },
-        researchandpublications: {
-          title: "Research And Publications",
-          list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
-          ],
-        },
-        awards: {
-          title: "Awards & Achievements",
-          list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
-          ],
-        },
+       
       },
 
     ],
@@ -877,36 +865,34 @@ export const doctorsData = [
         image: Sakthi,
         menulabel: "MBBS",
         role: "DMO",
-        experience: "33",
+        experience: "4",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Sakthi Saravanan K. E is a dedicated medical officer with 10 years of clinical experience, serving in reputed multispeciality hospitals in Chennai and Erode. He is skilled in handling emergency procedures and trauma care, with a strong focus on patient-centred medical management. His contributions during the COVID-19 pandemic were recognized with a Best Medical Service Award. Beyond his hospital practice, he actively engages in healthcare awareness programs to benefit peripheral communities. ",
         },
         clinicalExpertise: {
           title: "Clinical Expertise",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Emergency and trauma care management ",
+            "Advanced patient handling techniques ",
+            "Efficient clinical decision-making ",
+           
           ],
         },
         researchandpublications: {
-          title: "Research And Publications",
+          title: "Awards & Recognitions ",
           list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+            "Best Medical Service Award during the COVID-19 pandemic ",
+            
           ],
         },
         awards: {
-          title: "Awards & Achievements",
+          title: "Conferences ",
           list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+            "Active participant in CME programs organized by IMA, medical colleges, and public sector institutions ",
           ],
         },
       },
@@ -928,38 +914,25 @@ export const doctorsData = [
         image: Lakshmanan,
         menulabel: "MBBS",
         role: "DMO",
-        experience: "33",
+        experience: "4.5",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Lakshmanan KV is a committed medical professional with 4.5 years of clinical experience in emergency and critical care medicine. He is skilled in handling acute trauma and critical illnesses, with a strong focus on patient stabilization, rapid diagnostics, and multidisciplinary teamwork in high-pressure environments.",
         },
         clinicalExpertise: {
           title: "Clinical Expertise",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Emergency and critical care management ",
+            "Advanced resuscitation techniques ",
+            "Acute trauma and multi-system emergency handling ",
+            "Patient stabilization and rapid diagnostic assessments ",
+            "Team coordination in critical care settings ",
           ],
         },
-        researchandpublications: {
-          title: "Research And Publications",
-          list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
-          ],
-        },
-        awards: {
-          title: "Awards & Achievements",
-          list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
-          ],
-        },
+        
       },
 
     ],
@@ -979,36 +952,37 @@ export const doctorsData = [
         image: Kamall,
         menulabel: "MBBS",
         role: "DMO",
-        experience: "33",
+        experience: "7",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Kamall V.C. is a dedicated medical professional with over 7 years of clinical experience in emergency medicine, trauma care, and critical care management. Skilled in handling critically ill patients on ventilators and leading ICU teams, he combines strong medical expertise with compassionate patient-centred care.",
         },
         clinicalExpertise: {
-          title: "Clinical Expertise",
+          title: "Clinical Experience ",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Emergency and trauma care management",
+            "Critical care and ICU leadership ",
+            "Ventilator and advanced life support handling",
+            "Patient assessment and rapid clinical decision-making",
+            "Healthcare administration and hospital operations ",
+            "Patient communication and counselling ",
           ],
         },
         researchandpublications: {
-          title: "Research And Publications",
+          title: "Professional Milestones ",
           list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+            "Certified in Advanced Cardiac Life Support (ACLS) ",
+            "Certified in Basic Life Support (BLS) ",
           ],
         },
         awards: {
-          title: "Awards & Achievements",
+          title: "Awards & Recognitions",
           list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+            "COVID Warrior Award – For dedicated service during the pandemic ",
+            "Outstanding Performer Award – Excellence in emergency & critical care delivery",
           ],
         },
       },
@@ -1845,30 +1819,37 @@ export const doctorsData = [
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Pradap Palanivelu is a skilled Nuclear Medicine specialist with advanced training in diagnostic and therapeutic nuclear imaging. With expertise spanning oncology, neurology, cardiology, and radiotheranostics, he combines precision imaging with targeted therapies to enhance patient care. He has presented his research at national conferences and contributed to international publications in the field of nuclear medicine. ",
         },
         clinicalExpertise: {
-          title: "Clinical Expertise",
+          title: "Clinical Expertise & Areas of Interest ",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "PET-CT Oncology (FDG, PSMA, DOTANOC & FAPI PET) ",
+            "PET-CT Neurology .",
+            "PET-CT Cardiovascular ",
+            "Radioiodine therapeutic procedures for carcinoma thyroid and thyrotoxic patients ",
+            "Radiotheranostics with Lutetium-177 therapies for neuroendocrine tumors and carcinoma prostate ",
           ],
         },
         researchandpublications: {
-          title: "Research And Publications",
+          title: "Research & Publications ",
           list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+            " Impact of coexisting lymphocytic thyroiditis in differentiated thyroid carcinoma, SNMICON, AIIMS Delhi ",
+            
+            "Head-to-head comparison between 68Ga-Pentixafor and 18F-FDG PET/CT in diffuse large B-cell lymphoma, SNMICON-22, AIIMS Delhi ",
+            "Role of 131I-MIBG in detecting precursor adrenal hyperplasia: An interesting MEN-2B syndrome case, SNMI Southern Chapter, Madurai 2022 ",
+            "Assessment of renal function in PRRT treatment with co-administration of nephroprotective amino acid: a comparison with baseline renal parameters, SNMI Southern Chapter, Bangalore 2022 ",
+            "Utility of 18F-FDG PET/CT in Detecting Spinal Drop Metastases from Pineal Gland Tumors. Asia Oceania Journal of Nuclear Medicine & Biology, 2024 ",
+            "Imaging spectrum of peritoneal carcinomatosis associated with various etiologies on 18F-FDG PET/CT. Meenakshi Journal of Nuclear Medicine, June 2022 ",
+            "18F-FDG PET/CT for response evaluation in metastatic breast cancer treated with Palbociclib-containing regimen. ",
+
           ],
         },
         awards: {
-          title: "Awards & Achievements",
+          title: "Professional Milestones ",
           list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+            "Life Member – Society of Nuclear Medicine India (SNMI) ",
+            
           ],
         },
       },
@@ -1891,39 +1872,56 @@ export const doctorsData = [
         image: Sugeshwaran,
         menulabel: "MD(RT)(KIDWAI - Bengaluru),DNB(RT),FIPM,ECMO.",
         role: "Consultant Oncologist",
-        experience: "33",
+        experience: "9",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Sugashwaran J is a dedicated Clinical and Radiation Oncologist with over 9 years of experience in cancer care. He specializes in advanced radiation techniques, chemotherapy for solid cancers, and paediatric oncology. Along with his clinical work, he has published 15 research papers and has been part of leading cancer institutes and hospitals in South India. His approach combines strong academic expertise with compassionate patient care. ",
         },
         clinicalExpertise: {
-          title: "Clinical Expertise",
+          title: "Clinical Expertise and Special Interests ",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Management of solid cancers with chemotherapy ",
+            "Advanced radiation techniques ",
+            "Paediatric cancers ",
+            
           ],
         },
         researchandpublications: {
-          title: "Research And Publications",
+          title: "Professional Experience ",
           list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+            "Senior Resident – Kidwai Memorial Institute of Oncology, Bangalore (2016) ",
+            "Assistant Professor in Oncology – Velammal Hospital, Madurai (2016–2019) ",
+            "Consultant Radiation Oncologist – Apollo Hospital, Madurai (2017–2018) ",
+            "Consultant Radiation Oncologist – Guru Hospital, Madurai (2016–2019)",
+            "Consultant Radiation Oncologist – Royal Care Hospital, Coimbatore (2019–2025) ",
+            "Consultant Radiation Oncologist & Founder Member – OncoFoundation Cancer Hospital, Erode (2019–2023) ",
+            "Consultant Clinical & Radiation Oncologist – Sudha Cancer Centre, Erode (2022–Present) ",
+
           ],
         },
         awards: {
-          title: "Awards & Achievements",
+          title: "Publications ",
           list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Authored 15 national and international publications in oncology",
             "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
           ],
         },
+        conference: {
+          title: "Professional Memberships  ",
+          list: [
+            "Indian Medical Association (IMA)",
+            "Association of Radiation Oncologists of India (AROI)",
+            "European Society for Medical Oncology (ESMO)",
+            "European Society for Radiotherapy and Oncology (ESTRO) ",
+            "FRCR Forum",
+          ],
+        },
       },
+      
+        
 
     ],
   },
