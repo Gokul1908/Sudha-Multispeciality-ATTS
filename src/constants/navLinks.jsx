@@ -702,7 +702,7 @@ export const links = [
         subMenu: [
           {
             label: "News & Events",
-            dec: "Trusted healthcare with a 40-year legacy.",
+            dec: "News, Insights, and Achievements in Healthcare",
           },
         ],
       },

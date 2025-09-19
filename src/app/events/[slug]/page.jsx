@@ -59,14 +59,14 @@ const NewsAndEvents = () => {
             </motion.h1>
 
             {/* Subtitle */}
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
               A Heartfelt Care For Your Heart Care
-            </motion.p>
+            </motion.p> */}
           </div>
 
           {/* Side Info Box */}

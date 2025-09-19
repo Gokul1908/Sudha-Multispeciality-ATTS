@@ -70,7 +70,7 @@ const NewsAndEvents = () => {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              A Heartfelt Care For Your Heart Care
+             Milestones in Medicine and Beyond
             </motion.p>
           </div>
 
