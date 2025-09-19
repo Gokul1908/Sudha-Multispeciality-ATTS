@@ -85,7 +85,7 @@ export default function Navbar() {
       <div className="hidden md:block text-sm text-black py-4 max-w-7xl mx-auto">
         <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-y-2">
           {/* Left - Welcome Text */}
-          <p className="text-center md:text-left ">UpComing Events</p>
+          <Link href="#upcoming" className="text-center md:text-left ">UpComing Events</Link>
 
           {/* Right - Contact Numbers */}
           <div className="flex gap-4 items-center text-sm">

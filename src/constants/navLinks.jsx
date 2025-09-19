@@ -4,6 +4,8 @@ import AboutUs from "../assets/home/header/hover1.png";
 import Awards from "../assets/home/header/awards.webp";
 import Infracstructure from "../assets/home/header/infracstructure.webp";
 import Whysudha from "../assets/home/header/why-sudha.webp";
+import News from "../assets/home/header/news-events.webp";
+
 
 import Insurance from "../assets/menu/facilities/menu-insurance.webp";
 import Ambulance from "../assets/menu/facilities/menu-ambulance.webp";
@@ -691,7 +693,19 @@ export const links = [
           },
         ],
       },
+      {
+        header: "News & Events",
+        hrefs: "/news-and-events",
 
+        image: News,
+        hoverImage: News,
+        subMenu: [
+          {
+            label: "News & Events",
+            dec: "Trusted healthcare with a 40-year legacy.",
+          },
+        ],
+      },
 
       // {
       //   header: "Bio-medical Report",

@@ -121,7 +121,7 @@ export default function TimelineSlider() {
     <section>
       <div className="max-w-7xl mx-auto  relative">
         {/* Timeline horizontal line */}
-        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-white/30 z-0" />
+        <div className="absolute top-[49%] left-0 w-full h-0.5 bg-white/30 z-0" />
 
         <Slider {...settings}>
           {timelineData.map((item, index) => {

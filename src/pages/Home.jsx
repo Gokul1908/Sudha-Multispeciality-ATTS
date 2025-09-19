@@ -43,6 +43,7 @@ import CentreOfExcellence from "@/components/centreofexcellence";
 import Bookappointment from "@/components/Bookappointment";
 import BannerSlider from "@/components/BannerSlider";
 import BookAppointmentModal from "@/components/bookappointmentmodal";
+import NewsEvents from "@/components/NewsEvents";
 
 
 
@@ -647,6 +648,8 @@ function Home() {
         <CentreOfExcellence />
       </section>
 
+     
+
 
 
       <section className="max-w-7xl mx-auto py-16 pt-0 ">
@@ -769,6 +772,10 @@ function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+       <section id="upcoming" className="py-16 pt-0">
+        <NewsEvents/>
       </section>
 
       <section className="mb-m ">

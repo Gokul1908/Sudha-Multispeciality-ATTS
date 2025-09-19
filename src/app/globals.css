@@ -22,8 +22,27 @@
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+    border-radius: 25px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5E566A;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5E566A;
+}
 
 /* Options inside dropdown */
 select option {
