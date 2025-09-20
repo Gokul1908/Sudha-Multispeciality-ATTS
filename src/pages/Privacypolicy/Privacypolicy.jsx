@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import Banner from "@/assets/privacypolicy/banner.png";
+import Banner from "@/assets/privacypolicy/Banner.png";
 import Breadcrumb from "@/components/Breadcrumb";
 
 
