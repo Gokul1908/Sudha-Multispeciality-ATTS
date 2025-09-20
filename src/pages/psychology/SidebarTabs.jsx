@@ -37,10 +37,10 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         CBT is a structured, goal-oriented therapy that helps individuals identify and change negative thought patterns and behaviours. It is effective for a wide range of conditions including anxiety, depression, phobias, and OCD. Our trained therapists tailor sessions to each patient’s needs and progress. 
+          CBT is a structured, goal-oriented therapy that helps individuals identify and change negative thought patterns and behaviours. It is effective for a wide range of conditions including anxiety, depression, phobias, and OCD. Our trained therapists tailor sessions to each patient’s needs and progress.
         </p>
 
-       
+
       </div>
     ),
   },
@@ -49,7 +49,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" />  */}
-          Stress & Anxiety Management 
+          Stress & Anxiety Management
 
 
 
@@ -59,9 +59,9 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         We provide therapeutic support to help patients manage chronic stress, performance anxiety, panic disorders, and everyday emotional challenges. Our stress management approach combines therapy, relaxation techniques, and lifestyle guidance to build mental resilience. 
+          We provide therapeutic support to help patients manage chronic stress, performance anxiety, panic disorders, and everyday emotional challenges. Our stress management approach combines therapy, relaxation techniques, and lifestyle guidance to build mental resilience.
         </p>
-        
+
 
 
       </div>
@@ -73,7 +73,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" />  */}
-          Child & Adolescent Therapy 
+          Child & Adolescent Therapy
 
 
         </div>
@@ -82,9 +82,9 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-          Children and teens may experience emotional or behavioural difficulties due to family issues, academic pressure, or developmental disorders. Our psychologists use age-appropriate methods such as play therapy, behavioural interventions, and parental counselling to support young minds. 
+          Children and teens may experience emotional or behavioural difficulties due to family issues, academic pressure, or developmental disorders. Our psychologists use age-appropriate methods such as play therapy, behavioural interventions, and parental counselling to support young minds.
         </p>
-       
+
 
       </div>
     ),
@@ -96,7 +96,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" />  */}
-          Depression Counselling 
+          Depression Counselling
 
 
 
@@ -106,54 +106,8 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-        Depression is more than sadness—it can affect sleep, appetite, and motivation. Our experts offer personalized therapy sessions to help patients understand the roots of depression, cope with triggers, and regain emotional balance. 
+          Depression is more than sadness—it can affect sleep, appetite, and motivation. Our experts offer personalized therapy sessions to help patients understand the roots of depression, cope with triggers, and regain emotional balance.
         </p>
-        
-      </div>
-    ),
-  },
-
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Interventional Cardiology" />  */}
-         Grief & Trauma Counselling 
-
-
-
-        </div>
-      </>
-    ),
-    content: (
-      <div className="text-sm  space-y-3">
-        <p className="mt-2">
-          We offer specialized care for individuals dealing with grief, loss, or traumatic experiences. These sessions provide a safe space for emotional release, healing, and rebuilding confidence through professional psychological guidance. 
-        </p>
-       
-
-      </div>
-    ),
-  },
-
-   {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Interventional Cardiology" />  */}
-         Behavioural Therapy 
-
-
-
-        </div>
-      </>
-    ),
-    content: (
-      <div className="text-sm  space-y-3">
-        <p className="mt-2">
-         Behavioural therapy focuses on modifying harmful behaviours and reinforcing positive actions. It is particularly useful in treating ADHD, conduct disorders, and behavioural challenges in children. Our team collaborates with families and educators to ensure consistent improvement.  
-        </p>
-       
 
       </div>
     ),
@@ -164,7 +118,8 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" />  */}
-        Couple & Family Therapy
+          Grief & Trauma Counselling
+
 
 
         </div>
@@ -173,9 +128,54 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-         Relationship stress can impact mental health. Our psychologists offer therapy for couples and families to improve communication, resolve conflict, and strengthen emotional bonds. These sessions promote understanding, empathy, and healthy relationship dynamics.   
+          We offer specialized care for individuals dealing with grief, loss, or traumatic experiences. These sessions provide a safe space for emotional release, healing, and rebuilding confidence through professional psychological guidance.
         </p>
-       
+
+
+      </div>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" />  */}
+          Behavioural Therapy
+
+
+
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p className="mt-2">
+          Behavioural therapy focuses on modifying harmful behaviours and reinforcing positive actions. It is particularly useful in treating ADHD, conduct disorders, and behavioural challenges in children. Our team collaborates with families and educators to ensure consistent improvement.
+        </p>
+
+
+      </div>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" />  */}
+          Couple & Family Therapy
+
+
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p className="mt-2">
+          Relationship stress can impact mental health. Our psychologists offer therapy for couples and families to improve communication, resolve conflict, and strengthen emotional bonds. These sessions promote understanding, empathy, and healthy relationship dynamics.
+        </p>
+
 
       </div>
     ),
@@ -343,7 +343,7 @@ export default function SidebarTabs() {
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
-            Expert Psychological Care 
+            Expert Psychological Care
           </h3>
           <ul className="space-y-3">
             {serviceSections.map((item) => {
@@ -384,6 +384,141 @@ export default function SidebarTabs() {
           </ul>
         </div>
 
+        <div className="hidden md:block">
+          {/* Sudha Hospital Box */}
+          <div
+            className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+            style={{
+              backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <h3 className="text-[20px] font-bold mb-2">
+              Sudha Multispeciality Hospital
+            </h3>
+            <ul className="space-y-4 text-start mt-4">
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  Personalized counselling and therapy sessions for all age groups </li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Expert care for anxiety, depression, stress, and emotional issues    </li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Supportive environment for mental health and emotional healing  </li>
+
+            </ul>
+
+            <button className="btn-white mt-5">
+              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+            </button>
+          </div>
+
+          {/* Find a Doctor Box */}
+          <Link href="/find-a-doctor" >
+
+            <div
+              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+              style={{
+                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+              }}
+            >
+              {/* Text Section */}
+              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+                <h3
+
+                  className="text-[24px] sm:text-xl  font-bold leading-snug"
+                >
+                  Find a <br className="hidden sm:block" /> Doctor?
+                </h3>
+              </div>
+
+              {/* Image Section */}
+              <div className="">
+                <Image
+                  src={doctorImg}
+                  alt="Doctor"
+                  className="rounded-lg w-full customposition  h-auto object-cover"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
+
+      </aside>
+
+      {/* Content Sections */}
+      <div className="flex-1 space-y-0">
+        {serviceSections.map(({ id, label }) => (
+          <section key={id} id={id} className="scroll-mt-32 rounded-xl">
+            {id === "overview" && (
+              <>
+                <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
+
+                <div className="mt-6 space-y-4">
+                  <h2 className="text-[24px]">
+                    Comprehensive Psychological Care and Mental Wellness Services
+                  </h2>
+                  <p className="mb-4">
+                    Mental health plays a crucial role in overall well-being, and our Psychology Department is committed to offering compassionate, confidential, and evidence-based care. With experienced psychologists and trained therapists, we address a wide range of psychological concerns in both adults and children.
+                  </p>
+
+                  <p className="mt-4 mb-4">
+                    Whether it’s anxiety, depression, behavioural issues, or stress, our goal is to support patients in understanding and managing their emotions for a healthier, more balanced life. Our services are designed to integrate psychological support within a broader healthcare framework to ensure holistic care.
+                  </p>
+                </div>
+              </>
+            )}
+
+            {id === "facilities" && (
+              <>
+                <h3 className="text-[24px] mt-5">Facilities</h3>
+                <ul>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Private counselling rooms for confidentiality
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Child and adolescent therapy environment
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Comfortable and calm therapeutic setting
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Screening and assessment tools
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Support groups and workshops
+                  </li>
+
+
+                </ul>
+              </>
+            )}
+
+            {id === "services" && (
+              <div className="space-y-2">
+                <h2 className="text-[24px] mt-5">Services</h2>
+
+                <Accordion accordionData={accordionData} />
+              </div>
+            )}
+
+            {id === "doctors" && (
+              <>
+                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
+                <DoctorSlider />
+              </>
+            )}
+
+            {/* {id === "faqs" && (
+              <div className="mt-8">
+                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
+                <Faq faq={faq} />
+              </div>
+            )} */}
+          </section>
+        ))}
+      </div>
+
+      <div className="block md:hidden">
         {/* Sudha Hospital Box */}
         <div
           className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
@@ -437,82 +572,6 @@ export default function SidebarTabs() {
             </div>
           </div>
         </Link>
-      </aside>
-
-      {/* Content Sections */}
-      <div className="flex-1 space-y-0">
-        {serviceSections.map(({ id, label }) => (
-          <section key={id} id={id} className="scroll-mt-32 rounded-xl">
-            {id === "overview" && (
-              <>
-                <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
-
-                <div className="mt-6 space-y-4">
-                  <h2 className="text-[24px]">
-                   Comprehensive Psychological Care and Mental Wellness Services 
-                  </h2>
-                  <p className="mb-4">
-                    Mental health plays a crucial role in overall well-being, and our Psychology Department is committed to offering compassionate, confidential, and evidence-based care. With experienced psychologists and trained therapists, we address a wide range of psychological concerns in both adults and children.
-                  </p>
-
-                  <p className="mt-4 mb-4">
-                    Whether it’s anxiety, depression, behavioural issues, or stress, our goal is to support patients in understanding and managing their emotions for a healthier, more balanced life. Our services are designed to integrate psychological support within a broader healthcare framework to ensure holistic care. 
-                  </p>
-                </div>
-              </>
-            )}
-
-            {id === "facilities" && (
-              <>
-                <h3 className="text-[24px] mt-5">Facilities</h3>
-                <ul>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Private counselling rooms for confidentiality 
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Child and adolescent therapy environment 
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Comfortable and calm therapeutic setting 
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Screening and assessment tools 
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Support groups and workshops 
-                  </li>
-
-                  
-                </ul>
-              </>
-            )}
-
-            {id === "services" && (
-              <div className="space-y-2">
-                <h2 className="text-[24px] mt-5">Services</h2>
-
-                <Accordion accordionData={accordionData} />
-              </div>
-            )}
-
-            {id === "doctors" && (
-              <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
-              </>
-            )}
-
-            {/* {id === "faqs" && (
-              <div className="mt-8">
-                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
-                <Faq faq={faq} />
-              </div>
-            )} */}
-          </section>
-        ))}
       </div>
     </div>
   );

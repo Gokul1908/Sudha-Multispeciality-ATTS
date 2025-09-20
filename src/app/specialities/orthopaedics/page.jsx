@@ -152,7 +152,7 @@ function page() {
       />
 
 
-      import Script from "next/script";
+    
 
       <Script
         id="orthopaedics-schema"

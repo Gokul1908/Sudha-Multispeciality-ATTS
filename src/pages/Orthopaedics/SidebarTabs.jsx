@@ -316,62 +316,66 @@ export default function SidebarTabs() {
           </ul>
         </div>
 
-        {/* Sudha Hospital Box */}
-        <div
-          className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
-          style={{
-            backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-[20px] font-bold mb-2">
-            Sudha Multispeciality Hospital
-          </h3>
-          <hr className="border-light" />
-          <ul className="space-y-4 text-start mt-4">
-            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24x7 emergency orthopaedic and trauma care with advanced ICU support</li>
-            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> State-of-the-art operation theatres and orthopaedic trauma units</li>
-            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive care from paediatric to geriatric orthopaedic needs</li>
 
-          </ul>
-
-
-
-          <button className="btn-white mt-5">
-            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
-          </button>
-        </div>
-
-        {/* Find a Doctor Box */}
-        <Link href="/find-a-doctor" >
-
+        <div className="hidden md:block">
+          {/* Sudha Hospital Box */}
           <div
-            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
             style={{
-              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+              backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           >
-            {/* Text Section */}
-            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-              <h3
+            <h3 className="text-[20px] font-bold mb-2">
+              Sudha Multispeciality Hospital
+            </h3>
+            <hr className="border-light" />
+            <ul className="space-y-4 text-start mt-4">
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24x7 emergency orthopaedic and trauma care with advanced ICU support</li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> State-of-the-art operation theatres and orthopaedic trauma units</li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive care from paediatric to geriatric orthopaedic needs</li>
 
-                className="text-[24px] sm:text-xl  font-bold leading-snug"
-              >
-                Find a <br className="hidden sm:block" /> Doctor?
-              </h3>
-            </div>
+            </ul>
 
-            {/* Image Section */}
-            <div className="">
-              <Image
-                src={doctorImg}
-                alt="Doctor"
-                className="rounded-lg w-full customposition  h-auto object-cover"
-              />
-            </div>
+
+
+            <button className="btn-white mt-5">
+              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+            </button>
           </div>
-        </Link>
+
+          {/* Find a Doctor Box */}
+          <Link href="/find-a-doctor" >
+
+            <div
+              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+              style={{
+                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+              }}
+            >
+              {/* Text Section */}
+              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+                <h3
+
+                  className="text-[24px] sm:text-xl  font-bold leading-snug"
+                >
+                  Find a <br className="hidden sm:block" /> Doctor?
+                </h3>
+              </div>
+
+              {/* Image Section */}
+              <div className="">
+                <Image
+                  src={doctorImg}
+                  alt="Doctor"
+                  className="rounded-lg w-full customposition  h-auto object-cover"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
+
       </aside>
 
       {/* Content Sections */}
@@ -444,7 +448,7 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <div className="space-y-2 ">
                 <h2 className="text-[24px] mt-5 ">Doctors</h2>
-                <DoctorSlider specialty="Orthopedic" max={2} counter={2} />
+                <DoctorSlider specialty="Orthopaedics" max={2} />
               </div>
             )}
 
@@ -456,6 +460,65 @@ export default function SidebarTabs() {
             )}
           </section>
         ))}
+      </div>
+
+      <div className="block md:hidden">
+        {/* Sudha Hospital Box */}
+        <div
+          className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+          style={{
+            backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h3 className="text-[20px] font-bold mb-2">
+            Sudha Multispeciality Hospital
+          </h3>
+          <hr className="border-light" />
+          <ul className="space-y-4 text-start mt-4">
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24x7 emergency orthopaedic and trauma care with advanced ICU support</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> State-of-the-art operation theatres and orthopaedic trauma units</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive care from paediatric to geriatric orthopaedic needs</li>
+
+          </ul>
+
+
+
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+          </button>
+        </div>
+
+        {/* Find a Doctor Box */}
+        <Link href="/find-a-doctor" >
+
+          <div
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            style={{
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+            }}
+          >
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
+
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
+            </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

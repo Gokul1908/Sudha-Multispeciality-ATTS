@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -61,11 +61,6 @@ import gallery40 from "@/assets/gallery/lab-14.webp";
 import gallery41 from "@/assets/gallery/lab-15.webp";
 import gallery42 from "@/assets/gallery/lab-16.webp";
 
-
-
-
-
-
 // Breadcrumb
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -109,12 +104,19 @@ const allImages = [
   gallery23, gallery24, gallery25, gallery26, gallery27, gallery28, gallery29, gallery30,
   gallery31, gallery32, gallery33, gallery34, gallery35, gallery36, gallery37, gallery38,
   gallery39, gallery40, gallery41, gallery42,
-]
+];
 
 function Gallery() {
-  const [visibleImages, setVisibleImages] = useState(18);
-  const loadMore = () => setVisibleImages((prev) => prev + 6);
+  const [visibleImages, setVisibleImages] = useState(12);
 
+  // ✅ Detect mobile and adjust initial images
+  useEffect(() => {
+    if (window.innerWidth < 540) {
+      setVisibleImages(6); // show 6 on mobile
+    }
+  }, []);
+
+  const loadMore = () => setVisibleImages((prev) => prev + 6);
   const containerVariants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.2 } },
@@ -134,19 +136,38 @@ function Gallery() {
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
           <div className="max-w-7xl mx-auto">
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="text-white mb-3">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              className="text-white mb-3"
+            >
               <Breadcrumb items={breadcrumbItems} />
             </motion.div>
 
-            <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-[40px] mb-4">
+            <motion.h1
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-[40px] mb-4"
+            >
               Infrastructure
             </motion.h1>
 
-            <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-white mb-6">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-white mb-6"
+            >
               A Visual Journey of Trust and Healing
             </motion.p>
 
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+            >
               <Link href="#contactus" className="btn-white inline-flex items-center">
                 Book an Appointment <ArrowUpRight className="w-5 h-5 ml-2" />
               </Link>
@@ -170,10 +191,21 @@ function Gallery() {
       {/* Hospital Cards Section */}
       <section>
         <div className="max-w-7xl mx-auto my-20 h-full">
-          <motion.div variants={containerVariants} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
+          >
             {hospitalscards.map((card, idx) => (
               <motion.div key={idx} variants={cardVariants}>
-                <HospitalCard number={card.number} icon={card.icon} title={card.title} link={card.link} />
+                <HospitalCard
+                  number={card.number}
+                  icon={card.icon}
+                  title={card.title}
+                  link={card.link}
+                />
               </motion.div>
             ))}
           </motion.div>
@@ -193,8 +225,8 @@ function Gallery() {
             </h2>
           </div>
 
-          {/* ✅ Responsive grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* ✅ Responsive grid with 2 cols on mobile */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {allImages.slice(0, visibleImages).map((src, index) => (
               <motion.div
                 key={index}
@@ -207,7 +239,7 @@ function Gallery() {
                 <Image
                   src={src}
                   alt={`Gallery Image ${index + 1}`}
-                  className="w-full h-[220px] sm:h-[260px] lg:h-[300px] object-cover"
+                  className="w-full h-[180px] sm:h-[220px] lg:h-[300px] object-cover"
                   loading="lazy"
                 />
               </motion.div>
@@ -224,12 +256,9 @@ function Gallery() {
         </div>
       </section>
 
-
       <section id="contactus" className="my-16">
         <Bookappointment />
       </section>
-
-
     </div>
   );
 }

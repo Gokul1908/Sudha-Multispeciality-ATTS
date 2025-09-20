@@ -2034,21 +2034,21 @@ export const doctorsData = [
     ],
   },
 
-  //Orthopedic
+  //Orthopaedics
   {
     id: 35,
     name: "Dr.K.Attiyanan",
-    speciality: "Orthopedic ",
-    qualification: "Consultant Orthopedic Surgeon",
+    speciality: "Orthopaedics",
+    qualification: "Consultant Orthopaedics Surgeon",
     degrees: "MS ORTHO , D.ORTHO",
     image: Attiyanan,
     doctordetail: [
       {
         name: "Dr.K.Attiyanan",
-        specialist: "Orthopedic Surgeon",
+        specialist: "Orthopaedics",
         image: Attiyanan,
         menulabel: "MS ORTHO , D.ORTHO",
-        role: "Consultant Orthopedic Surgeon",
+        role: "Consultant Orthopaedics Surgeon",
         experience: "33",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
@@ -2089,17 +2089,17 @@ export const doctorsData = [
   {
     id: 36,
     name: "Dr.T.Janarthanan",
-    speciality: "Orthopedic ",
-    qualification: "Consultant Orthopedic Surgeon",
-    degrees: "M.Ch, DNB, D.orthopedics",
+    speciality: "Orthopaedics",
+    qualification: "Consultant Orthopaedic Surgeon",
+    degrees: "M.Ch, DNB, D.Orthopaedics",
     image: Janarthanan,
     doctordetail: [
       {
         name: "Dr.T.Janarthanan",
-        specialist: "Orthopedic Surgeon",
+        specialist: "Orthopaedic Surgeon",
         image: Janarthanan,
-        menulabel: "M.Ch, DNB, D.orthopedics",
-        role: "Consultant Orthopedic Surgeon",
+        menulabel: "M.Ch, DNB, D.Orthopaedic",
+        role: "Consultant Orthopaedic Surgeon",
         experience: "33",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",

@@ -300,65 +300,68 @@ export default function SidebarTabs() {
           </ul>
         </div>
 
-        {/* Hospital Info */}
-        <div
-          className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
-          style={{
-            backgroundImage: `linear-gradient(to bottom right, rgba(42,61,144,0.9), rgba(12,18,42,0.9)), url(${Frame.src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <h3 className="text-xl font-bold mb-2">
-            Sudha Multispeciality Hospital
-          </h3>
-          <hr />
-          <ul className="space-y-3 text-left mt-4">
-            {[
-              "Child-friendly environment with expert paediatric dental care",
-              "Painless root canal and laser-assisted dental procedures",
-              "Skilled dental surgeons offering comprehensive treatments under one roof",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm font-semibold">
-                <Image src={Checklight} alt="tick" width={14} height={14} />
-                {item}
-              </li>
-            ))}
-          </ul>
-          <button className="btn-white mt-5 flex items-center gap-2 justify-center mx-auto">
-            Book an Appointment <ArrowUpRight className="w-5 h-5" />
-          </button>
-        </div>
-
-        {/* Find a Doctor */}
-        <Link href="/find-a-doctor" >
-
+        <div className="hidden md:block">
+          {/* Hospital Info */}
           <div
-            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+            className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
             style={{
-              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+              backgroundImage: `linear-gradient(to bottom right, rgba(42,61,144,0.9), rgba(12,18,42,0.9)), url(${Frame.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           >
-            {/* Text Section */}
-            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-              <h3
-
-                className="text-[24px] sm:text-xl  font-bold leading-snug"
-              >
-                Find a <br className="hidden sm:block" /> Doctor?
-              </h3>
-            </div>
-
-            {/* Image Section */}
-            <div className="">
-              <Image
-                src={doctorImg}
-                alt="Doctor"
-                className="rounded-lg w-full customposition  h-auto object-cover"
-              />
-            </div>
+            <h3 className="text-xl font-bold mb-2">
+              Sudha Multispeciality Hospital
+            </h3>
+            <hr />
+            <ul className="space-y-3 text-left mt-4">
+              {[
+                "Child-friendly environment with expert paediatric dental care",
+                "Painless root canal and laser-assisted dental procedures",
+                "Skilled dental surgeons offering comprehensive treatments under one roof",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm font-semibold">
+                  <Image src={Checklight} alt="tick" width={14} height={14} />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <button className="btn-white mt-5 flex items-center gap-2 justify-center mx-auto">
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
+            </button>
           </div>
-        </Link>
+
+          {/* Find a Doctor */}
+          <Link href="/find-a-doctor" >
+
+            <div
+              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+              style={{
+                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+              }}
+            >
+              {/* Text Section */}
+              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+                <h3
+
+                  className="text-[24px] sm:text-xl  font-bold leading-snug"
+                >
+                  Find a <br className="hidden sm:block" /> Doctor?
+                </h3>
+              </div>
+
+              {/* Image Section */}
+              <div className="">
+                <Image
+                  src={doctorImg}
+                  alt="Doctor"
+                  className="rounded-lg w-full customposition  h-auto object-cover"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
+
       </aside>
 
       {/* Main Content */}
@@ -430,6 +433,68 @@ export default function SidebarTabs() {
           </section>
         ))}
       </div>
+
+      <div className="block md:hidden">
+          {/* Hospital Info */}
+          <div
+            className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+            style={{
+              backgroundImage: `linear-gradient(to bottom right, rgba(42,61,144,0.9), rgba(12,18,42,0.9)), url(${Frame.src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <h3 className="text-xl font-bold mb-2">
+              Sudha Multispeciality Hospital
+            </h3>
+            <hr />
+            <ul className="space-y-3 text-left mt-4">
+              {[
+                "Child-friendly environment with expert paediatric dental care",
+                "Painless root canal and laser-assisted dental procedures",
+                "Skilled dental surgeons offering comprehensive treatments under one roof",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm font-semibold">
+                  <Image src={Checklight} alt="tick" width={14} height={14} />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <button className="btn-white mt-5 flex items-center gap-2 justify-center mx-auto">
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Find a Doctor */}
+          <Link href="/find-a-doctor" >
+
+            <div
+              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
+              style={{
+                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
+              }}
+            >
+              {/* Text Section */}
+              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+                <h3
+
+                  className="text-[24px] sm:text-xl  font-bold leading-snug"
+                >
+                  Find a <br className="hidden sm:block" /> Doctor?
+                </h3>
+              </div>
+
+              {/* Image Section */}
+              <div className="">
+                <Image
+                  src={doctorImg}
+                  alt="Doctor"
+                  className="rounded-lg w-full customposition  h-auto object-cover"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
     </div>
   );
 }
