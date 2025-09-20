@@ -324,7 +324,7 @@ const VocationalEducation = () => {
                                     <span className="font-semibold">Course Code :</span> {course.code}
                                 </p>
                                 <p className="mb-2">
-                                    <span className="font-semibold">Education Qualification :</span> {course.qualification}
+                                    <span className="font-semibold">Educational Qualification :</span> {course.qualification}
                                 </p>
                                 <p className="mb-2">
                                     <span className="font-semibold">Course Duration :</span> {course.duration}

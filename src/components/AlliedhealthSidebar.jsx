@@ -109,60 +109,61 @@ const Alliedhealthsidebar = () => {
             {rightbar.map((item, index) => (
               <Link href={item.link} key={index}>
                 <div className="relative group">
-                  <div className="bg-white  rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
+                  <div className="bg-white rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
                     {/* Image */}
                     <Image
                       src={item.image}
                       alt={item.head}
-                      className="w-full sm:w-60 h-[220px] sm:h-[260px] object-cover rounded-3xl"
+                      className="w-full sm:w-60 h-[200px] sm:h-[260px] object-cover rounded-2xl"
                     />
 
                     {/* Text Content */}
-                    <div className="flex flex-col flex-1 h-full w-full">
+                    <div className="flex flex-col flex-1 w-full">
                       <div className="flex justify-between items-start w-full">
-                        <h3 className="text-[18px] ">
+                        <h3 className="text-[16px] sm:text-[18px] ">
                           {item.head}
                         </h3>
                         <Image
-                          height={40}
-                          width={40}
+                          height={36}
+                          width={36}
                           alt="Logo"
                           src={item.icon}
                           className="hidden sm:block"
                         />
                       </div>
 
-                      <div className="pt-4 absolute bottom-6 mr-4">
-                        <div className="border-t border-gray-200 mt-4 mb-2" />
-                        <p className="text-[14px]">
+                      {/* Label */}
+                      <div className="mt-4 border-t border-gray-200 pt-2">
+                        <p className="text-[13px] sm:text-[14px]">
                           {item.label}
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Arrow Icon */}
-                  {/* <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white flex items-center justify-center z-30 shadow-md group-hover:shadow-lg transition-all duration-200">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4 text-black group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 7L7 17M7 7h10v10"
-                      />
-                    </svg>
-                  </div> */}
+                  {/* Arrow Icon (optional for mobile too) */}
+                  {/* <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 text-black group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 7L7 17M7 7h10v10"
+              />
+            </svg>
+          </div> */}
                 </div>
               </Link>
             ))}
           </div>
         </div>
+
       </div>
     </div>
   );

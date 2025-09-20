@@ -21,7 +21,7 @@ import SidebarTabs from "./SidebarTabs";
 import Breadcrumb from "@/components/Breadcrumb";
 import { ArrowUpRight } from "lucide-react";
 
-const consultSlides = [consult1, consult2, consult3, consult4];
+const consultSlides = [consult1, consult2, consult3,];
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },

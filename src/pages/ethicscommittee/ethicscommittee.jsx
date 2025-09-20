@@ -280,12 +280,12 @@ const EthicsCommitte = () => {
 
 
             {/* Intro Content */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
+            <section className="max-w-7xl mx-auto px-4 md:px-8 py-6 sm:py-8 md:py-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10">
                     {/* Left Content */}
                     <div className="md:col-span-8">
                         <h2 className="text-[30px]">
-                           Institutional Ethics Committee at Sudha Multispeciality Hospitals 
+                            Institutional Ethics Committee at Sudha Multispeciality Hospitals
                         </h2>
                         <p className=" mt-5 mb-2 text-primary-blue font-bold">
                             Registration No:
@@ -306,7 +306,7 @@ const EthicsCommitte = () => {
                             </span>
                         </p>
                         <p className='mt-4'>
-                            The Ethics Committee was established to formalize and affirm the Institution’s dedication to upholding the highest scientific and ethical standards in patient care, professional education, clinical research, and community welfare. 
+                            The Ethics Committee was established to formalize and affirm the Institution’s dedication to upholding the highest scientific and ethical standards in patient care, professional education, clinical research, and community welfare.
                         </p>
                     </div>
                     {/* right image */}
@@ -324,7 +324,8 @@ const EthicsCommitte = () => {
             {/* section-1 */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10">
-                    <div className="md:col-span-4">
+                    {/* Use flex-col-reverse on mobile (default) and md:flex-row for desktop */}
+                    <div className="md:col-span-4 order-last md:order-first">
                         <img
                             src={Doc1.src}
                             alt="Doc1"
@@ -333,7 +334,7 @@ const EthicsCommitte = () => {
                     </div>
 
                     {/* Text (8 cols) */}
-                    <div className="md:col-span-8">
+                    <div className="md:col-span-8 order-first md:order-last">
                         <h2 className="text-[30px] mb-4 ">
                             Terms of Reference of EC
                         </h2>
@@ -348,17 +349,16 @@ const EthicsCommitte = () => {
                             </div>
                         ))}
                     </div>
-
                 </div>
             </section>
 
 
             {/* Section 2 - Roles and Responsibility */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
+            <section className="max-w-7xl mx-auto px-4 md:px-4 py-6 sm:py-8 md:py-10">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-start">
 
                     {/* Text Column */}
-                    <div className="order-2 md:order-1 md:col-span-8">
+                    <div className=" md:col-span-8">
                         <h2 className="text-[30px] mb-4">
                             Roles and Responsibility of EC
                         </h2>
@@ -375,7 +375,7 @@ const EthicsCommitte = () => {
                     </div>
 
                     {/* Image Column */}
-                    <div className="order-1 md:order-2 md:col-span-4">
+                    <div className=" md:col-span-4">
                         <img
                             src={Doc2.src}
                             alt="Doc2"
@@ -389,8 +389,8 @@ const EthicsCommitte = () => {
 
 
 
-            <section className='md:12 px-28'>
-                <h2 className="text-[30px] mb-7 mt-5">
+            <section className='max-w-7xl mx-auto px-4  md:px-0 py-6 md:py-10'>
+                <h2 className="text-[24px] mb-7 mt-5">
                     Composition of the Ethics Committee
                 </h2>
                 <div className='text-center mb-9'>

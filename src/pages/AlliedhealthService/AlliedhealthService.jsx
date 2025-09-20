@@ -151,9 +151,9 @@ const Alliedhealthservice = () => {
                         <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-5">
-                               
+
                                 <p className="text-[16px] mb-2 text-black font-bold">
-                                   Modern resources <br/> for advanced <br/> patient care
+                                    Modern resources <br /> for advanced <br /> patient care
                                 </p>
                                 <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
                             </div>
@@ -201,11 +201,11 @@ const Alliedhealthservice = () => {
                 </Marquee>
             </div>
 
-            <div className="max-w-7xl mx-auto py-8 sm:py-16 ">
+            <div className="max-w-7xl mx-auto md:px-0 px-4 py-8 sm:py-16 ">
                 <Alliedhealthsidebar />
             </div>
 
-            <div className="max-w-7xl mx-auto  py-8 sm:py-16 ">
+            <div className="max-w-7xl mx-auto px-4 md:px-0  py-8 sm:py-16 ">
                 <div className="flex flex-col lg:flex-row gap-10">
                     {/* Slider Section */}
                     <div className="w-full lg:w-1/2">

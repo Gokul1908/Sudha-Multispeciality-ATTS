@@ -315,7 +315,7 @@ const VocationalDegree = () => {
 
                                 {/* degree Details */}
                                 <p className="  mb-2">
-                                    <span className="font-semibold">Education Qualification :</span> {degree.qualification}
+                                    <span className="font-semibold">Educational Qualification :</span> {degree.qualification}
                                 </p>
                                 <p className=" mb-4">
                                     <span className="font-semibold">Course Duration :</span> {degree.duration}
