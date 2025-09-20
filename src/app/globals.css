@@ -388,7 +388,17 @@ span {
 }
 
 
+/* Desktop active dot */
+.slick-dots li.slick-active div {
+  background-color: #2b3990; /* Your active color */
+}
 
+/* Mobile active dot */
+@media (max-width: 768px) {
+  .slick-dots li.slick-active div {
+    background-color: #2b3990; /* Same or different color for mobile */
+  }
+}
 
 
 .bg-blue {
@@ -863,4 +873,32 @@ textarea {
 .btn-diagonal-outline:hover::after {
   border-right: 200px solid transparent;
   border-top: 100px solid transparent;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  /* margin: auto; */
+  right: -20px;
+}
+
+@media  (max-width: 548px) {
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    right: 0;
+  }
 }

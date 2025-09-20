@@ -41,7 +41,7 @@ function Urology() {
       <div className="flex justify-center mt-4">{dots}</div>
     ),
     customPaging: (i) => (
-      <div className="w-3 h-3 mx-1 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"></div>
+      <div className="w-3 h-3 mx-1 rounded-full bg-white hover:bg-[#2b3990] transition-all duration-300"></div>
     ),
   };
   return (
@@ -121,7 +121,7 @@ function Urology() {
       </section>
 
       {/* Clinic + Info Section */}
-      <section className="max-w-7xl mx-auto py-16  relative">
+      <section className="max-w-7xl mx-auto py-16 px-4 md:px-0  relative">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
           <div className="relative w-full lg:w-1/2 mx-auto rounded-3xl overflow-hidden">
             <Image src={Clinic} alt="Clinic" className="w-full h-[466px] object-cover rounded-3xl" />

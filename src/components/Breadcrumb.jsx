@@ -5,7 +5,7 @@ import Link from "next/link";
 const Breadcrumb = ({ items }) => {
   return (
     <div
-      className="max-w-2xl mx-auto "
+      className="w-full"
       aria-label="Breadcrumb"
     >
       <ol className="flex items-center text-sm text-gray-600 space-x-1 md:space-x-2">

@@ -37,7 +37,7 @@ const Ambulanceservice = () => {
       </div>
     ),
     customPaging: () => (
-      <div className="w-3 h-3 mx-1 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"></div>
+      <div className="w-3 h-3 mx-1 rounded-full bg-white hover:bg-[#2b3990] transition-all duration-300"></div>
     ),
   };
 

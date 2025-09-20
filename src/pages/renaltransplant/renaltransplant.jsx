@@ -56,7 +56,7 @@ function Organtransplant() {
       <div className="flex justify-center mt-4">{dots}</div>
     ),
     customPaging: (i) => (
-      <div className="w-3 h-3 mx-1 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300"></div>
+      <div className="w-3 h-3 mx-1 rounded-full bg-white hover:bg-[#2b3990] transition-all duration-300"></div>
     ),
   };
 
@@ -119,9 +119,9 @@ function Organtransplant() {
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 540,
         setting: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
     ],
