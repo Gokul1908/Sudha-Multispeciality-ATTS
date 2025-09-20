@@ -61,20 +61,22 @@ const Privacypolicy = () => {
 
 
             <div className="max-w-7xl mx-auto px-4 py-10  " >
-                <h2 className='text-[24px] pb-2 pt-8'>Sudha Hospitals is located at:</h2>
-                <p className='text-[#000000] font-bold text-1xl pb-2 pt-10'>Sudha Hospitals</p>
+                <h2 className='text-[24px] pb-2 pt-8'>Your privacy is important to us </h2>
+                <p className='text-[#000000] font-bold text-1xl pb-2 '>Sudha Hospitals is located at: </p>
+                <p className='text-[#000000] font-bold text-1xl pb-2 pt-2'>Sudha Hospitals  </p>
                 <p className='text-[#000000] font-bold text-1xl pb-2 pt-0'>181 Edayankattuvalasu,</p>
                 <p className='text-[#000000] font-bold text-1xl pb-2 pt-0'>Erode 638001 - Tamil Nadu , India</p>
                 <p className='pt-10'>
                     It is Sudha Hospitals's policy to respect your privacy regarding any information we may collect while operating our website. This Privacy Policy applies to www.sudhahospitals.com/ (hereinafter, "us", "we", or "www.sudhahospitals.com/"). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy ("Privacy Policy") to explain what information may be collected on our website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the website and does not apply to our collection of information from other sources.
+
                     This Privacy Policy, together with the Terms of Service posted on our website, set forth the general rules and policies governing your use of our website. Depending on your activities when visiting our website, you may be required to agree to additional terms of service.
                 </p>
-                <h2 className='text-[24px] pb-2 pt-6'>Website Visitors</h2>
+                <h2 className='text-[24px] pb-2 pt-6'>Website Visitors </h2>
                 <p className='pt-2'>
-                    Like most website operators, Sudha Hospitals collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Sudha Hospitals’ purpose in collecting non-personally identifying information is to better understand how Sudha Hospitals’ visitors use its website. From time to time, Sudha Hospitals may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.
-                    Sudha Hospitals also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on http://www.sudhahospitals.com/ blog posts. Sudha Hospitals only discloses logged in user and commenter IP addresses under the same circumstances that it uses and discloses personally-identifying information as described below.
+                    Like most website operators, Sudha Hospitals collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Sudha Hospitals’ purpose in collecting non-personally identifying information is to better understand how Sudha Hospitals’ visitors use its website. From time to time, Sudha Hospitals may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website. 
+                   Sudha Hospitals also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on http://www.sudhahospitals.com/ blog posts. Sudha Hospitals only discloses logged in user and commenter IP addresses under the same circumstances that it uses and discloses personally-identifying information as described below. 
                 </p>
-                <h2 className='text-[24px] pb-2 pt-6'>Gathering of Personally-Identifying Information</h2>
+                <h2 className='text-[24px] pb-2 pt-6'>Gathering of Personally-Identifying Information </h2>
                 <p className='pt-2'>
                     Certain visitors of our website choose to interact with Sudha Hospitals in ways that require us to gather personally-identifying personally identifying information. The amount and type of information that Sudha Hospitals gathers depends on the nature of the interaction. For example, to sign up for a blog at http://www.sudhahospitals.com/ we ask for a username and email address.
                 </p>

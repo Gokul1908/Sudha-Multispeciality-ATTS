@@ -8,8 +8,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Disclamier", href: "/disclaimer" },
-  
-  ];
+
+];
 const Disclaimer = () => {
     return (
         <div>
@@ -35,7 +35,7 @@ const Disclaimer = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px] mb-4"
                         >
-                            Disclaimer and Events
+                            Disclaimer
                         </motion.h1>
                     </div>
 
@@ -58,16 +58,65 @@ const Disclaimer = () => {
 
 
             <div className="max-w-7xl mx-auto px-4 py-10  " >
-                <p className='pt-10'>
-                    All the information displayed, transmitted or carried by Sudha Hospitals and its related websites including, but not limited to, directories, guides, news articles, opinions, reviews, text, photographs, images, illustrations, profiles, audio clips, video clips, trademarks, service marks and the like, collectively the “Content”, are protected by the copyright and other intellectual property laws and be informed that the content of the same is not intended to be a substitute for professional medical advice and not for solicitation of business.
-                    The Content is owned by  Sudha Hospitals, its affiliates or third party licensors. You may not modify, publish, transmit, transfer, sell, reproduce, create derivative work from, distribute, repost, perform, display or in any way commercially exploit any of the Content. You agree to abide by all copyright notices and restrictions attached to any Content accessed through the Sri Ramakrishna Hospitals website and not to alter the content in any way. Permitted Use you may take a single copy of the Content displayed on the Sri Ramakrishna Hospitals for personal,
-                    non-commercial use only, provided that you do not remove any trademarks, copyright and any other notice contained in such Content. You shall not archive or retain any Content in any form without written permission. The information provided in this site for the sole purpose of disseminating health information for public benefit.
-                </p>
-                <h1 className='text-[24px] pb-2 pt-6'>General Disclaimer and Limitation of Liability</h1>
-                <p className='pt-2 mb-10'>
-                    The Sudha Hospital’s website contains facts, views, opinions, statements and recommendations of users of the Sudha Hospitals website, advertisers, third party information providers and organizations. Sudha Hospital’s website does not represent or endorse the accuracy, completeness or reliability of any advice, opinion, statement or other information displayed, uploaded or distributed through the website. You acknowledge that any reliance upon any such opinion, advice, statement or information shall be at your sole risk.
-                    Sri Ramakrishna Hospital makes no warranty or representation whatsoever regarding the website or any content, advertising services or products provided through or in connection with the website.​                </p>
+                <div className='space-y-10'>
 
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>Disclaimer </h4>
+                        <p className=''>
+                            The information provided on the official website of Sudha Hospitals (https://sudhahospitals.com/) is for general informational and educational purposes only. By accessing and using this website, you acknowledge and agree to the following disclaimer:
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>Not a Substitute for Medical Advice  </h4>
+                        <p className=''>
+                            The content on this website—including articles, blog posts, videos, downloadable materials, and any other information—is not intended to replace or substitute professional medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare professionals regarding any medical condition or treatment options.
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>No Doctor-Patient Relationship </h4>
+                        <p className=''>
+                            Accessing or using the website does not establish a doctor-patient relationship between you and Sudha Hospitals or any of its medical professionals. Appointments, consultations, and treatments should be scheduled directly through our official channels or in person at our facilities.
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>Accuracy of Information</h4>
+                        <p className=''>
+                            While we strive to ensure that the content on this website is accurate, complete, and up-to-date, Sudha Hospitals makes no warranties or representations regarding the accuracy or reliability of any content. Medical knowledge and practices evolve rapidly, and the website may not reflect the most current developments.
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>Third-party Content and Links</h4>
+                        <p className=''>
+                            The website may contain links to third-party websites or resources for convenience and reference. Sudha Hospitals is not responsible for the content, accuracy, or privacy policies of these external sites and does not endorse any products or services they offer.
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>Limitation of Liability </h4>
+                        <p className=''>
+                            Sudha Hospitals, its affiliates, staff, and content providers shall not be held liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use or misuse of the information on this website. Use of the site and its content is entirely at your own risk.
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+                        <h4 className='text-[24px] mb-3'>Changes to Disclaimer </h4>
+                        <p className=''>
+                            Sudha Hospitals reserves the right to update or modify this disclaimer at any time without prior notice. It is your responsibility to review this page periodically for any changes.
+                        </p>
+                    </div>
+
+                    <div className="mt-5">
+
+                        <p className=''>
+                            If you have any concerns or require medical advice, please contact us through email or phone.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );
