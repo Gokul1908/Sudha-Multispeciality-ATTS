@@ -256,10 +256,10 @@ const Diplomacourse = () => {
 
                 <div className="text-center">
                     <h5 className="inline-block mb-4 px-4 sm:px-5 py-1.5 sm:py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm">
-                           Courses offered 
+                        Courses offered
                     </h5>
                     <h2 className="text-[30px]">
-                       DNB Courses Offered by <br/>Sudha Multispeciality Hospital 
+                        DNB Courses Offered by <br />Sudha Multispeciality Hospital
                     </h2>
                 </div>
                 {/* Heading */}

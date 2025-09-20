@@ -14,14 +14,9 @@ import Lakshmanan from "@/assets/home/doc/lakshmanan.jpg";
 import Kamall from "@/assets/home/doc/kamall.png";
 import Krishna from "@/assets/home/doc/male-dummy.png";
 import Thriuvenkata from "@/assets/home/doc/male-dummy.png";
-import Sathiya from "@/assets/home/doc/female-dummy.webp";
-
-
-
-
+import Sathiya from "@/assets/fellownationalboard/user-dummy.avif";
 
 import Duraikannan from "@/assets/home/doc/duraikannan.webp";
-
 import Sangeeth from "@/assets/home/doc/sangeeth.webp";
 import Renuka from "@/assets/home/doc/renuka.webp";
 import Subhashree from "@/assets/home/doc/subhashree.webp";
