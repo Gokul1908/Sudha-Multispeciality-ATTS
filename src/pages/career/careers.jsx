@@ -75,14 +75,14 @@ const Careers = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="pl-8 md:pl-20">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                             className="mb-3 text-white"
                         >
                             <Breadcrumb items={breadcrumbItems} />
-                        </motion.p>
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -105,7 +105,7 @@ const Careers = () => {
                         <Link
                             href="#"
                             className="btn-white ">
-                            Job Openings <ArrowUpRight className="w-5 h-5" />
+                            Apply Now  <ArrowUpRight className="w-5 h-5" />
                         </Link>
                     </div>
 

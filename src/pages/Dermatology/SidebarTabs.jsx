@@ -340,7 +340,7 @@ export default function SidebarTabs() {
   }, []);
 
   return (
-    <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10">
+    <div className="flex md:mt-0 mt-4 flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10">
       {/* Sidebar */}
       <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}

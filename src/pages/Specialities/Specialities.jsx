@@ -168,7 +168,7 @@ const Specialities = () => {
               transition={{ duration: 0.5 }}
               className="text-[32px] md:text-[40px] font-bold mb-4"
             >
-              Excellence in Care, Across Every Department
+              Specialities
             </motion.h1>
 
             <motion.p
@@ -177,7 +177,7 @@ const Specialities = () => {
               transition={{ duration: 0.6 }}
               className="text-white mb-6"
             >
-              Every Service You Need, All in One Place – Feel at Home with Us.
+             Excellence in Care, Across Every Department
             </motion.p>
           </div>
 

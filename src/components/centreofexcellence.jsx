@@ -39,7 +39,7 @@ export default function CentreOfExcellence() {
   };
 
   return (
-    <section className="bg-gradient-to-br py-16 relative">
+    <section className="bg-gradient-to-br px-4 md:px-0  py-16 relative">
       <div className="max-w-7xl mx-auto relative">
         {/* Header */}
         <div className="text-center mb-12">
