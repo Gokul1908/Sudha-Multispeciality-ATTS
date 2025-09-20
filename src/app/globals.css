@@ -329,6 +329,13 @@ span {
   }
 
 
+  h1{
+    font-size: 30px!important;
+  }
+
+  h2{
+    font-size: 24px!important;
+  }
   .mb-hero-section {
     margin-top: -5rem;
   }

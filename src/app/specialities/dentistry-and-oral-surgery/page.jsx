@@ -155,8 +155,7 @@ function page() {
         }}
       />
 
-      import Script from "next/script";
-
+      
       <Script
         id="dentistry-oral-surgery-schema"
         type="application/ld+json"

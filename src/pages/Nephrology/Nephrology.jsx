@@ -10,7 +10,7 @@ import Image from "next/image";
 import consult1 from "@/assets/specialites/nephrology/gallery/nephrology-1.webp";
 import consult2 from "@/assets/specialites/nephrology/gallery/nephrology-2.webp";
 import consult3 from "@/assets/specialites/nephrology/gallery/nephrology-3.webp";
-import consult4 from "@/assets/specialites/nephrology/gallery/nephrology-4.webp";
+// import consult4 from "@/assets/specialites/nephrology/gallery/nephrology-4.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";

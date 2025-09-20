@@ -389,7 +389,7 @@ function MotherandChildcare() {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
     ],
@@ -404,19 +404,19 @@ function MotherandChildcare() {
         {/* Parallax Cloud Bottom */}
         <motion.div
           style={{ y: cloudY }}
-          className="absolute bottom-11  lg:-bottom-16 w-full z-30"
+          className="absolute bottom-12  lg:-bottom-16 w-full z-30"
         >
           <Image src={Sky} alt="sky" className="w-full h-auto" />
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 py-10 mt-10 lg:mt-0 sm:py-28 grid md:grid-cols-2 gap-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 md:py-16 pb-0 pt-16 md:mt-10 mt-24  grid md:grid-cols-2 gap-12">
           {/* Left Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col justify-center text-center md:text-left"
+            className="flex flex-col justify-center  md:text-left"
           >
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -452,13 +452,12 @@ function MotherandChildcare() {
             transition={{ duration: 0.7 }}
             className="relative flex justify-center"
           >
-            <div className="relative w-[100%] md:w-full max-w-md">
+            <div className="relative w-full md:max-w-md">
               <Image
                 src={family}
                 alt="Family"
-                width={500}
-                height={500}
-                className="w-full object-cover"
+                
+                className="w-full  object-cover"
                 priority
               />
               {/* Parallax Animated Bubble */}
@@ -494,8 +493,8 @@ function MotherandChildcare() {
         </div>
       </section>
 
-      <section className={`${nunito.className} bg-blue-50 py-12 px-4 sm:px-6 lg:px-16`}>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <section className={`${nunito.className} bg-blue-50 py-12 md:px-0 px-4`}>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center flex-col-reverse">
           {/* Left Section - Images and Experience */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -508,7 +507,7 @@ function MotherandChildcare() {
               <Image
                 src={Mother}
                 alt="Doctor and child"
-                className="w-[85%] mx-auto object-cover"
+                className="md:w-[85%] w-full mx-auto object-cover"
               />
             </div>
 
@@ -523,7 +522,7 @@ function MotherandChildcare() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="space-y-6 "
           >
             <span className=" bg-white text-[#2B3990] px-5  py-2 rounded-full text-sm font-semibold">
               About US
@@ -579,13 +578,13 @@ function MotherandChildcare() {
       </section>
 
       <section
-        className={`${nunito.className} max-w-7xl mx-auto py-16 rounded-3xl  bg-cover bg-no-repeat`}
+        className={`${nunito.className} max-w-7xl mx-auto py-16 rounded-3xl   bg-cover bg-no-repeat`}
         style={{
           backgroundImage: `url(${Background.src})`,
         }}
       >
         {/* Heading */}
-        <div className=" max-w-7xl mx-auto px-8 text-start mb-10">
+        <div className=" max-w-7xl mx-auto md:px-8 px-4 text-start mb-10">
           <span className="bg-white text-[#2B3990] px-5  py-2 rounded-full text-sm font-semibold">
             Our Services
           </span>
@@ -596,7 +595,7 @@ function MotherandChildcare() {
 
         {/* Grid Cards */}
 
-        <div className={`${nunito.className} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-8`}>
+        <div className={`${nunito.className} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:px-8 px-4`}>
           {services.map((service, index) => {
             const cardContent = (
               <motion.div
@@ -660,13 +659,13 @@ function MotherandChildcare() {
 
         {/* CTA */}
         <motion.div
-          className={`${nunito.className} mt-10 text-center text-sm sm:text-base text-black`}
+          className={`${nunito.className} mt-10 md:px-0 px-4 text-center text-sm sm:text-base text-black`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <span className="bg-blue  px-3 py-1 rounded-full text-xs mr-2">
+          <span className="bg-blue  md:px-3 px-4 py-1 rounded-full text-xs mr-2">
             Free
           </span>
           <b>Dreaming of motherhood? Get the right support.  </b>
@@ -676,7 +675,7 @@ function MotherandChildcare() {
         </motion.div>
       </section>
 
-      <section className={`${nunito.className} px-4 sm:px-6  bg-[#f3f7fc] mt-7`}>
+      <section className={`${nunito.className} md:px-0 px-4  bg-[#f3f7fc] mt-7`}>
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           {/* Left content with animation */}
           <motion.div
@@ -749,7 +748,7 @@ function MotherandChildcare() {
       </section>
 
       <section
-        className={`${nunito.className} max-w-7xl mx-auto rounded-3xl relative py-16 px-4 sm:px-6 lg:px-16 text-white`}
+        className={`${nunito.className} max-w-7xl mx-auto rounded-3xl relative py-16 md:px-0 px-4 text-white`}
         style={{
           backgroundImage: `url(${Whychoicebg.src})`,
           backgroundColor: "#2B3990",
@@ -763,7 +762,7 @@ function MotherandChildcare() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="max-w-5xl mb-10 text-start"
+          className="max-w-5xl mb-10 md:px-8 px-4 text-start"
         >
           <div className="inline-block bg-white text-primary-blue px-5  py-2 rounded-full  text-sm font-semibold mb-4">
             Why Choose Us
@@ -775,7 +774,7 @@ function MotherandChildcare() {
         </motion.div>
 
         {/* Cards Grid */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto md:px-8 px-4">
           {whychoice.map((item, idx) => (
             <motion.div
               key={idx}
@@ -803,9 +802,9 @@ function MotherandChildcare() {
         </div>
       </section>
 
-      <section className={`${nunito.className} mt-16`}>
+      <section className={`${nunito.className} mt-10 sm:mt-16 `}>
         <div
-          className="max-w-7xl rounded-3xl mx-auto py-12 px-4 sm:px-6 lg:px-9 flex flex-col lg:flex-row items-center gap-10 bg-cover bg-no-repeat"
+          className="max-w-7xl rounded-3xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-9 flex flex-col lg:flex-row items-center gap-8 lg:gap-10 bg-cover bg-no-repeat"
           style={{ backgroundImage: `url(${Background.src})` }}
         >
           {/* Left Side */}
@@ -816,42 +815,48 @@ function MotherandChildcare() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <span className="inline-block bg-white text-primary-blue px-5  py-2 rounded-full  text-sm font-semibold mb-4">
+            <span className="inline-block bg-white text-primary-blue px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-3 sm:mb-4">
               Our Achievements
             </span>
-            <h2 className=" text-[30px]  mb-4">
-              Driven by the trust of Mothers    <br className="hidden sm:block" />
+
+            <h2 className="text-[22px] sm:text-[30px]  mb-3 sm:mb-4">
+              Driven by the trust of Mothers
+              <br className="hidden sm:block" />
               Across Generations
             </h2>
-            <p className="  mb-6">
-              With over four decades of dedicated experience in mother and childcare, Sudha has been a part of countless parenthood journeys. Every baby born here reflects our commitment to expert care, compassion, and safety.
+
+            <p className="text-sm sm:text-base mb-5 sm:mb-6">
+              With over four decades of dedicated experience in mother and childcare,
+              Sudha has been a part of countless parenthood journeys. Every baby born
+              here reflects our commitment to expert care, compassion, and safety.
             </p>
-            <div className="rounded-3xl overflow-hidden w-full">
+
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden w-full">
               <Image
                 src={OurAchivementTwo}
                 alt="Expecting Couple"
-                className="w-[100%] mx-auto h-[352px] object-cover rounded-3xl"
+                className="w-full h-[220px] sm:h-[352px] object-cover rounded-2xl sm:rounded-3xl"
               />
             </div>
           </motion.div>
 
           {/* Right Side */}
           <motion.div
-            className="w-full lg:w-1/2 space-y-6"
+            className="w-full lg:w-1/2 space-y-5 sm:space-y-6"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-3xl overflow-hidden">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden">
               <Image
                 src={OurAchivementOne}
                 alt="Happy Family"
-                className="w-[100%] mx-auto h-[352px] object-cover rounded-3xl"
+                className="w-full h-[220px] sm:h-[352px] object-cover rounded-2xl sm:rounded-3xl"
               />
             </div>
 
-            <ul className="space-y-4 text-md">
+            <ul className="space-y-3 sm:space-y-4 text-sm sm:text-md">
               {[
                 "Advanced treatments for mother and childcare ",
                 "World-class equipment and infrastructure ",
@@ -865,16 +870,16 @@ function MotherandChildcare() {
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="text-primary-blue w-7 h-7 bg-white flex justify-center items-center p-1 rounded-2xl">
-                    <TickCircle className="min-w-5 min-h-5" />
+                  <div className="text-primary-blue w-6 h-6 sm:w-7 sm:h-7 bg-white flex justify-center items-center rounded-xl sm:rounded-2xl">
+                    <TickCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <p className="">{text}</p>
+                  <p>{text}</p>
                 </motion.li>
               ))}
             </ul>
 
             <motion.div
-              className="grid grid-cols-3 gap-4 pt-4 border-t border-gray-300"
+              className="grid grid-cols-3 gap-3 sm:gap-4 pt-4 border-t border-gray-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -883,13 +888,15 @@ function MotherandChildcare() {
               {[
                 { number: "40+", label: "Year of Experience" },
                 { number: "98%", label: "Patient satisfaction" },
-                { number: "1,00,000+", label: "Happy families" },
+                { number: "1L+", label: "Happy families" },
               ].map((item, i) => (
                 <div key={i} className="text-start">
-                  <h3 className="text-primary-blue  text-[44px]">
+                  <h3 className="text-primary-blue text-[26px] md:text-[28px] ">
                     {item.number}
                   </h3>
-                  <p className="text-black mt-2">{item.label}</p>
+                  <p className="text-black text-xs sm:text-sm mt-1 sm:mt-2">
+                    {item.label}
+                  </p>
                 </div>
               ))}
             </motion.div>
@@ -897,8 +904,9 @@ function MotherandChildcare() {
         </div>
       </section>
 
+
       <section
-        className={`${nunito.className} max-w-7xl mx-auto relative bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden mt-10`}
+        className={`${nunito.className} max-w-7xl mx-auto relative bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden mt-10 `}
         style={{
           backgroundImage: `url(${Contact_us.src})`,
         }}
@@ -906,7 +914,7 @@ function MotherandChildcare() {
         {/* Overlay */}
         {/* <div className="absolute inset-0 bg-indigo-900 bg-opacity-70"></div> */}
 
-        <div className="relative z-10 px-6 py-12 sm:px-10 lg:px-16">
+        <div className="relative z-10  px-6 py-12 sm:px-10 lg:px-16">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1023,7 +1031,7 @@ function MotherandChildcare() {
       </section>
 
       <motion.div
-        className={`${nunito.className} py-16 `}
+        className={`${nunito.className} py-16 md:px-0 px-4`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -1038,7 +1046,7 @@ function MotherandChildcare() {
             <h2 className="text-[30px]  text-[#2A3D90] mt-4 mb-6">
               Maternal Health Care
             </h2>
-            <div className="flex justify-between">
+            <div className="block md:flex md:justify-between">
               <ul className="space-y-4 text-[14px] font-semibold text-[#5E566A]">
                 {[
                   "Postpartum Care",
@@ -1099,8 +1107,8 @@ function MotherandChildcare() {
         </div>
       </motion.div>
 
-      <div className={`${nunito.className} py-16 `}>
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className={`${nunito.className} md:py-16 pt-0 md:px-0 px-4 `}>
+        <div className="max-w-7xl mx-auto grid  grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <motion.div
             className="relative"
             initial={{ opacity: 0, x: -50 }}
@@ -1125,7 +1133,7 @@ function MotherandChildcare() {
               Paediatric Health Care
             </h2>
 
-            <div className="flex justify-between">
+            <div className="block md:flex md:justify-between">
               <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
                 {[
                   "Seasonal & Tropical Infections (Dengue, Malaria etc.)",
@@ -1171,13 +1179,13 @@ function MotherandChildcare() {
       </div>
 
       <section className={`${nunito.className}`}>
-        <div className="max-w-7xl mx-auto py-16">
+        <div className="max-w-7xl mx-auto py-16 md:px-0 px-4">
           {/* Heading */}
           <div className="text-center">
             <div className="px-5 py-2 bg-white text-primary-blue inline-block font-semibold rounded-full ">
               <p className="text-[#2A3D90]">Sudha Care</p>
             </div>
-            <h2 className="text-[30px] text-center text-[#2A3D90] mt-4 mb-6 font-bold">
+            <h2 className="text-[30px] text-center text-[#2A3D90] mt-4 mb-6">
               Dedicated to your fertility <br /> journey success
             </h2>
           </div>
@@ -1228,7 +1236,7 @@ function MotherandChildcare() {
 
       <section className={`${nunito.className}`}>
         <div>
-          <div className="max-w-3xl mx-auto py-16">
+          <div className="max-w-3xl mx-auto py-16 md:px-0 px-4">
             <h2 className="text-center text-[30px] mb-6">
               Frequently Asked Questions
             </h2>
@@ -1279,7 +1287,7 @@ function MotherandChildcare() {
             backgroundSize: "cover",
           }}
         >
-          <div className="flex flex-col md:flex-row  w-full py-16  justify-center px-8 ">
+          <div className="flex flex-col md:flex-row  w-full md:py-16 py-6   justify-center md:px-0 px-4 ">
             {/* Left Image + Info */}
             <div
               className="w-full md:w-1/2 h-[500px] md:h-[600px] bg-cover bg-center rounded-3xl overflow-hidden relative md:mb-0"
@@ -1290,11 +1298,11 @@ function MotherandChildcare() {
                   <div>
                     <h2 className="text-[20px] font-bold">Helpline Number:</h2>
                     <p className="text-sm text-[#fff] mt-3">
-                     For Immediate Medical Assistance, contact our helpline number.
+                      For Immediate Medical Assistance, contact our helpline number.
 
                     </p>
                     <p className="text-[16px] font-bold mt-2 text-[#fff]">
-                     0424 351 4545
+                      0424 351 4545
                     </p>
                   </div>
                   <div className="border-l border-white/30 pl-4">
@@ -1303,7 +1311,7 @@ function MotherandChildcare() {
                       24/7 Ambulance Services for Medical Emergencies.
                     </p>
                     <p className="text-[16px] font-bold mt-2 text-[#fff]">
-                     +91 9042-065-454
+                      +91 9042-065-454
                     </p>
                   </div>
                 </div>
@@ -1311,7 +1319,7 @@ function MotherandChildcare() {
             </div>
 
             {/* Right Form Section */}
-            <div className="w-full md:w-1/2 md:pl-10">
+            <div className="w-full md:w-1/2 md:pl-10 md:py-0 py-4">
               <h2 className="text-[30px]   mb-2">
                 Book An Appointment
                 <span className="text-[#2B3990]"> Today</span>

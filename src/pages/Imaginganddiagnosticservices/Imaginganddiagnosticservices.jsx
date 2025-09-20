@@ -10,7 +10,7 @@ import Image from "next/image";
 import consult1 from "@/assets/specialites/diagnostic-service/gallery/image-1.webp";
 import consult2 from "@/assets/specialites/diagnostic-service/gallery/image-2.webp";
 import consult3 from "@/assets/specialites/diagnostic-service/gallery/image-3.webp";
-import consult4 from "@/assets/specialites/diagnostic-service/gallery/image-4.webp";
+// import consult4 from "@/assets/specialites/diagnostic-service/gallery/image-4.webp";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

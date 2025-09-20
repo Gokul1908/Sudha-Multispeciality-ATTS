@@ -458,7 +458,7 @@ export default function SidebarTabs() {
             )}
 
             {id === "faqs" && (
-              <div className="space-y-2 ">
+              <div className="space-y-2 md:pt-0 pt-8">
                 <h2 className="text-[24px]  mt-5 ">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>

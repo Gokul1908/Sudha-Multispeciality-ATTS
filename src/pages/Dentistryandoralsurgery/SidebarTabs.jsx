@@ -400,7 +400,7 @@ export default function SidebarTabs() {
                   ].map((item, i) => (
                     <li
                       key={i}
-                      className="flex gap-2 items-center text-[#5E566A] text-sm font-semibold"
+                      className="flex gap-2 md:items-center items-start text-[#5E566A] text-sm font-semibold"
                     >
                       <div className="w-2 h-2 rounded-full bg-[#2B3990]" />
                       {item}

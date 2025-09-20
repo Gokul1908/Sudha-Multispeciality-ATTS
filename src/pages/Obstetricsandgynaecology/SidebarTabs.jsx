@@ -550,7 +550,7 @@ export default function SidebarTabs() {
             )}
 
             {id === "faqs" && (
-              <div className="space-y-2">
+              <div className="space-y-2 md:pt-0 pt-10">
                 <h2 className="text-[24px]  mt-5 ">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
@@ -559,63 +559,63 @@ export default function SidebarTabs() {
         ))}
       </div>
 
-       <div className="block md:hidden">
-          {/* Sudha Hospital Box */}
+      <div className="block md:hidden">
+        {/* Sudha Hospital Box */}
+        <div
+          className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+          style={{
+            backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h3 className="text-[20px] font-bold mb-2">
+            Sudha Multispeciality Hospital
+          </h3>
+          <hr className="border-light" />
+          <ul className="space-y-4 text-start mt-4">
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Trusted care from conception to childbirth and beyond</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> 3.5 lakh+ Infertile Couples Counselled</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />1 lakh+ Laparoscopic Surgeries</li>
+
+          </ul>
+
+
+
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+          </button>
+        </div>
+
+        <Link href="/find-a-doctor" >
+
           <div
-            className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
             style={{
-              backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
             }}
           >
-            <h3 className="text-[20px] font-bold mb-2">
-              Sudha Multispeciality Hospital
-            </h3>
-            <hr className="border-light" />
-            <ul className="space-y-4 text-start mt-4">
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Trusted care from conception to childbirth and beyond</li>
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> 3.5 lakh+ Infertile Couples Counselled</li>
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />1 lakh+ Laparoscopic Surgeries</li>
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
 
-            </ul>
-
-
-
-            <button className="btn-white mt-5">
-              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
-            </button>
-          </div>
-
-          <Link href="/find-a-doctor" >
-
-            <div
-              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-              style={{
-                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-              }}
-            >
-              {/* Text Section */}
-              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-                <h3
-
-                  className="text-[24px] sm:text-xl  font-bold leading-snug"
-                >
-                  Find a <br className="hidden sm:block" /> Doctor?
-                </h3>
-              </div>
-
-              {/* Image Section */}
-              <div className="">
-                <Image
-                  src={doctorImg}
-                  alt="Doctor"
-                  className="rounded-lg w-full customposition  h-auto object-cover"
-                />
-              </div>
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
             </div>
-          </Link>
-        </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
