@@ -82,7 +82,7 @@ const OrganTransplantSidebar = () => {
             {rightbar.map((item, index) => (
               <Link href={item.link} key={index}>
                 <div className="relative group">
-                  <div className="bg-white  rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
+                  <div className="bg-white md:h-auto h-[340px]  rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
                     {/* Image */}
                     <Image
                       src={item.image}

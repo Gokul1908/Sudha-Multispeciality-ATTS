@@ -276,7 +276,7 @@ const OrganTransplant = () => {
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
+        <div className="max-w-7xl mx-auto md:pt-16 py-16">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -310,11 +310,11 @@ const OrganTransplant = () => {
         </Marquee>
       </div>
 
-      <div className="max-w-7xl mx-auto py-16 ">
+      <div className="max-w-7xl mx-auto  md:py-16 py-8 md:px-0 px-4">
         <OrganTransplantSidebar />
       </div>
 
-      <section className="max-w-3xl mx-auto py-16" >
+      <section className="max-w-3xl mx-auto py-16 md:py-16 py-8  md:px-0 px-4" >
         <div>
           <h2 className="text-center text-[30px] mb-8">
             Frequently Asked Questions

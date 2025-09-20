@@ -109,7 +109,7 @@ const Alliedhealthsidebar = () => {
             {rightbar.map((item, index) => (
               <Link href={item.link} key={index}>
                 <div className="relative group">
-                  <div className="bg-white rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
+                  <div className="bg-white md:h-auto h-[340px] rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
                     {/* Image */}
                     <Image
                       src={item.image}
@@ -133,11 +133,14 @@ const Alliedhealthsidebar = () => {
                       </div>
 
                       {/* Label */}
-                      <div className="mt-4 border-t border-gray-200 pt-2">
-                        <p className="text-[13px] sm:text-[14px]">
-                          {item.label}
-                        </p>
+                      <div className="absolute bottom-6">
+                        <div className="mt-4  border-t border-gray-200 pt-2 ">
+                          <p className="text-[13px] sm:text-[14px]">
+                            {item.label}
+                          </p>
+                        </div>
                       </div>
+
                     </div>
                   </div>
 
