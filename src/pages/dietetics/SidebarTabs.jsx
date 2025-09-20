@@ -438,30 +438,30 @@ export default function SidebarTabs() {
               <>
                 <h3 className="text-[24px] mt-5">Facilities</h3>
                 <ul>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Experienced, qualified team of dieticians trained in clinical and therapeutic nutrition
                   </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Personalized dietary counselling for OPD, IPD, and ICU patients
                   </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
                     Nutrition support tailored for Master Health Checkup cases
                   </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
                     Regular nutrition reassessment for critical care patients
                   </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
                     Integration with other departments like General Medicine, Oncology, Cardiology, Nephrology, and Obstetrics
                   </li>
 
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
                     Use of medical history, biochemical data, and lifestyle factors in planning diets
                   </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
                     Specialized diet charts for children, adults, pregnant women, and the elderly
                   </li>

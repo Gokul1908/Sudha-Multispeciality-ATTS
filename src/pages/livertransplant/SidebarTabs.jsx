@@ -482,7 +482,7 @@ export default function SidebarTabs() {
                 </h3>
                 <ul className="space-y-4 mt-4">
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -494,7 +494,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -506,7 +506,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -519,7 +519,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -531,7 +531,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -543,7 +543,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -556,7 +556,7 @@ export default function SidebarTabs() {
 
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 
@@ -568,7 +568,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={24} height={24} />
                       <div>
 

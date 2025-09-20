@@ -525,17 +525,17 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 ">Facilities</h2>
                 <p className="mb-3">Our world-class laryngology unit is equipped with the latest diagnostic and therapeutic technologies to provide comprehensive care for voice, swallowing, and airway disorders.     </p>
                 <ul>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Olympus Nasopharyngolaryngoscope with Narrow Band Imaging (NBI) for early cancer detection    </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Mobile bedside nasopharyngolaryngoscopy for inpatient evaluations    </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Advanced video fluoroscopic swallowing study (VFSS) facilities in collaboration with Radiology </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Precision Coblation and Blue Laser micro laryngeal surgical systems    </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Specialised surgical instrumentation including Weerda cricopharyngoscope and paediatric rigid bronchoscope  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Dedicated voice analysis and stroboscopic equipment for vocal fold vibration evaluation  </li>
 
 

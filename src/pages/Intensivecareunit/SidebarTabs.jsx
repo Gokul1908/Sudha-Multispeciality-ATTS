@@ -416,20 +416,20 @@ export default function SidebarTabs() {
                 </p>
 
                 <ul className="space-y-4 text-start mt-4">
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />   Critical Care Unit 1</li>
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Critical Care Unit 2</li>
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Isolation Rooms</li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />   Critical Care Unit 1</li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Critical Care Unit 2</li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Isolation Rooms</li>
 
 
 
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Paediatric Intensive Care Unit   </li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Paediatric Intensive Care Unit   </li>
 
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Medical Intensive Care Unit</li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Medical Intensive Care Unit</li>
 
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiac Intensive Coronary Care Unit </li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiac Intensive Coronary Care Unit </li>
 
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiothoracic Surgery Intensive Care Unit</li>
-                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Neonatal Intensive Care Unit </li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiothoracic Surgery Intensive Care Unit</li>
+                  <li className="flex md:items-center items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Neonatal Intensive Care Unit </li>
                 </ul>
 
               </>

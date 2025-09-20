@@ -690,7 +690,7 @@ export default function SidebarTabs() {
 
                 <ul className="space-y-4">
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -702,7 +702,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -713,7 +713,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -725,7 +725,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -737,7 +737,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -750,7 +750,7 @@ export default function SidebarTabs() {
 
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -762,7 +762,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -774,7 +774,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -786,7 +786,7 @@ export default function SidebarTabs() {
                   </li>
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -799,7 +799,7 @@ export default function SidebarTabs() {
 
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -812,7 +812,7 @@ export default function SidebarTabs() {
 
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">
@@ -825,7 +825,7 @@ export default function SidebarTabs() {
 
 
                   <li>
-                    <div className="flex items-start gap-3">
+                    <div className="flex md:items-center items-start gap-3">
                       <Image src={Check} alt="tick" width={20} height={20} />
                       <div>
                         <p className="font-semibold text-[#1F1F1F]">

@@ -438,36 +438,36 @@ export default function SidebarTabs() {
               <div className="space-y-2 ">
                 <h2 className="text-[24px] mt-5 ">Facilities</h2>
                 <ul>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>24 x 7 Emergency Neurology Services
                     </b></li>
                   <p className="ml-5"> Immediate care for stroke, seizures, head injuries, and neuro-emergencies. </p>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>General & Special Wards</b></li>
                   <p className="ml-5"> Dedicated neuro-care units with trained duty doctors and staff nurses for continuous patient monitoring. </p>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>State-of-the-Art Neuro Intensive Care Unit (Neuro-ICU)
                     </b></li>
                   <p className="ml-5">Equipped with advanced monitoring systems and ventilator support for critical neurological patients. </p>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>Neurodiagnostic Lab</b></li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Electroencephalography (EEG) for seizure disorder diagnosis  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Nerve Conduction Studies (NCS), EMG & Evoked Potential Studies </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Transcranial Doppler for stroke evaluation </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Sleep Study & Video Telemetry for sleep and epilepsy disorders</li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Microelectrode Recording for Deep Brain Stimulation (DBS)</li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>Advanced Surgical Tools </b></li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Vario Operative Microscope</li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>CRW Stereotactic System for pinhole neurosurgeries </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
+                  <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Intraoperative Monitoring for high-risk surgeries </li>
 
                 </ul>

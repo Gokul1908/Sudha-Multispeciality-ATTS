@@ -399,7 +399,7 @@ export default function SidebarTabs() {
                   ].map((facility, idx) => (
                     <li
                       key={idx}
-                      className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3"
+                      className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3"
                     >
                       <div className="w-2 h-2 rounded-lg bg-[#2B3990]" />
                       {facility}
