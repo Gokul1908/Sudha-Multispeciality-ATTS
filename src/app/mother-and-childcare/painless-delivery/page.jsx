@@ -41,7 +41,7 @@ const Page = () => {
   return (
     <div>
 
-      import Script from "next/script";
+      
 
       <Script
         id="painless-delivery-schema"
