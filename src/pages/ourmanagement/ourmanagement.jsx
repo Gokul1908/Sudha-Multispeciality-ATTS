@@ -170,7 +170,7 @@ const Ourmanagement = () => {
               style={{ height: "350px", width: "650px" }}
             />
           </div>
-          <div className="absolute top-16 left-0 md:left-10 w-full h-full flex items-end justify-start p-5 ">
+          <div className="absolute md:top-16 top-2 left-0 md:left-10 w-full h-full flex items-end justify-start p-5 ">
             <div className='bg-white w-full px-2 py-4 rounded-2xl  text-center items-center justify-center'>
               <h4 className=" text-black text-md mb-2 font-bold">
                 Founder
@@ -182,7 +182,7 @@ const Ourmanagement = () => {
             </div>
           </div>
         </div>
-        <div className='w-full md:w-[70%] rounded-3xl px-4'>
+        <div className='w-full md:w-[70%] rounded-3xl px-4 mb-pt'>
           <h1 className='text-[#000000] text-[24px]  pb-5'>Chairman’s Message</h1>
           <p className='text-[#2B3990] font-bold  pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
           <p className='pb-5'>
@@ -196,7 +196,7 @@ const Ourmanagement = () => {
       <div className='max-w-7xl mx-auto px-4 mt-16 py-16 relative'>
         <h2 className='text-[30px] text-center'>Our Executive Team</h2>
       </div>
-      <div className='max-w-7xl mx-auto px-4  relative'>
+      <div className='max-w-7xl mx-auto  md:px-0 px-4  relative'>
         <Executiveteam />
       </div>
 

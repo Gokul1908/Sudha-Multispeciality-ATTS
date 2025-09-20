@@ -359,6 +359,9 @@ span {
     padding: 16px;
   }
 
+  .mb-pt{
+    padding-top:2rem;
+  }
   .mb-pb-5 {
     padding-bottom: 2rem;
   }

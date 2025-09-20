@@ -139,7 +139,7 @@ function Gallery() {
             </motion.div>
 
             <motion.h1 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="text-[40px] mb-4">
-              Gallery
+              Infrastructure
             </motion.h1>
 
             <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-white mb-6">
@@ -188,13 +188,28 @@ function Gallery() {
           </p>
 
           <div className="text-center mb-10">
-            <h2 className="text-[30px]">Our Legacy Through the Lens </h2>
+            <h2 className="text-[24px] sm:text-[28px] lg:text-[30px] ">
+              Our Legacy Through the Lens
+            </h2>
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          {/* ✅ Responsive grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {allImages.slice(0, visibleImages).map((src, index) => (
-              <motion.div key={index} className="rounded-2xl overflow-hidden" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} viewport={{ once: true }}>
-                <Image src={src} alt={`Gallery Image ${index + 1}`} className="w-full h-[300px] object-cover" loading="lazy" />
+              <motion.div
+                key={index}
+                className="rounded-2xl overflow-hidden"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={src}
+                  alt={`Gallery Image ${index + 1}`}
+                  className="w-full h-[220px] sm:h-[260px] lg:h-[300px] object-cover"
+                  loading="lazy"
+                />
               </motion.div>
             ))}
           </div>
@@ -208,6 +223,7 @@ function Gallery() {
           )}
         </div>
       </section>
+
 
       <section id="contactus" className="my-16">
         <Bookappointment />
