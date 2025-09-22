@@ -12,7 +12,7 @@ import Niva from "@/assets/insurance/hdfc.png";
 import Tata from "@/assets/insurance/tata.png";
 import Hdfc from "@/assets/insurance/hdfc.png";
 import Scheme from "@/assets/insurance/ex-serviceman.webp";
-import Emergency from "@/assets/insurance/scheme.jpg";
+import Emergency from "@/assets/insurance/Scheme.jpg";
 import hospitalize from "@/assets/insurance/hospital.webp";
 import Preauth from "@/assets/insurance/employee-govt.webp";
 
