@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import clinic from "../assets/contactus/contactus.svg";
+import clinic from "../assets/contactus/clinic.jpg";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -81,7 +81,7 @@ const AppointmentForm = () => {
           <Image
             src={clinic}
             alt="Image"
-            className="rounded-2xl w-full object-cover h-auto max-h-[540px]"
+            className="rounded-3xl w-full object-cover h-auto max-h-[540px]"
           />
         </motion.div>
         {/* </div> */}

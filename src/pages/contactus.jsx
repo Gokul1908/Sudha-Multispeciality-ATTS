@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import Banner from "@/assets/about/hero.png";
+import Banner from "@/assets/about/contact-banner.png";
 import { motion } from "framer-motion";
 
 

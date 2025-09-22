@@ -25,18 +25,26 @@ function Bookappointment() {
     Anaesthesiology: ["Dr.Kumaravel Pandiyan","Dr.P.Nithiyanandhan","Dr.V.Amutha","Dr.Balaji Mani","Dr.Aarthi Sasivarnan","Dr.V.Sountharajan"],
     BariatricMetabolic: ["Dr.S.Balamurugan"],
     Cardiology: ["Dr.N.Rajasekar","Dr.D.Kandaswamy","Dr.K.Sudhakar"],
-
-
-
-
-
-
-
-
-  
-    Dermatology: ["Dr. Priya", "Dr. Ramesh"],
-    Neurology: ["Dr. Kumar", "Dr. Anitha"],
-    Orthopaedics: ["Dr. David", "Dr. Rajesh"],
+    CardiothoracicSurgery: ["Dr.Minnathulla"],
+    Dentistry: ["Dr.A.Aafia Parveen","Dr.Sharath Ashokan"],
+    Dermatology: ["Dr.M.Chakravarthi"],
+    DMO: ["Dr.C.Senthur Raj","Dr.K.E.Sakthi Saravanan","Dr.K.V.Lakshmanan","Dr.V.Kamall","Dr.A.Krishna kumar","Dr.D.Thriuvenkata Lakshmanan"],
+    ENT: ["Dr.M.P.Kavin Kumar"],
+    FetalMedicine: ["Dr.Sathiya Lakshmi"],
+    GeneralMedicine: ["Dr.K.Sudhakar","Dr.S.N.Ganesha Moorthy","Dr.G.Sathish Kumar"],
+    Gynecology: ["Dr.P.Vanitha","Dr.Deepika","Dr.S.Pradeepa","Dr.S.Dhanabagyam"],
+    Nephrology: ["Dr.V.Nagendran"],
+    Neurology: ["Dr.G.Vikram Raj","Dr.S.Mohan"],
+    NuclearMedicine: ["Dr.Prathap"],
+    Oncology: ["Dr.J.Sugeshwaran"],
+    Orthopedic : ["Dr.K.Attiyanan","Dr.T.Janarthanan"],
+    Pediatrics: ["Dr.S.Rangesh","Dr.N.Gowrishankar"],
+    Pathology: ["Dr.R.Renuga"],
+    PlasticSurgery: ["Dr.Gnanasekaran"],
+    Psychiatry: ["Dr.S.Anand"],
+    Pulmonology: ["Dr.P.Duraikannan"],
+    Radiology: ["Dr.Subhashree Ramasamy","Dr.M.Thirunavukarasu"],
+    Urology: ["Dr.M.Gopinath"],
   };
 
   const validate = () => {
