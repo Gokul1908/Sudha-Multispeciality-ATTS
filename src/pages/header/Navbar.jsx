@@ -85,7 +85,7 @@ export default function Navbar() {
       <div className="hidden md:block text-sm text-black py-4 max-w-7xl mx-auto">
         <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-y-2">
           {/* Left - Welcome Text */}
-          <Link href="#upcoming" className="text-center md:text-left ">UpComing Events</Link>
+          <p className="text-center md:text-left ">UpComing Events</p>
 
           {/* Right - Contact Numbers */}
           <div className="flex gap-4 items-center text-sm">
@@ -113,12 +113,12 @@ export default function Navbar() {
 
       <section
         className={cn(
-          "sticky top-0 z-50 mb-top mb-pl transition-all supports-[backdrop-filter]:bg-background-transparent",
+          "sticky top-0 z-50 mb-pl transition-all supports-[backdrop-filter]:bg-background-transparent",
           isScrolled
-            ? "w-full bg-white text-black"
+            ? "w-full bg-white text-black" // ✅ no mb-top when scrolled
             : isWhitePage
-              ? "max-w-7xl mx-auto bg-transparent text-black lg:text-white"
-              : "max-w-7xl mx-auto bg-transparent text-white"
+            ? "max-w-7xl mx-auto bg-transparent text-white lg:text-white mb-top" // ✅ mb-top only when not scrolled
+            : "max-w-7xl mx-auto bg-transparent text-white mb-top" // ✅ mb-top only when not scrolled
         )}
       >
         <header
@@ -127,8 +127,8 @@ export default function Navbar() {
             isScrolled
               ? "w-full bg-white text-black"
               : isWhitePage
-                ? "max-w-7xl mx-auto bg-transparent text-black lg:text-white"
-                : "max-w-7xl mx-auto bg-transparent text-white"
+              ? "max-w-7xl mx-auto bg-transparent text-white lg:text-white"
+              : "max-w-7xl mx-auto bg-transparent text-white"
           )}
         >
           <div className="container flex h-14 max-w-screen-2xl items-center justify-between mx-auto px-4">
@@ -137,7 +137,11 @@ export default function Navbar() {
               href="/"
               className="flex items-center gap-x-3 font-bold text-muted hover:text-accent text-2xl sm:text-3xl transition"
             >
-              <Image src={currentLogo} alt="Logo" className="h-10 w-auto" />
+              <Image
+                src={currentLogo}
+                alt="Logo"
+                className="h-10 w-24 md:w-auto"
+              />
             </Link>
 
             {/* Desktop Navigation */}
@@ -184,15 +188,19 @@ export default function Navbar() {
                         {links[hovering]?.type === "aboutus" && (
                           <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6 mx-auto">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
-                              {links[hovering].subLinks.map((subLink, index) => (
-                                <SubLink
-                                  key={index}
-                                  index={index}
-                                  subLink={subLink}
-                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
-                                   onCloseDropdown={() => setHovering(null)}
-                                />
-                              ))}
+                              {links[hovering].subLinks.map(
+                                (subLink, index) => (
+                                  <SubLink
+                                    key={index}
+                                    index={index}
+                                    subLink={subLink}
+                                    setHoveredSubLinkImage={
+                                      setHoveredSubLinkImage
+                                    }
+                                    onCloseDropdown={() => setHovering(null)}
+                                  />
+                                )
+                              )}
                             </div>
                             <div className="hidden lg:block w-[300px] shrink-0 rounded-2xl overflow-hidden">
                               <MenuImage
@@ -211,15 +219,19 @@ export default function Navbar() {
                         {links[hovering]?.type === "specialites" && (
                           <div className="max-w-[1560px] mx-auto px-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-                              {links[hovering].subLinks.map((subLink, index) => (
-                                <SpecialSubLink
-                                  key={index}
-                                  index={index}
-                                  subLink={subLink}
-                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
-                                  onCloseDropdown={() => setHovering(null)}
-                                />
-                              ))}
+                              {links[hovering].subLinks.map(
+                                (subLink, index) => (
+                                  <SpecialSubLink
+                                    key={index}
+                                    index={index}
+                                    subLink={subLink}
+                                    setHoveredSubLinkImage={
+                                      setHoveredSubLinkImage
+                                    }
+                                    onCloseDropdown={() => setHovering(null)}
+                                  />
+                                )
+                              )}
                             </div>
                           </div>
                         )}
@@ -228,15 +240,19 @@ export default function Navbar() {
                         {links[hovering]?.type === "facilities" && (
                           <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6 mx-auto">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
-                              {links[hovering].subLinks.map((subLink, index) => (
-                                <SubLink
-                                  key={index}
-                                  index={index}
-                                  subLink={subLink}
-                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
+                              {links[hovering].subLinks.map(
+                                (subLink, index) => (
+                                  <SubLink
+                                    key={index}
+                                    index={index}
+                                    subLink={subLink}
+                                    setHoveredSubLinkImage={
+                                      setHoveredSubLinkImage
+                                    }
                                     onCloseDropdown={() => setHovering(null)}
-                                />
-                              ))}
+                                  />
+                                )
+                              )}
                             </div>
                             <div className="hidden lg:block w-[300px] shrink-0 rounded-2xl overflow-hidden">
                               <MenuImage
@@ -255,15 +271,19 @@ export default function Navbar() {
                         {links[hovering]?.type === "academics" && (
                           <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6 mx-auto">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
-                              {links[hovering].subLinks.map((subLink, index) => (
-                                <Academics
-                                  key={index}
-                                  index={index}
-                                  subLink={subLink}
-                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
-                                     onCloseDropdown={() => setHovering(null)}
-                                />
-                              ))}
+                              {links[hovering].subLinks.map(
+                                (subLink, index) => (
+                                  <Academics
+                                    key={index}
+                                    index={index}
+                                    subLink={subLink}
+                                    setHoveredSubLinkImage={
+                                      setHoveredSubLinkImage
+                                    }
+                                    onCloseDropdown={() => setHovering(null)}
+                                  />
+                                )
+                              )}
                             </div>
                             <div className="hidden lg:block w-[300px] shrink-0 rounded-2xl overflow-hidden">
                               <MenuImage
@@ -290,29 +310,25 @@ export default function Navbar() {
                 href="/contact-us"
                 className="small-hidden display-block  btn-white items-center gap-x-2 rounded-full"
               >
-                Consult Our Specialists 
+                Consult Our Specialists
               </Link>
 
               {/* Mobile CTA */}
               <Link
                 href="/contact-us"
-                className="desktop-hidden small-block  btn-white items-center gap-x-2 rounded-full"
+                className="desktop-hidden text-sm small-block bg-white px-4 py-1 text-black text-nowrap items-center gap-x-2 rounded-full"
               >
-                Contact Us 
+                Contact Us
               </Link>
-
 
               {/* Mobile Menu Toggle */}
               <div className="lg:hidden">
                 <MobileNav links={links} />
               </div>
             </div>
-
           </div>
         </header>
       </section>
-
-
     </>
   );
 }

@@ -285,6 +285,13 @@ export default function Finddoctor() {
                     infinite: doctors.length > 1,
                   },
                 },
+                {
+                  breakpoint: 408,
+                  settings: {
+                    slidesToShow: 1,
+                    infinite: doctors.length > 1,
+                  },
+                },
               ],
             };
 

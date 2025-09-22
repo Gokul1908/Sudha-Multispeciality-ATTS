@@ -17,7 +17,7 @@ import "./renaltransplant.css";
 import Phone from "@/assets/insurance/phone.svg";
 import Email from "@/assets/insurance/email.svg";
 import Check from "@/assets/insurance/check.svg";
-import Contact from "@/assets/insurance/bg-contact.webp";
+import Contact from "@/assets/insurance/appointment.webp";
 import Bookappointment from "@/components/Bookappointment";
 import SidebarTabs from "./SidebarTabs";
 import DoctorSlider from "@/components/Slicksliderdoctor";
@@ -329,9 +329,9 @@ function Organtransplant() {
         </div>
       </div>
 
-      <section>
+      {/* <section>
         <Bookappointment />
-      </section>
+      </section> */}
     </div >
   );
 }

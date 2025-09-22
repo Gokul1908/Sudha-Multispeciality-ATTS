@@ -11,17 +11,18 @@ import Bajaj from "@/assets/insurance/bajaj.png";
 import Niva from "@/assets/insurance/hdfc.png";
 import Tata from "@/assets/insurance/tata.png";
 import Hdfc from "@/assets/insurance/hdfc.png";
-import Scheme from "@/assets/insurance/pre-auth.webp";
-import Emergency from "@/assets/insurance/emergency.jpg";
+import Scheme from "@/assets/insurance/ex-serviceman.webp";
+import Emergency from "@/assets/insurance/scheme.jpg";
 import hospitalize from "@/assets/insurance/hospital.webp";
-import Preauth from "@/assets/insurance/admission.webp";
-import Discharge from "@/assets/insurance/discharge.webp";
+import Preauth from "@/assets/insurance/employee-govt.webp";
+
 import { ArrowUpRight } from "lucide-react";
 
 import CMCHIS from "@/assets/insurance/CMCHIS.jpg";
 
 import Check from "@/assets/insurance/check.svg";
-import Contact from "@/assets/insurance/bg-contact.webp";
+import Contact from "@/assets/insurance/appointment.webp";
+
 import Phone from "@/assets/insurance/phone.svg";
 import Email from "@/assets/insurance/email.svg";
 import Marquee from "react-fast-marquee";
@@ -461,7 +462,7 @@ const Insurance = () => {
             <p className="mt-2 mb-2">(Mon - Sat) 8:30 am - 6:00 pm</p>
             <div className="flex items-center gap-2 text-[14px] font-bold  text-[#2B3990] mt-4">
               <Image src={Phone} alt="Phone" width={32} height={32} />
-              <span>+91-424-454545</span>
+              <span>0424-245-4545</span>
             </div>
           </div>
         </div>
@@ -475,7 +476,7 @@ const Insurance = () => {
             className="rounded-2xl"
           />
           <div className="absolute inset-0 bg-opacity-80 rounded-2xl flex flex-col justify-end p-6 text-white">
-            <h3 className="text-[24px] font-semibold mb-2">
+            <h3 className="text-[24px] mb-2">
               Virtual Care from Every Where
             </h3>
             <p className="text-white text-sm mb-4">
