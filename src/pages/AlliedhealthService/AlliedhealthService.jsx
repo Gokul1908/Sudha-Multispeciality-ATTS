@@ -9,6 +9,7 @@ import patient from "@/assets/home/patient.svg";
 import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
 import Main from "@/assets/alliedhealthservice/alliedhealth.webp";
+
 import Bookappointment from "@/components/Bookappointment";
 import Image from "next/image";
 import hospitalOne from "@/assets/home/cards/c1.svg";
@@ -292,7 +293,7 @@ const Alliedhealthservice = () => {
             </div>
 
 
-            <div>
+            <div id="contactus">
                 <Bookappointment />
             </div>
         </div>

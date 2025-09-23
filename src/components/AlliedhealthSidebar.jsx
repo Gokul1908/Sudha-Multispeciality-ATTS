@@ -8,6 +8,9 @@ import Lactation from "@/assets/alliedhealthservice/lactation-maternal.webp";
 import Nursing from "@/assets/alliedhealthservice/nursingservices/nursing-inner.webp";
 import Psychology from "@/assets/alliedhealthservice/psychology.webp";
 import Image from "next/image";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+import  { useEffect, useState } from "react";
+
 
 
 import Physio from "@/assets/alliedhealthservice/physical.svg";
@@ -58,6 +61,36 @@ const rightbar = [
 ];
 
 const Alliedhealthsidebar = () => {
+
+  const [openModal, setOpenModal] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
+  // If you don’t actually need scroll tracking, you can remove this
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-20% 0px -60% 0px" }
+    );
+
+    // ⚠️ serviceSections not defined → so commenting this
+    // serviceSections.forEach(({ id }) => {
+    //   const el = document.getElementById(id);
+    //   if (el) observer.observe(el);
+    // });
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+
   return (
     <div className="">
       <div className="flex flex-col lg:flex-row gap-8">
@@ -81,25 +114,17 @@ const Alliedhealthsidebar = () => {
               and cutting-edge therapies.
             </p>
 
-            <Link href="#">
-              <div className="btn-diagonal ">
-                Book an Appointment
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 7L7 17M7 7h10v10"
-                  />
-                </svg>
-              </div>
-            </Link>
+            <button
+              className="btn-diagonal mt-5 flex items-center gap-2 mx-auto"
+              onClick={() => setOpenModal(true)}
+            >
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
+            </button>
+
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
         </aside>
 
@@ -134,7 +159,7 @@ const Alliedhealthsidebar = () => {
 
                       {/* Label */}
                       <div className="absolute bottom-6">
-                        <div className="mt-4  border-t border-gray-200 pt-2 ">
+                        <div className="mt-4  border-t border-gray-200 pt-2 pe-3">
                           <p className="text-[13px] sm:text-[14px]">
                             {item.label}
                           </p>
