@@ -484,7 +484,7 @@ export const links = [
         header: "Mother & Child Care",
         image: Mother,
         // hoverImage: AboutUs,
-        hrefs: "/mother-and-childcare",
+        hrefs: "/mother-and-child-care",
         subMenu: [
           {
             label: "Our Growth Story",
@@ -542,7 +542,7 @@ export const links = [
       },
       {
         header: "Laboratory",
-        hrefs: "/facilities/laboratory-services",
+        hrefs: "/facilities/laboratory",
         image: Laboratory,
         hoverImage: Laboratory,
         subMenu: [
@@ -555,7 +555,7 @@ export const links = [
 
       {
         header: "Health Package",
-        hrefs: "/facilities/health-packages",
+        hrefs: "/facilities/health-package",
         image: Health,
         hoverImage: Health,
         subMenu: [
@@ -582,7 +582,7 @@ export const links = [
 
   {
     label: "Mother & Child Care",
-    hrefs: "/mother-and-childcare",
+    hrefs: "/mother-and-child-care",
   },
 
 

@@ -228,7 +228,10 @@ const accordionData = [
 ];
 
 export default function SidebarTabs() {
-  const [activeSection, setActiveSection] = useState('');
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

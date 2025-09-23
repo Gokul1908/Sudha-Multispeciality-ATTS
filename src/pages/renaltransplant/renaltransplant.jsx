@@ -322,9 +322,9 @@ function Organtransplant() {
               Experience the great virtual care from anywhere and connect with
               medical professionals for expert guidance.
             </p>
-            <button className="btn-white flex items-center gap-2 bg-white text-[#2B3990] font-semibold text-sm pt-3 pb-3 pr-7 pl-7 rounded-full w-fit hover:-translate-y-[3px] transition-transform duration-200">
+            <Link href="/contact-us" className="btn-white flex items-center gap-2 bg-white text-[#2B3990] font-semibold text-sm pt-3 pb-3 pr-7 pl-7 rounded-full w-fit hover:-translate-y-[3px] transition-transform duration-200">
               Call for More Information <ArrowUpRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

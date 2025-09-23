@@ -213,7 +213,7 @@ const cards = [
         Check Up
       </p>
     ),
-    link: "/facilities/health-packages",
+    link: "/facilities/health-package",
   },
   {
     icon: cardfour,
@@ -249,7 +249,7 @@ const hospitalscards = [
   {
     number: <h3 className="text-[48px] text-[#2B3990]">300+</h3>,
     title: <p className="text-md font-bold text-black">Patient Beds</p>,
-    link: "/facilities/health-packages",
+    link: "/facilities/health-package",
     icon: hospitalTwo,
   },
   {

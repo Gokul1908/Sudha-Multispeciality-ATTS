@@ -63,7 +63,7 @@ export default function Sliderdoctor() {
 
   return (
     <section className="max-w-7xl mx-auto pt-16 pb-20 px-4 md:px-6 lg:px-8">
-      {/* Section Heading */}
+     
       <div className="flex justify-center">
         <h2 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
           Our Medical Team
@@ -74,7 +74,7 @@ export default function Sliderdoctor() {
         Our Transplant Team
       </h1>
 
-      {/* Slider */}
+      
       <div className="relative mt-10">
         <Slider {...settings}>
           {doctorsDatarenal.map((doc, index) => (

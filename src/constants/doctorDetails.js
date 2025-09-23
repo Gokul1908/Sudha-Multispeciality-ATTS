@@ -662,7 +662,7 @@ export const doctorsData = [
       {
         name: "Dr.Minnathulla",
         specialist: "Cardiothoracic",
-        image: Sudhakar,
+        image: Minnathulla,
         menulabel: "MD, Mch",
         role: "Cardiothoracic surgeon",
         experience: "33",

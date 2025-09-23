@@ -77,7 +77,7 @@ const nunito = Nunito({ subsets: ['latin'], weight: ['400', '700', '900'] });
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-  { label: "Mother & Child Care", href: "/mother-and-childcare" },
+  { label: "Mother & Child Care", href: "/mother-and-child-care" },
 ];
 const cards = [
   {
@@ -98,7 +98,7 @@ const cards = [
         Check Up
       </p>
     ),
-    link: "/facilities/health-packages",
+    link: "/facilities/health-package",
   },
   {
     icon: cardfour,
@@ -172,7 +172,7 @@ const services = [
     image: Four,
     icon: IconHoverFour,
     hoverIcon: IconFour,
-    link: "/facilities/health-packages",
+    link: "/facilities/health-package",
   },
   {
     title: "Dietetics",
@@ -186,7 +186,7 @@ const services = [
     image: Six,
     icon: IconHoversix,
     hoverIcon: Iconsix,
-    link: "/mother-and-childcare/post-partum-care",
+    link: "/mother-and-child-care/post-partum-care",
   },
   // {
   //   title: "Paediatric Cardiology",
@@ -200,7 +200,7 @@ const services = [
     image: Eight,
     icon: IconHovereight,
     hoverIcon: Iconeight,
-    link: "/mother-and-childcare/painless-delivery",
+    link: "/mother-and-child-care/painless-delivery",
   },
 ];
 

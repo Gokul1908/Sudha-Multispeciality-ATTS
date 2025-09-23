@@ -75,7 +75,7 @@ const cards = [
         Check Up
       </p>
     ),
-    link: "/facilities/health-packages",
+    link: "/facilities/health-package",
   },
   {
     icon: cardfour,
@@ -137,7 +137,7 @@ const specialties = [
   { title: "Plastic Surgery", icon: Plastic, href: "/specialities/plastic-surgery" },
   { title: "Laryngology", icon: Laryngology, href: "/specialities/laryngology" },
   { title: "Fertility Centre", icon: Fertility, href: "https://sudhafertilitycentre.com/" },
-  { title: "Mother & Child Care", icon: Mother, href: "/mother-and-childcare" },
+  { title: "Mother & Child Care", icon: Mother, href: "/mother-and-child-care" },
 ];
 
 // Slide images

@@ -38,8 +38,8 @@ const breadcrumbItems = [
 
   { label: "Facilities", href: "" },
 
-   { label: "Organ Transplant", href: "/facilities/organ-transplant" },
-   { label: "Liver Transplant", href: "/liver-transplant" },
+  { label: "Organ Transplant", href: "/facilities/organ-transplant" },
+  { label: "Liver Transplant", href: "/liver-transplant" },
 ];
 
 
@@ -209,14 +209,14 @@ function LiverTransplant() {
         </div>
       </section>
 
-      <section className="mt-5">
+      {/* <section className="mt-5">
         <div className="max-w-7xl mx-auto  py-8 relative">
 
           <Sliderdoctor />
         </div>
-      </section>
+      </section> */}
 
-      <section className="max-w-7xl mx-auto pt-0 pb-2 ">
+      {/* <section className="max-w-7xl mx-auto pt-0 pb-2 ">
         <h2 className="text-center text-[30px]  mt-4">
           Our Transplant Co-Ordinators
         </h2>
@@ -225,9 +225,9 @@ function LiverTransplant() {
           <Slider {...setting}>
             {doctorsData.slice(0, 2).map((doc, index) => (
               <div key={index} className="pr-3">
-                {/* Card wrapper */}
+                
                 <div className="bg-white h-[500px] max-w-[300px] rounded-2xl text-start flex flex-col overflow-hidden">
-                  {/* Image */}
+                 
                   <Image
                     src={doc.image}
                     alt={doc.name}
@@ -236,7 +236,7 @@ function LiverTransplant() {
                     className="w-full h-[300px] object-cover rounded-t-2xl"
                   />
 
-                  {/* Content */}
+                 
                   <div className="p-4 flex flex-col justify-between flex-1">
                     <div>
                       <h3 className="text-[16px] sm:text-[16px] font-bold text-[#2B3990]">
@@ -250,7 +250,6 @@ function LiverTransplant() {
                       </p>
                     </div>
 
-                    {/* Button aligned at bottom */}
                     <Link
                       href={`/doctor-detail/${doc.id}`}
                       className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2"
@@ -263,7 +262,7 @@ function LiverTransplant() {
             ))}
           </Slider>
         </div>
-      </section >
+      </section > */}
 
 
       {/* <section>
@@ -323,9 +322,9 @@ function LiverTransplant() {
               Experience the great virtual care from anywhere and connect with
               medical professionals for expert guidance.
             </p>
-            <button className="btn-white flex items-center gap-2 bg-white text-[#2B3990] font-semibold text-sm pt-3 pb-3 pr-7 pl-7 rounded-full w-fit hover:-translate-y-[3px] transition-transform duration-200">
+            <Link href="/contact-us" className="btn-white flex items-center gap-2 bg-white text-[#2B3990] font-semibold text-sm pt-3 pb-3 pr-7 pl-7 rounded-full w-fit hover:-translate-y-[3px] transition-transform duration-200">
               Call for More Information <ArrowUpRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

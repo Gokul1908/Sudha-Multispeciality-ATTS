@@ -144,11 +144,11 @@ const Footer = () => {
     },
     {
       name: "Laboratory",
-      link: "laboratory-services",
+      link: "laboratory",
     },
     {
       name: "Health Packages",
-      link: "health-packages",
+      link: "health-package",
     },
     {
       name: "Organ Transplant",
@@ -181,7 +181,7 @@ const Footer = () => {
 
   const grouphospitalLinks = [
     { name: "Sudha Fertility Centre", link: "https://sudhafertilitycentre.com/" },
-    { name: "Sudha Mother & Child Care", link: "mother-and-childcare" },
+    { name: "Sudha Mother & Child Care", link: "mother-and-child-care" },
     { name: "Sudha Cancer Centre", link: "https://sudhacancercentre.com/" },
   ];
 

@@ -33,7 +33,7 @@ const slides = [
         Child Care
       </>
     ),
-    link: "/mother-and-childcare",
+    link: "/mother-and-child-care",
     description:
       "Because Every mother deserves care that comforts, every step of the way.",
     buttonText: "Discover Our Service ",

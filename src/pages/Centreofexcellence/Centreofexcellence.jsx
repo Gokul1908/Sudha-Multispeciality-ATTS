@@ -35,7 +35,7 @@ const hospitalscards = [
     {
         number: <h3 className="text-[48px] text-[#2B3990]">300+</h3>,
         title: <p className="text-md font-bold text-black">Patient Beds</p>,
-        link: "/facilities/health-packages",
+        link: "/facilities/health-package",
         icon: hospitalTwo,
     },
     {
@@ -340,7 +340,7 @@ const Centreofexcellence = () => {
                     </Link>
 
                     {/*Mother And Child Care -card  */}
-                    <Link href="/mother-and-childcare" className="block">
+                    <Link href="/mother-and-child-care" className="block">
                         <section className="bg-white rounded-3xl text-left mb-p mb-m p-8 max-w-7xl mx-auto flex flex-col md:flex-row-reverse gap-6 items-start mt-8  cursor-pointer transition">
                             <div className="w-full md:w-1/3">
                                 <Image

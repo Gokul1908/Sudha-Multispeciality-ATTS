@@ -37,7 +37,7 @@ const cards = [
                 Check Up
             </p>
         ),
-        link: "/facilities/health-packages",
+        link: "/facilities/health-package",
     },
     {
         icon: cardfour,

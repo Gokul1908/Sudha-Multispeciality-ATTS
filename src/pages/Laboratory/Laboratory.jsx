@@ -38,7 +38,7 @@ const breadcrumbItems = [
 
   { label: "Facilities", href: "" },
 
-  { label: "Laboratory", href: "/facilities/laboratory-services" },
+  { label: "Laboratory", href: "/facilities/laboratory" },
 ];
 const facilities = [
   

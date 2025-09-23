@@ -41,7 +41,7 @@ export default function Navbar() {
     "/doctor-detail",
     "/why-sudha",
     "/anaesthesiology",
-    "/mother-and-childcare",
+    "/mother-and-child-care",
   ];
   const isWhitePage = whiteTextRoutes.some((route) =>
     pathname.startsWith(route)

@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Banner from "@/assets/facilities/health-packages.webp";
+import Banner from "@/assets/facilities/health-package.webp";
 import Accordion from "../../components/Accordion";
 import HandIcon from "@/assets/healthpackage/nephrology.svg";
 import Doctors from "@/assets/healthpackage/doctors.webp";
@@ -25,7 +25,7 @@ const breadcrumbItems = [
 
     { label: "Facilities", href: "" },
 
-    { label: "Master Helath Packages", href: "/facilities/health-packages" },
+    { label: "Master Helath Packages", href: "/facilities/health-package" },
 ];
 
 
