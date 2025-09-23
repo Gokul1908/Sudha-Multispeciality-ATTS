@@ -12,10 +12,7 @@ import Faq from "../../components/Faq";
 import one from "@/assets/about/1.svg";
 import Link from "next/link";
 import BookAppointmentModal from "@/components/bookappointmentmodal";
-const [openModal, setOpenModal] = useState(false);
 
-console.log("openModal", openModal);
-const [isOpen, setIsOpen] = useState(false);
 
 
 import Checklight from "@/assets/home/check-light.svg";
