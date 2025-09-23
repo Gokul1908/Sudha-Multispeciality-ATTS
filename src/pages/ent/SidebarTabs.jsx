@@ -226,9 +226,10 @@ const accordionData = [
 
 export default function SidebarTabs() {
   const [openModal, setOpenModal] = useState(false);
-
-  console.log("openModal", openModal);
   const [isOpen, setIsOpen] = useState(false);
+
+  // ✅ Missing state added here
+  const [activeSection, setActiveSection] = useState("overview");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -239,7 +240,7 @@ export default function SidebarTabs() {
           }
         });
       },
-      { rootMargin: '-20% 0px -60% 0px' }
+      { rootMargin: "-20% 0px -60% 0px" }
     );
 
     serviceSections.forEach(({ id }) => {
@@ -248,11 +249,6 @@ export default function SidebarTabs() {
     });
 
     return () => observer.disconnect();
-  }, []);
-
-
-  useEffect(() => {
-    document.documentElement.style.scrollBehavior = "smooth";
   }, []);
 
   return (
