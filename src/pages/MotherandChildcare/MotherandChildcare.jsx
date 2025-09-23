@@ -1,6 +1,11 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Bookappointment from "@/components/Bookappointment";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+
+import DoctorSlider from "../../components/Slicksliderdoctor";
+
 import {
   ArrowUpRight,
   CalendarDays,
@@ -70,6 +75,7 @@ import "./motherandchildcare.css";
 import Motherandchild from "@/assets/motherandchildcare/img.png";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Nunito } from 'next/font/google';
+import { Toaster } from "react-hot-toast";
 
 
 const nunito = Nunito({ subsets: ['latin'], weight: ['400', '700', '900'] });
@@ -88,7 +94,7 @@ const cards = [
         Emergency Care
       </p>
     ),
-    link: "/about-us/our-growth-story",
+    link: "/contact-us",
   },
   {
     icon: cardtwo,
@@ -109,7 +115,7 @@ const cards = [
         Find a<span className="text-[#2b3990] font-extrabold "> Doctor</span>
       </p>
     ),
-    link: "/specialities",
+    link: "/find-a-doctor",
   },
   {
     icon: cardthree,
@@ -120,7 +126,7 @@ const cards = [
         <span className="text-[#2b3990] font-extrabold"> Appointment </span>
       </p>
     ),
-    link: "/find-a-doctor",
+    link: "#contactus",
   },
 ];
 
@@ -255,33 +261,7 @@ const ourcommitment = [
   },
 ];
 
-const PrevArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="absolute z-10 
-               right-10 
-               -bottom-14  text-[#2B3990] 
-               border border-[#2B3990]
-               hover:bg-[#2B3990] hover:text-white 
-               p-2 rounded-full"
-  >
-    <ChevronLeft className="w-4 h-4" />
-  </button>
-);
 
-const NextArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="absolute z-10 
-               right-0
-               -bottom-14
-               border border-white bg-[#2B3990] 
-               hover:bg-[#1f2e6e] text-white 
-               p-2 rounded-full"
-  >
-    <ChevronRight className="w-4 h-4" />
-  </button>
-);
 
 const faqData = [
   {
@@ -350,6 +330,121 @@ function MotherandChildcare() {
     offset: ["start end", "end start"], // when element enters and exits viewport
   });
 
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
+
+
+     const [formData, setFormData] = useState({
+    date: "",
+    name: "",
+    mobile: "",
+    email: "",
+    department: "",
+    doctor: "",
+    remarks: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  // Department → Doctors mapping
+  const doctorsList = {
+
+    Anaesthesiology: ["Dr.Kumaravel Pandiyan","Dr.P.Nithiyanandhan","Dr.V.Amutha","Dr.Balaji Mani","Dr.Aarthi Sasivarnan","Dr.V.Sountharajan"],
+    BariatricMetabolic: ["Dr.S.Balamurugan"],
+    Cardiology: ["Dr.N.Rajasekar","Dr.D.Kandaswamy","Dr.K.Sudhakar"],
+    CardiothoracicSurgery: ["Dr.Minnathulla"],
+    Dentistry: ["Dr.A.Aafia Parveen","Dr.Sharath Ashokan"],
+    Dermatology: ["Dr.M.Chakravarthi"],
+    DMO: ["Dr.C.Senthur Raj","Dr.K.E.Sakthi Saravanan","Dr.K.V.Lakshmanan","Dr.V.Kamall","Dr.A.Krishna kumar","Dr.D.Thriuvenkata Lakshmanan"],
+    ENT: ["Dr.M.P.Kavin Kumar"],
+    FetalMedicine: ["Dr.Sathiya Lakshmi"],
+    GeneralMedicine: ["Dr.K.Sudhakar","Dr.S.N.Ganesha Moorthy","Dr.G.Sathish Kumar"],
+    Gynecology: ["Dr.P.Vanitha","Dr.Deepika","Dr.S.Pradeepa","Dr.S.Dhanabagyam"],
+    Nephrology: ["Dr.V.Nagendran"],
+    Neurology: ["Dr.G.Vikram Raj","Dr.S.Mohan"],
+    NuclearMedicine: ["Dr.Prathap"],
+    Oncology: ["Dr.J.Sugeshwaran"],
+    Orthopedic : ["Dr.K.Attiyanan","Dr.T.Janarthanan"],
+    Pediatrics: ["Dr.S.Rangesh","Dr.N.Gowrishankar"],
+    Pathology: ["Dr.R.Renuga"],
+    PlasticSurgery: ["Dr.Gnanasekaran"],
+    Psychiatry: ["Dr.S.Anand"],
+    Pulmonology: ["Dr.P.Duraikannan"],
+    Radiology: ["Dr.Subhashree Ramasamy","Dr.M.Thirunavukarasu"],
+    Urology: ["Dr.M.Gopinath"],
+  };
+
+  const validate = () => {
+    let newErrors = {};
+
+    if (!formData.date) newErrors.date = "Preferred date is required";
+    if (!formData.name) newErrors.name = "Name is required";
+
+    if (!formData.mobile) {
+      newErrors.mobile = "Mobile number is required";
+    } else if (!/^[0-9]{10}$/.test(formData.mobile)) {
+      newErrors.mobile = "Enter a valid 10-digit mobile number";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Enter a valid email";
+    }
+
+    if (!formData.department) newErrors.department = "Department is required";
+    if (!formData.doctor) newErrors.doctor = "Doctor is required";
+    if (!formData.remarks) newErrors.remarks = "Remarks are required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+
+    try {
+      const form = new FormData();
+      form.append("date", formData.date);
+      form.append("name", formData.name);
+      form.append("mobile", formData.mobile);
+      form.append("email", formData.email);
+      form.append("department", formData.department);
+      form.append("doctor", formData.doctor);
+      form.append("remarks", formData.remarks);
+
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycbyfAqPmwT117o8qJ2U_hEaSfh9cBlB6CjHbxtGUq7EnVQM9HzfNCen_d0JWq1Et5rVB/exec",
+        {
+          method: "POST",
+          body: form,
+        }
+      );
+
+      const result = await res.json();
+
+      if (result.result === "success") {
+        toast.success("Appointment booked successfully!");
+        setFormData({
+          date: "",
+          name: "",
+          mobile: "",
+          email: "",
+          department: "",
+          doctor: "",
+          remarks: "",
+        });
+      } else {
+        toast.error("Something went wrong!");
+      }
+    } catch (error) {
+      toast.error("Error connecting to server!");
+    }
+  };
+
   const toggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
@@ -371,29 +466,6 @@ function MotherandChildcare() {
   const cloudY = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const bubbleY = useTransform(scrollYProgress, [0, 1], [0, -80]);
 
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4, // default for desktop
-    slidesToScroll: 1,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <div>
@@ -456,7 +528,7 @@ function MotherandChildcare() {
               <Image
                 src={family}
                 alt="Family"
-                
+
                 className="w-full  object-cover"
                 priority
               />
@@ -551,12 +623,12 @@ function MotherandChildcare() {
               </h3>
 
               <div className="flex gap-4 items-center mt-3">
-                <a
-                  href="#"
+                <Link
+                  href="/contact-us"
                   className=" text-primary-blue font-semibold inline-flex items-center gap-2 hover:underline"
                 >
                   24/7 Emergency Care
-                </a>
+                </Link>
 
                 {/* Animated arrow image */}
                 <motion.div
@@ -669,9 +741,15 @@ function MotherandChildcare() {
             Free
           </span>
           <b>Dreaming of motherhood? Get the right support.  </b>
-          <a href="#" className="text-primary-blue font-semibold ml-1 underline">
+
+          <button className="text-primary-blue font-semibold ml-1 underline" onClick={() => setOpenModal(true)}>
             Book your free consultation
-          </a>
+          </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
+
         </motion.div>
       </section>
 
@@ -957,10 +1035,14 @@ function MotherandChildcare() {
                   <PhoneIcon className="h-6 w-6 text-white flex-shrink-0" />
                   <h5 className="font-bold">Call Us:</h5>
                 </div>
-                <div className="mt-3">
-                  <p className="text-[#fff]">+91 42–424–54545</p>
-                  <p className="mt-3 text-[#fff]">+91 76–7007–6006</p>
+                <div className="mt-3 ">
+                  <Link href="tel:+914242454545" className="text-[#fff] font-bold">0424-245-4545</Link>
+
                 </div>
+                <div className="mt-3 ">
+                  <Link href="tel:+917670076006" className="mt-3 text-[#fff] font-bold">+91 76–7007–6006</Link>
+                </div>
+
               </motion.div>
 
               {/* Email */}
@@ -975,7 +1057,7 @@ function MotherandChildcare() {
                   <h5 className="font-semibold">E-mail Us:</h5>
                 </div>
                 <div className="mt-2">
-                  <p className="text-[#fff]">care@sudhahospitals.com</p>
+                  <Link href="mailto:care@sudhahospitals.com" className="text-[#fff] font-bold">care@sudhahospitals.com</Link>
                 </div>
               </motion.div>
 
@@ -1008,10 +1090,13 @@ function MotherandChildcare() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className=""
             >
-              <button className="btn-white ">
-                Start Your Journey
-                <ArrowUpRight className="w-5 h-5" />
+              <button className="btn-white  flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+                Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </button>
+              <BookAppointmentModal
+                open={openModal}
+                onClose={() => setOpenModal(false)}
+              />
 
               {/* <motion.div
                 animate={{
@@ -1192,12 +1277,16 @@ function MotherandChildcare() {
 
           {/* Doctors Slider */}
           <div className="relative mt-10">
-            <Slider {...settings}>
+            <div className="max-w-7xl mx-auto  md:px-0 px-4">
+              <DoctorSlider specialty="Gynecologist"/>
+            </div>
+
+            {/* <Slider {...settings}>
               {doctorsData.map((doc) => (
                 <div key={doc.id} className="px-3">
-                  {/* Doctor Card */}
+              
                   <div className="bg-white h-[500px] max-w-[300px] mx-auto rounded-2xl text-start flex flex-col overflow-hidden ">
-                    {/* Image */}
+                    
                     <div className="relative w-full h-[300px]">
                       <Image
                         src={doc.image}
@@ -1207,7 +1296,7 @@ function MotherandChildcare() {
                       />
                     </div>
 
-                    {/* Content */}
+                    
                     <div className="p-6 flex flex-col justify-between flex-1">
                       <div>
                         <h3 className="text-[16px] text-[#2b3990] font-bold mb-2">
@@ -1217,7 +1306,7 @@ function MotherandChildcare() {
                         <p className="text-[12px] mt-2">{doc.qualification}</p>
                       </div>
 
-                      {/* Button */}
+                      
                       <Link
                         href={`/doctor-detail/${doc.id}`}
                         className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2"
@@ -1228,7 +1317,7 @@ function MotherandChildcare() {
                   </div>
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
           </div>
         </div>
       </section>
@@ -1279,9 +1368,9 @@ function MotherandChildcare() {
         </div>
       </section>
 
-      <section className={`${nunito.className}`}>
+      <section className={`${nunito.className}`} id="contactus">
         <div
-          className="max-w-7xl mx-auto py-8 rounded-3xl"
+          className="max-w-7xl mx-auto py-8 rounded-3xl px-8"
           style={{
             backgroundImage: `url(${Background.src})`,
             backgroundSize: "cover",
@@ -1301,18 +1390,18 @@ function MotherandChildcare() {
                       For Immediate Medical Assistance, contact our helpline number.
 
                     </p>
-                    <p className="text-[16px] font-bold mt-2 text-[#fff]">
-                      0424 351 4545
-                    </p>
+                    <Link href="tel:+914242454545" className="text-[16px] font-bold mt-4 text-[#fff]">
+                      0424-245-4545
+                    </Link>
                   </div>
                   <div className="border-l border-white/30 pl-4">
                     <h2 className="text-[20px] font-bold">Emergency Ambulance:</h2>
                     <p className="text-sm text-[#fff] mt-3">
                       24/7 Ambulance Services for Medical Emergencies.
                     </p>
-                    <p className="text-[16px] font-bold mt-2 text-[#fff]">
+                    <Link  href="tel:+919042065454" className="text-[16px] font-bold mt-4 text-[#fff]">
                       +91 9042-065-454
-                    </p>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1329,100 +1418,166 @@ function MotherandChildcare() {
                 today and take the first step toward personalized care.
               </p>
 
-              <form className="space-y-4">
-                {/* Row 1 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="relative">
-                    <label className="text-sm font-medium block mb-1">
-                      Preferred Date*
+               <form
+                  onSubmit={handleSubmit}
+                  className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6"
+                >
+                  <Toaster />
+
+                  {/* Date */}
+                  <div className="flex flex-col">
+                    <label className="text-sm font-semibold mb-1">
+                      Preferred Date *
                     </label>
-                    <div className="relative">
-                      <input
-                        type="text"
-                        placeholder="DD/MM/YYYY"
-                        className="w-full rounded-md  px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      />
-                      <CalendarDays
-                        className="absolute right-3 top-2.5 text-gray-400"
-                        size={20}
-                      />
-                    </div>
+                    <input
+                      type="date"
+                      value={formData.date}
+                      onChange={(e) =>
+                        setFormData({ ...formData, date: e.target.value })
+                      }
+                      className="border border-gray-200 rounded-lg px-4 py-2 h-11 text-sm"
+                    />
+                    {errors.date && (
+                      <p className="text-red-500 text-xs">{errors.date}</p>
+                    )}
                   </div>
-                  <div>
-                    <label className="text-sm font-medium block mb-1">
-                      Name*
-                    </label>
+
+                  {/* Name */}
+                  <div className="flex flex-col">
+                    <label className="text-sm font-semibold mb-1">Name *</label>
                     <input
                       type="text"
                       placeholder="Enter full name"
-                      className="w-full rounded-md  px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      value={formData.name}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
+                      className="border border-gray-200 rounded-lg px-4 h-11 py-2 text-sm"
                     />
+                    {errors.name && (
+                      <p className="text-red-500 text-xs">{errors.name}</p>
+                    )}
                   </div>
-                </div>
 
-                {/* Row 2 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium block mb-1">
-                      Mobile Number*
+                  {/* Mobile */}
+                  <div className="flex flex-col">
+                    <label className="text-sm font-semibold mb-1">
+                      Mobile *
                     </label>
                     <input
-                      type="text"
-                      placeholder="Enter your mobile number"
-                      className="w-full rounded-md  px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      type="tel"
+                      placeholder="Enter mobile number"
+                      value={formData.mobile}
+                      onChange={(e) =>
+                        setFormData({ ...formData, mobile: e.target.value })
+                      }
+                      className="border border-gray-200 rounded-lg px-4 h-11 py-2 text-sm"
                     />
+                    {errors.mobile && (
+                      <p className="text-red-500 text-xs">{errors.mobile}</p>
+                    )}
                   </div>
-                  <div>
-                    <label className="text-sm font-medium block mb-1">
-                      E-mail*
+
+                  {/* Email */}
+                  <div className="flex flex-col">
+                    <label className="text-sm font-semibold mb-1">
+                      Email *
                     </label>
                     <input
                       type="email"
-                      placeholder="Enter full name"
-                      className="w-full rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Enter email"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
+                      className="border border-gray-200 rounded-lg px-4 h-11 py-2 text-sm"
                     />
+                    {errors.email && (
+                      <p className="text-red-500 text-xs">{errors.email}</p>
+                    )}
                   </div>
-                </div>
 
-                {/* Row 3 */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-medium block mb-1">
-                      Department*
+                  {/* Department */}
+                  <div className="flex flex-col">
+                    <label className="text-sm font-semibold mb-1">
+                      Department *
                     </label>
-                    <select className="w-full rounded-md  px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                      <option>Select a department</option>
+                    <select
+                      value={formData.department}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          department: e.target.value,
+                          doctor: "",
+                        })
+                      }
+                      className="border border-gray-200 rounded-lg px-4 h-11 text-sm"
+                    >
+                      <option value="">Select a department</option>
+                      {Object.keys(doctorsList).map((dept) => (
+                        <option key={dept}>{dept}</option>
+                      ))}
                     </select>
+                    {errors.department && (
+                      <p className="text-red-500 text-xs">
+                        {errors.department}
+                      </p>
+                    )}
                   </div>
-                  <div>
-                    <label className="text-sm font-medium block mb-1">
-                      Doctor*
+
+                  {/* Doctor */}
+                  <div className="flex flex-col">
+                    <label className="text-sm font-semibold mb-1">
+                      Doctor *
                     </label>
-                    <select className="w-full rounded-md  px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                      <option>Select a doctor</option>
+                    <select
+                      value={formData.doctor}
+                      onChange={(e) =>
+                        setFormData({ ...formData, doctor: e.target.value })
+                      }
+                      disabled={!formData.department}
+                      className="border border-gray-200 rounded-lg px-4 h-11 text-sm"
+                    >
+                      <option value="">Select a doctor</option>
+                      {formData.department &&
+                        doctorsList[formData.department]?.map((doc) => (
+                          <option key={doc}>{doc}</option>
+                        ))}
                     </select>
+                    {errors.doctor && (
+                      <p className="text-red-500 text-xs">{errors.doctor}</p>
+                    )}
                   </div>
-                </div>
 
-                {/* Remarks */}
-                <div>
-                  <label className="text-sm font-medium block mb-1">
-                    Remarks*
-                  </label>
-                  <textarea
-                    rows="3"
-                    placeholder="Enter your remarks..."
-                    className="w-full rounded-md  px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  ></textarea>
-                </div>
+                  {/* Remarks */}
+                  <div className="md:col-span-2 flex flex-col">
+                    <label className="text-sm font-semibold mb-1">
+                      Remarks *
+                    </label>
+                    <textarea
+                      rows="3"
+                      placeholder="Enter remarks"
+                      value={formData.remarks}
+                      onChange={(e) =>
+                        setFormData({ ...formData, remarks: e.target.value })
+                      }
+                      className="border border-gray-200 rounded-lg px-4 py-2 text-sm"
+                    />
+                    {errors.remarks && (
+                      <p className="text-red-500 text-xs">{errors.remarks}</p>
+                    )}
+                  </div>
 
-                <button
-                  type="submit"
-                  className="btn-diagonal "
-                >
-                  Book an Appointment <ArrowUpRight className="w-5 h-5" />
-                </button>
-              </form>
+                  {/* Submit */}
+                  <div className="md:col-span-1 mt-2">
+                    <button
+                      type="submit"
+                      className="btn-diagonal flex items-center gap-2"
+                    >
+                      Book an Appointment <ArrowUpRight className="w-5 h-5" />
+                    </button>
+                  </div>
+                </form>
             </div>
           </div>
         </div>
