@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/liver-transplant.webp";
+import Faculties from '@/components/renalfaculties';
 
 import Clinic from "@/assets/common/general-consultation.webp";
 import Image from "next/image";
@@ -264,7 +265,13 @@ function LiverTransplant() {
         </div>
       </section > */}
 
+      <section className="max-w-7xl mx-auto  md:px-0 px-4">
+        <h2 className="text-center text-[30px]  mt-4 mb-8">
+          Our Transplant Co-Ordinators
+        </h2>
 
+        <Faculties />
+      </section >
       {/* <section>
         <div>
           <DonorDataTable />

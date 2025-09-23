@@ -308,7 +308,7 @@ const Fellownationalboard = () => {
 
 
             {/* Intro Content */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20">
+            <section className="max-w-7xl mx-auto px-4 md:px-0 py-10 sm:py-14 lg:py-20">
                 <div className="flex flex-col md:flex-row items-center md:items-center gap-6 sm:gap-8 lg:gap-12">
                     {/* Left Content */}
                     <div className="flex-1 text-center md:text-left">

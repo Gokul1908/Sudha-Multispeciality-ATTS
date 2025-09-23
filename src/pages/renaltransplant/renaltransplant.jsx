@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/organ-transplant.webp";
+import Faculties from '@/components/renalfaculties';
 
 import Clinic from "@/assets/common/general-consultation.webp";
 import Image from "next/image";
@@ -26,7 +27,7 @@ import OurTeamSlider from "@/components/OurTeamSlider";
 import Sliderdoctor from "@/components/Sliderdoctor";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Senthur from "@/assets/renal/senthur.jpg";
-import Chitra from "@/assets/renal/chitra.png";
+
 import DonorDataTable from '@/components/donordatatable';
 import { ArrowUpRight } from "lucide-react";
 
@@ -60,23 +61,7 @@ function Organtransplant() {
     ),
   };
 
-  const doctorsData = [
-    {
-      id: 1,
-      name: "Dr.C.Senthur Raj",
-      qualification: "MBBS",
-      designation: "Senior Medical Resident",
-      image: Senthur,
-    },
-    {
-      id: 2,
-      name: "Mrs.G.Chitra",
-      qualification: "Dialysis Tech",
-      designation: "Professional Transplant Coordinator",
-      image: Chitra,
-    },
-  ];
-
+  
   const PrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
@@ -215,53 +200,12 @@ function Organtransplant() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto  ">
-        <h2 className="text-center text-[30px]  mt-4">
+      <section className="max-w-7xl mx-auto  md:px-0 px-4">
+        <h2 className="text-center text-[30px]  mt-4 mb-8">
           Our Transplant Co-Ordinators
         </h2>
 
-        <div className="relative mt-10">
-          <Slider {...setting}>
-            {doctorsData.slice(0, 2).map((doc, index) => (
-              <div key={index} className="pr-3">
-                {/* Card wrapper */}
-                <div className="bg-white h-[500px] max-w-[300px] rounded-2xl text-start flex flex-col overflow-hidden">
-                  {/* Image */}
-                  <Image
-                    src={doc.image}
-                    alt={doc.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-[300px] object-cover rounded-t-2xl"
-                  />
-
-                  {/* Content */}
-                  <div className="p-4 flex flex-col justify-between flex-1">
-                    <div>
-                      <h3 className="text-[16px] sm:text-[16px] font-bold text-[#2B3990]">
-                        {doc.name}
-                      </h3>
-                      <p className="text-[12px]  mt-1">
-                        {doc.qualification}
-                      </p>
-                      <p className="text-[12px]  mt-1">
-                        {doc.designation}
-                      </p>
-                    </div>
-
-                    {/* Button aligned at bottom */}
-                    <Link
-                      href={`/doctor-detail/${doc.id}`}
-                      className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2"
-                    >
-                      View Profile <ArrowUpRight className="w-5 h-5" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
+          <Faculties />
       </section >
 
 
