@@ -9,6 +9,7 @@ import aboutOverview from "@/assets/about/about_overview.png";
 import Accordion from "../../components/Accordion";
 import Checklight from "@/assets/home/check-light.svg";
 import Link from "next/link";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
 
 
 import DoctorSlider from "../../components/Slicksliderdoctor";
@@ -202,6 +203,10 @@ const accordionData = [
 export default function SidebarTabs() {
 
   const [activeSection, setActiveSection] = useState('');
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -305,9 +310,13 @@ export default function SidebarTabs() {
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Experienced multidisciplinary team with advanced facilities</li>
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Holistic support through counselling, nutrition, and long-term follow-up</li>
             </ul>
-            <button className="btn-white mt-5">
-              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* find a doctor */}
@@ -875,9 +884,13 @@ export default function SidebarTabs() {
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Experienced multidisciplinary team with advanced facilities</li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Holistic support through counselling, nutrition, and long-term follow-up</li>
           </ul>
-          <button className="btn-white mt-5">
-            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+            Book an Appointment <ArrowUpRight className="w-5 h-5" />
           </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
         </div>
 
         {/* find a doctor */}

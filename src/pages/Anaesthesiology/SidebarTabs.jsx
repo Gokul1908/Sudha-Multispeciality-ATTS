@@ -8,6 +8,8 @@ import doctorImg from "@/assets/about/doctorImg.png";
 import aboutOverview from "@/assets/specialites/Anaesthesia/anaesthesiology-inner.webp";
 import Accordion from "../../components/Accordion";
 import DoctorSlider from "../../components/Slicksliderdoctor";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+
 import Checklight from "@/assets/home/check-light.svg";
 import Link from "next/link";
 // ---------------- Accordion Data ----------------
@@ -128,6 +130,13 @@ const serviceSections = [
 export default function SidebarTabs() {
   const [activeSection, setActiveSection] = useState("");
 
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
+
+
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -232,9 +241,13 @@ export default function SidebarTabs() {
                 </li>
               ))}
             </ul>
-            <button className="btn-white mt-5 flex items-center gap-2 mx-auto">
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
               Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor */}
@@ -267,11 +280,9 @@ export default function SidebarTabs() {
             </div>
           </Link>
         </div>
-
-
       </aside>
 
-      
+
       {/* Content Sections */}
       <div className="flex-1 space-y-0">
         {serviceSections.map(({ id }) => (
@@ -391,9 +402,13 @@ export default function SidebarTabs() {
               </li>
             ))}
           </ul>
-          <button className="btn-white mt-5 flex items-center gap-2 mx-auto">
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
             Book an Appointment <ArrowUpRight className="w-5 h-5" />
           </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
         </div>
 
         {/* Find a Doctor */}

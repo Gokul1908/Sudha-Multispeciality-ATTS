@@ -15,6 +15,7 @@ import Checklight from "@/assets/home/check-light.svg";
 import Accordion from "../../components/Accordion";
 import DoctorSlider from "../../components/Slicksliderdoctor";
 // import Faq from "../../components/Faq"; // Uncomment when FAQ is needed
+import BookAppointmentModal from "@/components/bookappointmentmodal";
 
 // Sidebar Section Tabs
 const serviceSections = [
@@ -177,6 +178,10 @@ const accordionData = [
 
 export default function SidebarTabs() {
   const [activeSection, setActiveSection] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
 
   // Section observer to track active
   useEffect(() => {
@@ -279,9 +284,13 @@ export default function SidebarTabs() {
               </li>
             </ul>
 
-            <button className="btn-white mt-5">
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
               Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor Box */}
@@ -462,9 +471,13 @@ export default function SidebarTabs() {
             </li>
           </ul>
 
-          <button className="btn-white mt-5">
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
             Book an Appointment <ArrowUpRight className="w-5 h-5" />
           </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
         </div>
 
         {/* Find a Doctor Box */}

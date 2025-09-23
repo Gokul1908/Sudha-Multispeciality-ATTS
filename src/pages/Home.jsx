@@ -1,6 +1,5 @@
 "use client";
 
-
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
@@ -14,7 +13,12 @@ import hospitalThree from "@/assets/home/cards/c3.svg";
 import hospitalFour from "@/assets/home/cards/c4.svg";
 import ServiceCard from "../components/ServiceCard";
 import React, { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  AnimatePresence,
+} from "framer-motion";
 import Link from "next/link";
 
 import play from "../assets/home/play.png";
@@ -45,25 +49,24 @@ import BannerSlider from "@/components/BannerSlider";
 import BookAppointmentModal from "@/components/bookappointmentmodal";
 import NewsEvents from "@/components/NewsEvents";
 
-
-
 const accordionData = [
   {
     title: (
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Cardiothoracic Surgery" />  */}
-         Which is the Best Multispecialty Hospital in Erode? 
+          Which is the Best Multispecialty Hospital in Erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         Sudha Multispeciality Hospital is recognised as the best multispecialty hospital in Erode, offering advanced tertiary care with modern infrastructure, specialised departments, and expert consultants across a wide range of medical fields. 
+          Sudha Multispeciality Hospital is recognised as the best
+          multispecialty hospital in Erode, offering advanced tertiary care with
+          modern infrastructure, specialised departments, and expert consultants
+          across a wide range of medical fields.
         </p>
-
-
       </div>
     ),
   },
@@ -72,17 +75,18 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Which hospital provides world class facilities in Erode? 
+          Which hospital provides world class facilities in Erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Sudha Multispeciality Hospital known as the best multispeciality hospital in Erode, provides world-class facilities with state-of-the-art technology, advanced diagnostic services, and modern surgical care, ensuring high standards of treatment for all patients. 
+          Sudha Multispeciality Hospital known as the best multispeciality
+          hospital in Erode, provides world-class facilities with
+          state-of-the-art technology, advanced diagnostic services, and modern
+          surgical care, ensuring high standards of treatment for all patients.
         </p>
-
-
       </div>
     ),
   },
@@ -91,17 +95,18 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Which is the best hospital for Larynx treatment in Erode? 
+          Which is the best hospital for Larynx treatment in Erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-         As the best multispeciality hospital in Erode, Sudha Multispeciality Hospital is equipped with best ENT specialists and laryngologists offering the best and advanced Larynx treatments in Erode at an affordable price.
+          As the best multispeciality hospital in Erode, Sudha Multispeciality
+          Hospital is equipped with best ENT specialists and laryngologists
+          offering the best and advanced Larynx treatments in Erode at an
+          affordable price.
         </p>
-
-
       </div>
     ),
   },
@@ -110,16 +115,18 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-         Does Sudha Hospital provide affordable treatments in Erode? 
+          Does Sudha Hospital provide affordable treatments in Erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital is known for offering affordable treatments without compromising on quality. Patients benefit from cost-effective health packages and transparent pricing across various specialties. 
+          Sudha Multispeciality Hospital is known for offering affordable
+          treatments without compromising on quality. Patients benefit from
+          cost-effective health packages and transparent pricing across various
+          specialties.
         </p>
-
       </div>
     ),
   },
@@ -128,16 +135,18 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-         Which hospital is best for respiratory care in Erode? 
+          Which hospital is best for respiratory care in Erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Equipped with best pulmonologists in Erode, Sudha Multispeciality Hospital is considered the best choice for respiratory care, with dedicated pulmonology services, advanced respiratory diagnostics, and comprehensive treatment at an affordable price. 
+          Equipped with best pulmonologists in Erode, Sudha Multispeciality
+          Hospital is considered the best choice for respiratory care, with
+          dedicated pulmonology services, advanced respiratory diagnostics, and
+          comprehensive treatment at an affordable price.
         </p>
-
       </div>
     ),
   },
@@ -147,16 +156,19 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Which is the most trusted hospital in Erode? 
+          Which is the most trusted hospital in Erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          With over 40 years of experience and excellence in delivering quality healthcare services, Sudha Multispeciality Hospital has earned its reputation as the most trusted hospital in Erode. Sudha is widely known for its experienced specialists, patient-focused services, and affordable treatments without compromise in quality. 
+          With over 40 years of experience and excellence in delivering quality
+          healthcare services, Sudha Multispeciality Hospital has earned its
+          reputation as the most trusted hospital in Erode. Sudha is widely
+          known for its experienced specialists, patient-focused services, and
+          affordable treatments without compromise in quality.
         </p>
-
       </div>
     ),
   },
@@ -165,20 +177,21 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Which hospital provides the best intensive care unit in erode? 
+          Which hospital provides the best intensive care unit in erode?
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         Sudha Multispeciality Hospital in Erode provides one of the best intensive care units, equipped with advanced monitoring systems, modern life-support technologies, and round-the-clock critical care specialists. 
+          Sudha Multispeciality Hospital in Erode provides one of the best
+          intensive care units, equipped with advanced monitoring systems,
+          modern life-support technologies, and round-the-clock critical care
+          specialists.
         </p>
-
       </div>
     ),
   },
-
 ];
 const cards = [
   {
@@ -195,8 +208,9 @@ const cards = [
     icon: cardtwo,
     title: (
       <p className="text-md font-extrabold text-black">
-        Master <span className="text-[#2b3990] font-extrabold"> Health  </span>   <br />Check Up
-
+        Master <span className="text-[#2b3990] font-extrabold"> Health </span>{" "}
+        <br />
+        Check Up
       </p>
     ),
     link: "/facilities/health-packages",
@@ -306,7 +320,6 @@ const cardData = [
     icon: experienced, // replace with your image path
   },
   {
-
     title: (
       <h3 className="text-[18px] font-bold text-black">
         Safety & Quality Standards
@@ -318,7 +331,6 @@ const cardData = [
     icon: holistic, // replace with your image path
   },
   {
-
     title: (
       <h3 className="text-[18px] font-bold text-black">Blood Bank Facility</h3>
     ),
@@ -427,6 +439,9 @@ const cardVariants = {
   },
 };
 function Home() {
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
   const [isOpen, setIsOpen] = useState(false);
 
   const [currentPage, setCurrentPage] = useState(0);
@@ -446,14 +461,10 @@ function Home() {
 
   const maxPage = Math.ceil(specialties.length / itemsPerPage) - 1;
 
-
-
   // Our Specialities end
 
   return (
     <>
-
-
       <section className="relative  px-7 hero-section -mt-28 mb-hero-section z-index">
         <BannerSlider />
       </section>
@@ -470,13 +481,11 @@ function Home() {
             {cards.map((card, idx) => (
               <motion.div key={idx} variants={item}>
                 <div className="cursor-pointer  duration-300">
-
                   <ServiceCard
                     icon={card.icon}
                     title={card.title}
                     link={card.link}
                   />
-
                 </div>
               </motion.div>
             ))}
@@ -555,9 +564,7 @@ function Home() {
               </p>
 
               <Link href="/about-us/why-choose-sudha-hospital">
-                <motion.div
-                  className="btn-diagonal "
-                >
+                <motion.div className="btn-diagonal ">
                   Know more
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -575,7 +582,6 @@ function Home() {
                   </svg>
                 </motion.div>
               </Link>
-
             </motion.div>
           </section>
         </div>
@@ -648,10 +654,6 @@ function Home() {
         <CentreOfExcellence />
       </section>
 
-     
-
-
-
       <section className="max-w-7xl mx-auto py-16 pt-0 ">
         <FacilitySlider />
       </section>
@@ -666,11 +668,12 @@ function Home() {
           <div className="w-full md:w-1/2">
             <div className="rounded-3xl overflow-hidden relative">
               <h2 className="text-[30px] mb-4">
-                Expert Care Across
-                Every Medical
-                Speciality
+                Expert Care Across Every Medical Speciality
               </h2>
-              <p className="mb-4">Providing comprehensive, compassionate treatment tailored to every <br /> patient’s unique needs.</p>
+              <p className="mb-4">
+                Providing comprehensive, compassionate treatment tailored to
+                every <br /> patient’s unique needs.
+              </p>
 
               <Image
                 src={Expect}
@@ -774,15 +777,19 @@ function Home() {
         </div>
       </section>
 
-       <section id="upcoming" className="py-16 pt-0">
-        <NewsEvents/>
+      <section id="upcoming" className="py-16 pt-0">
+        <NewsEvents />
       </section>
 
       <section className="mb-m ">
         <div className="max-w-7xl mx-auto px-4 py-16 mb-p-5 sm:px-6 lg:px-8 h-full bg-[#fff] rounded-[30px]">
           <div className="flex flex-wrap">
             <div className="w-full md:w-1/2 text-center">
-              <Image src={review} alt="review" className="w-[80%] text-left mb-img" />
+              <Image
+                src={review}
+                alt="review"
+                className="w-[80%] text-left mb-img"
+              />
             </div>
             <div className="w-full md:w-1/2 flex items-center">
               <div>
@@ -790,9 +797,21 @@ function Home() {
                   Testimonials of Trust From <br /> Those We've Served.
                 </h3>
 
-                <button className="btn-diagonal mt-5">
-                  Book your Appointment <ArrowUpRight />
-                </button>
+                <div>
+
+                  <button
+                    className="btn-diagonal mt-5"
+                    onClick={() => setOpenModal(true)}
+                  >
+                    Book your Appointment <ArrowUpRight />
+                  </button>
+
+
+                  <BookAppointmentModal
+                    open={openModal}
+                    onClose={() => setOpenModal(false)}
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -807,7 +826,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto py-16 md-px-0 px-4" >
+      <section className="max-w-3xl mx-auto py-16 md-px-0 px-4">
         <div>
           <h2 className="text-center text-[30px] mb-8">
             Frequently Asked Questions

@@ -13,6 +13,8 @@ import aboutOverview from "@/assets/alliedhealthservice/nursingservices/nursing-
 import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
 import one from "@/assets/about/1.svg";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+
 
 
 
@@ -286,6 +288,10 @@ const faq = [
 
 export default function SidebarTabs() {
   const [activeSection, setActiveSection] = useState('');
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -381,9 +387,13 @@ export default function SidebarTabs() {
 
             </ul>
 
-            <button className="btn-white mt-5">
-              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor Box */}
@@ -520,9 +530,13 @@ export default function SidebarTabs() {
 
           </ul>
 
-          <button className="btn-white mt-5">
-            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+            Book an Appointment <ArrowUpRight className="w-5 h-5" />
           </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
         </div>
 
         {/* Find a Doctor Box */}

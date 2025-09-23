@@ -25,7 +25,7 @@ const Contactusfooter = () => {
                           Call us on our 24x7 hotline for any queries. 
                         </p>
                          <div className="absolute bottom-3 font-semibold flex items-center gap-2 z-30">
-                      <span className="text-[16px] text-[#2B3990] font-bold">+91 42-424-54545</span>
+                      <Link href="tel:+914242454545" className="text-[16px] text-[#2B3990] font-bold">0424-245-4545</Link>
                   </div>
                         <Image
                             src={achivement}

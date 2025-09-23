@@ -11,6 +11,12 @@ import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
 import one from "@/assets/about/1.svg";
 import Link from "next/link";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+const [openModal, setOpenModal] = useState(false);
+
+console.log("openModal", openModal);
+const [isOpen, setIsOpen] = useState(false);
+
 
 import Checklight from "@/assets/home/check-light.svg";
 const serviceSections = [
@@ -320,9 +326,13 @@ export default function SidebarTabs() {
 
 
 
-            <button className="btn-white mt-5">
-              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor Box */}
@@ -460,9 +470,13 @@ export default function SidebarTabs() {
 
 
 
-          <button className="btn-white mt-5">
-            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+            Book an Appointment <ArrowUpRight className="w-5 h-5" />
           </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
         </div>
 
         {/* Find a Doctor Box */}

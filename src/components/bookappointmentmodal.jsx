@@ -1,6 +1,6 @@
 "use client";
-import React, { useRef, useState } from "react";
-import Link from "next/link";
+import React, { useRef, useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { X, ArrowUpRight } from "lucide-react";
 import AppointmentImage from "@/assets/bookappointmentmodal/consultation-form.webp";
@@ -8,14 +8,40 @@ import toast, { Toaster } from "react-hot-toast";
 
 const BookAppointmentModal = ({ open, onClose }) => {
   const modalRef = useRef(null);
+  const [isMounted, setIsMounted] = useState(false);
 
+  // ensure we're on client before touching document / createPortal
+  useEffect(() => {
+    setIsMounted(true);
+    return () => setIsMounted(false);
+  }, []);
 
-  const handleBackdropClick = (e) => {
-    if (modalRef.current && !modalRef.current.contains(e.target)) {
-      onClose();
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (!isMounted) return;
+    const origOverflow = typeof document !== "undefined" ? document.body.style.overflow : "";
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = origOverflow || "";
     }
-  };
+    return () => {
+      // restore original overflow
+      if (typeof document !== "undefined") document.body.style.overflow = origOverflow || "";
+    };
+  }, [open, isMounted]);
 
+  // Close on ESC
+  useEffect(() => {
+    if (!isMounted || !open) return;
+    const handleKey = (e) => {
+      if (e.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
+  }, [open, isMounted, onClose]);
+
+  // Form state
   const [formData, setFormData] = useState({
     date: "",
     name: "",
@@ -25,59 +51,70 @@ const BookAppointmentModal = ({ open, onClose }) => {
     doctor: "",
     remarks: "",
   });
-
   const [errors, setErrors] = useState({});
 
-  // Department → Doctors mapping
+  // Full doctors list (copied from your original)
   const doctorsList = {
-   Anaesthesiology: ["Dr.Kumaravel Pandiyan","Dr.P.Nithiyanandhan","Dr.V.Amutha","Dr.Balaji Mani","Dr.Aarthi Sasivarnan","Dr.V.Sountharajan"],
+    Anaesthesiology: [
+      "Dr.Kumaravel Pandiyan",
+      "Dr.P.Nithiyanandhan",
+      "Dr.V.Amutha",
+      "Dr.Balaji Mani",
+      "Dr.Aarthi Sasivarnan",
+      "Dr.V.Sountharajan",
+    ],
     BariatricMetabolic: ["Dr.S.Balamurugan"],
-    Cardiology: ["Dr.N.Rajasekar","Dr.D.Kandaswamy","Dr.K.Sudhakar"],
+    Cardiology: ["Dr.N.Rajasekar", "Dr.D.Kandaswamy", "Dr.K.Sudhakar"],
     CardiothoracicSurgery: ["Dr.Minnathulla"],
-    Dentistry: ["Dr.A.Aafia Parveen","Dr.Sharath Ashokan"],
+    Dentistry: ["Dr.A.Aafia Parveen", "Dr.Sharath Ashokan"],
     Dermatology: ["Dr.M.Chakravarthi"],
-    DMO: ["Dr.C.Senthur Raj","Dr.K.E.Sakthi Saravanan","Dr.K.V.Lakshmanan","Dr.V.Kamall","Dr.A.Krishna kumar","Dr.D.Thriuvenkata Lakshmanan"],
+    DMO: [
+      "Dr.C.Senthur Raj",
+      "Dr.K.E.Sakthi Saravanan",
+      "Dr.K.V.Lakshmanan",
+      "Dr.V.Kamall",
+      "Dr.A.Krishna kumar",
+      "Dr.D.Thriuvenkata Lakshmanan",
+    ],
     ENT: ["Dr.M.P.Kavin Kumar"],
     FetalMedicine: ["Dr.Sathiya Lakshmi"],
-    GeneralMedicine: ["Dr.K.Sudhakar","Dr.S.N.Ganesha Moorthy","Dr.G.Sathish Kumar"],
-    Gynecology: ["Dr.P.Vanitha","Dr.Deepika","Dr.S.Pradeepa","Dr.S.Dhanabagyam"],
+    GeneralMedicine: [
+      "Dr.K.Sudhakar",
+      "Dr.S.N.Ganesha Moorthy",
+      "Dr.G.Sathish Kumar",
+    ],
+    Gynecology: ["Dr.P.Vanitha", "Dr.Deepika", "Dr.S.Pradeepa", "Dr.S.Dhanabagyam"],
     Nephrology: ["Dr.V.Nagendran"],
-    Neurology: ["Dr.G.Vikram Raj","Dr.S.Mohan"],
+    Neurology: ["Dr.G.Vikram Raj", "Dr.S.Mohan"],
     NuclearMedicine: ["Dr.Prathap"],
     Oncology: ["Dr.J.Sugeshwaran"],
-    Orthopedic : ["Dr.K.Attiyanan","Dr.T.Janarthanan"],
-    Pediatrics: ["Dr.S.Rangesh","Dr.N.Gowrishankar"],
+    Orthopedic: ["Dr.K.Attiyanan", "Dr.T.Janarthanan"],
+    Pediatrics: ["Dr.S.Rangesh", "Dr.N.Gowrishankar"],
     Pathology: ["Dr.R.Renuga"],
     PlasticSurgery: ["Dr.Gnanasekaran"],
     Psychiatry: ["Dr.S.Anand"],
     Pulmonology: ["Dr.P.Duraikannan"],
-    Radiology: ["Dr.Subhashree Ramasamy","Dr.M.Thirunavukarasu"],
+    Radiology: ["Dr.Subhashree Ramasamy", "Dr.M.Thirunavukarasu"],
     Urology: ["Dr.M.Gopinath"],
   };
-  if (!open) return null; // ✅ Now safe
 
   const validate = () => {
-    let newErrors = {};
-
+    const newErrors = {};
     if (!formData.date) newErrors.date = "Preferred date is required";
     if (!formData.name) newErrors.name = "Name is required";
-
     if (!formData.mobile) {
       newErrors.mobile = "Mobile number is required";
     } else if (!/^[0-9]{10}$/.test(formData.mobile)) {
       newErrors.mobile = "Enter a valid 10-digit mobile number";
     }
-
     if (!formData.email) {
       newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Enter a valid email";
     }
-
     if (!formData.department) newErrors.department = "Department is required";
     if (!formData.doctor) newErrors.doctor = "Doctor is required";
     if (!formData.remarks) newErrors.remarks = "Remarks are required";
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -85,27 +122,14 @@ const BookAppointmentModal = ({ open, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-
     try {
       const form = new FormData();
-      form.append("date", formData.date);
-      form.append("name", formData.name);
-      form.append("mobile", formData.mobile);
-      form.append("email", formData.email);
-      form.append("department", formData.department);
-      form.append("doctor", formData.doctor);
-      form.append("remarks", formData.remarks);
-
+      Object.entries(formData).forEach(([k, v]) => form.append(k, v));
       const res = await fetch(
         "https://script.google.com/macros/s/AKfycbyfAqPmwT117o8qJ2U_hEaSfh9cBlB6CjHbxtGUq7EnVQM9HzfNCen_d0JWq1Et5rVB/exec",
-        {
-          method: "POST",
-          body: form,
-        }
+        { method: "POST", body: form }
       );
-
       const result = await res.json();
-
       if (result.result === "success") {
         toast.success("Appointment booked successfully!");
         setFormData({
@@ -119,22 +143,31 @@ const BookAppointmentModal = ({ open, onClose }) => {
         });
       } else {
         toast.error("Something went wrong!");
+        console.error("API error response:", result);
       }
-    } catch (error) {
+    } catch (err) {
       toast.error("Error connecting to server!");
+      console.error("Submit error:", err);
     }
   };
 
-  return (
+  // If not mounted or not open, don't render
+  if (!isMounted || !open) return null;
+
+  // render via portal so modal escapes parent stacking contexts
+  return createPortal(
     <div
-      className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-2 sm:px-4"
-      onClick={handleBackdropClick}
+      role="dialog"
+      aria-modal="true"
+      className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[9999] flex items-center justify-center px-2 sm:px-4"
+      onClick={(e) => {
+        // only close when clicking the backdrop itself
+        if (e.target === e.currentTarget) onClose();
+      }}
     >
       <div
         ref={modalRef}
-        className="relative bg-[#EEF6FF] rounded-3xl shadow-lg w-full max-w-lg sm:max-w-2xl md:max-w-6xl mx-auto 
-             overflow-hidden grid md:grid-cols-2 
-             max-h-[90vh] overflow-y-auto"
+        className="relative bg-[#EEF6FF] rounded-3xl shadow-lg w-full max-w-lg sm:max-w-2xl md:max-w-6xl mx-auto z-[10000] overflow-hidden grid md:grid-cols-2 max-h-[90vh] overflow-y-auto"
       >
         {/* Close Button */}
         <button
@@ -145,13 +178,15 @@ const BookAppointmentModal = ({ open, onClose }) => {
           <X className="w-6 h-6 text-gray-800" />
         </button>
 
-        {/* Left Side Image (hidden on mobile) */}
-        <div className="relative hidden md:block">
+        {/* Left Image (hidden on small screens) */}
+        <div className="relative hidden md:block h-full">
+          {/* parent is relative + h-full so Image fill works */}
           <Image
             src={AppointmentImage}
             alt="Appointment"
             fill
             className="object-cover"
+            sizes="(min-width: 768px) 50vw, 100vw"
           />
         </div>
 
@@ -161,28 +196,19 @@ const BookAppointmentModal = ({ open, onClose }) => {
             Book an Appointment for Comprehensive Medical Care
           </h2>
 
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6"
-          >
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
             <Toaster />
 
             {/* Date */}
             <div className="flex flex-col">
-              <label className="text-sm font-semibold mb-1">
-                Preferred Date *
-              </label>
+              <label className="text-sm font-semibold mb-1">Preferred Date *</label>
               <input
                 type="date"
                 value={formData.date}
-                onChange={(e) =>
-                  setFormData({ ...formData, date: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                 className="border border-gray-200 rounded-lg px-4 py-2 h-11 text-sm"
               />
-              {errors.date && (
-                <p className="text-red-500 text-xs">{errors.date}</p>
-              )}
+              {errors.date && <p className="text-red-500 text-xs">{errors.date}</p>}
             </div>
 
             {/* Name */}
@@ -192,14 +218,10 @@ const BookAppointmentModal = ({ open, onClose }) => {
                 type="text"
                 placeholder="Enter full name"
                 value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="border border-gray-200 rounded-lg px-4 h-11 py-2 text-sm"
               />
-              {errors.name && (
-                <p className="text-red-500 text-xs">{errors.name}</p>
-              )}
+              {errors.name && <p className="text-red-500 text-xs">{errors.name}</p>}
             </div>
 
             {/* Mobile */}
@@ -209,14 +231,10 @@ const BookAppointmentModal = ({ open, onClose }) => {
                 type="tel"
                 placeholder="Enter mobile number"
                 value={formData.mobile}
-                onChange={(e) =>
-                  setFormData({ ...formData, mobile: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                 className="border border-gray-200 rounded-lg px-4 h-11 py-2 text-sm"
               />
-              {errors.mobile && (
-                <p className="text-red-500 text-xs">{errors.mobile}</p>
-              )}
+              {errors.mobile && <p className="text-red-500 text-xs">{errors.mobile}</p>}
             </div>
 
             {/* Email */}
@@ -226,14 +244,10 @@ const BookAppointmentModal = ({ open, onClose }) => {
                 type="email"
                 placeholder="Enter email"
                 value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="border border-gray-200 rounded-lg px-4 h-11 py-2 text-sm"
               />
-              {errors.email && (
-                <p className="text-red-500 text-xs">{errors.email}</p>
-              )}
+              {errors.email && <p className="text-red-500 text-xs">{errors.email}</p>}
             </div>
 
             {/* Department */}
@@ -241,23 +255,17 @@ const BookAppointmentModal = ({ open, onClose }) => {
               <label className="text-sm font-semibold mb-1">Department *</label>
               <select
                 value={formData.department}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    department: e.target.value,
-                    doctor: "",
-                  })
-                }
+                onChange={(e) => setFormData({ ...formData, department: e.target.value, doctor: "" })}
                 className="border border-gray-200 rounded-lg px-4 h-11 text-sm"
               >
                 <option value="">Select a department</option>
                 {Object.keys(doctorsList).map((dept) => (
-                  <option key={dept}>{dept}</option>
+                  <option key={dept} value={dept}>
+                    {dept}
+                  </option>
                 ))}
               </select>
-              {errors.department && (
-                <p className="text-red-500 text-xs">{errors.department}</p>
-              )}
+              {errors.department && <p className="text-red-500 text-xs">{errors.department}</p>}
             </div>
 
             {/* Doctor */}
@@ -265,21 +273,19 @@ const BookAppointmentModal = ({ open, onClose }) => {
               <label className="text-sm font-semibold mb-1">Doctor *</label>
               <select
                 value={formData.doctor}
-                onChange={(e) =>
-                  setFormData({ ...formData, doctor: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, doctor: e.target.value })}
                 disabled={!formData.department}
                 className="border border-gray-200 rounded-lg px-4 h-11 text-sm"
               >
                 <option value="">Select a doctor</option>
                 {formData.department &&
                   doctorsList[formData.department]?.map((doc) => (
-                    <option key={doc}>{doc}</option>
+                    <option key={doc} value={doc}>
+                      {doc}
+                    </option>
                   ))}
               </select>
-              {errors.doctor && (
-                <p className="text-red-500 text-xs">{errors.doctor}</p>
-              )}
+              {errors.doctor && <p className="text-red-500 text-xs">{errors.doctor}</p>}
             </div>
 
             {/* Remarks */}
@@ -289,29 +295,24 @@ const BookAppointmentModal = ({ open, onClose }) => {
                 rows="3"
                 placeholder="Enter remarks"
                 value={formData.remarks}
-                onChange={(e) =>
-                  setFormData({ ...formData, remarks: e.target.value })
-                }
+                onChange={(e) => setFormData({ ...formData, remarks: e.target.value })}
                 className="border border-gray-200 rounded-lg px-4 py-2 text-sm"
               />
-              {errors.remarks && (
-                <p className="text-red-500 text-xs">{errors.remarks}</p>
-              )}
+              {errors.remarks && <p className="text-red-500 text-xs">{errors.remarks}</p>}
             </div>
 
             {/* Submit */}
-            <div className="md:col-span-1 mt-2">
-              <button
-                type="submit"
-                className="btn-diagonal flex items-center gap-2"
-              >
-                Book an Appointment 
+            <div className="md:col-span-2 mt-2">
+              <button type="submit" className="btn-diagonal flex items-center gap-2">
+                Book an Appointment
+                <ArrowUpRight className="w-5 h-5" />
               </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </div>,
+    typeof document !== "undefined" ? document.body : null
   );
 };
 

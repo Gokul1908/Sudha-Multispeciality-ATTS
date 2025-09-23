@@ -16,6 +16,8 @@ import Checklight from "@/assets/home/check-light.svg";
 import Accordion from "../../components/Accordion";
 import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+
 
 // Sections for Sidebar
 const serviceSections = [
@@ -227,6 +229,10 @@ const accordionData = [
 
 export default function SidebarTabs() {
   const [activeSection, setActiveSection] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
 
   // Observe active section
   useEffect(() => {
@@ -326,9 +332,13 @@ export default function SidebarTabs() {
                 </li>
               ))}
             </ul>
-            <button className="btn-white mt-5 flex items-center gap-2 justify-center mx-auto">
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
               Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor */}
@@ -435,66 +445,70 @@ export default function SidebarTabs() {
       </div>
 
       <div className="block md:hidden">
-          {/* Hospital Info */}
+        {/* Hospital Info */}
+        <div
+          className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+          style={{
+            backgroundImage: `linear-gradient(to bottom right, rgba(42,61,144,0.9), rgba(12,18,42,0.9)), url(${Frame.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h3 className="text-xl font-bold mb-2">
+            Sudha Multispeciality Hospital
+          </h3>
+          <hr />
+          <ul className="space-y-3 text-left mt-4">
+            {[
+              "Child-friendly environment with expert paediatric dental care",
+              "Painless root canal and laser-assisted dental procedures",
+              "Skilled dental surgeons offering comprehensive treatments under one roof",
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm font-semibold">
+                <Image src={Checklight} alt="tick" width={14} height={14} />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+            Book an Appointment <ArrowUpRight className="w-5 h-5" />
+          </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
+        </div>
+
+        {/* Find a Doctor */}
+        <Link href="/find-a-doctor" >
+
           <div
-            className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
             style={{
-              backgroundImage: `linear-gradient(to bottom right, rgba(42,61,144,0.9), rgba(12,18,42,0.9)), url(${Frame.src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
             }}
           >
-            <h3 className="text-xl font-bold mb-2">
-              Sudha Multispeciality Hospital
-            </h3>
-            <hr />
-            <ul className="space-y-3 text-left mt-4">
-              {[
-                "Child-friendly environment with expert paediatric dental care",
-                "Painless root canal and laser-assisted dental procedures",
-                "Skilled dental surgeons offering comprehensive treatments under one roof",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm font-semibold">
-                  <Image src={Checklight} alt="tick" width={14} height={14} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <button className="btn-white mt-5 flex items-center gap-2 justify-center mx-auto">
-              Book an Appointment <ArrowUpRight className="w-5 h-5" />
-            </button>
-          </div>
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
 
-          {/* Find a Doctor */}
-          <Link href="/find-a-doctor" >
-
-            <div
-              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-              style={{
-                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-              }}
-            >
-              {/* Text Section */}
-              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-                <h3
-
-                  className="text-[24px] sm:text-xl  font-bold leading-snug"
-                >
-                  Find a <br className="hidden sm:block" /> Doctor?
-                </h3>
-              </div>
-
-              {/* Image Section */}
-              <div className="">
-                <Image
-                  src={doctorImg}
-                  alt="Doctor"
-                  className="rounded-lg w-full customposition  h-auto object-cover"
-                />
-              </div>
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
             </div>
-          </Link>
-        </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }

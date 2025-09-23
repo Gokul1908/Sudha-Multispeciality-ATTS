@@ -96,18 +96,18 @@ export const links = [
           },
         ],
       },
-      {
-        header: "Awards & Honors",
-        hrefs: "/about-us/awards-and-honors",
-        image: Awards,
-        hoverImage: Awards,
-        subMenu: [
-          {
-            label: "Awards & Honors",
-            dec: "Excellence in healthcare service for decades",
-          },
-        ],
-      },
+      // {
+      //   header: "Awards & Honors",
+      //   hrefs: "/about-us/awards-and-honors",
+      //   image: Awards,
+      //   hoverImage: Awards,
+      //   subMenu: [
+      //     {
+      //       label: "Awards & Honors",
+      //       dec: "Excellence in healthcare service for decades",
+      //     },
+      //   ],
+      // },
       {
         header: "Infrastructure",
         hrefs: "/about-us/infrastructure",

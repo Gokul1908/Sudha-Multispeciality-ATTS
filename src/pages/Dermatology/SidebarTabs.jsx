@@ -11,6 +11,8 @@ import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
 import Checklight from "@/assets/home/check-light.svg";
 import Link from "next/link";
+import BookAppointmentModal from "@/components/bookappointmentmodal";
+
 
 
 const serviceSections = [
@@ -314,6 +316,10 @@ const accordionData = [
 
 export default function SidebarTabs() {
   const [activeSection, setActiveSection] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+
+  console.log("openModal", openModal);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -414,9 +420,13 @@ export default function SidebarTabs() {
               </li>
             </ul>
 
-            <button className="btn-white mt-5">
-              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
             </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor Box */}
@@ -539,70 +549,74 @@ export default function SidebarTabs() {
       </div>
 
       <div className="block md:hidden">
-          {/* Sudha Hospital Box */}
+        {/* Sudha Hospital Box */}
+        <div
+          className="relative rounded-2xl overflow-hidden text-white text-center px-4 sm:px-6 py-8 sm:py-10"
+          style={{
+            backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <h3 className="text-[20px] font-bold mb-2">
+            Sudha Multispeciality Hospital
+          </h3>
+          <hr className="border-light" />
+          <ul className="space-y-4 text-start mt-4">
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">
+              <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert
+              dermatologists for both medical and cosmetic concerns.
+            </li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">
+              <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />
+              Safe and effective skin rejuvenation and anti-aging solutions.
+            </li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">
+              <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />
+              Personalized treatment plans for chronic and recurring skin issues.
+            </li>
+          </ul>
+
+          <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+            Book an Appointment <ArrowUpRight className="w-5 h-5" />
+          </button>
+          <BookAppointmentModal
+            open={openModal}
+            onClose={() => setOpenModal(false)}
+          />
+        </div>
+
+        {/* Find a Doctor Box */}
+
+        <Link href="/find-a-doctor" >
+
           <div
-            className="relative rounded-2xl overflow-hidden text-white text-center px-4 sm:px-6 py-8 sm:py-10"
+            className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
             style={{
-              backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
             }}
           >
-            <h3 className="text-[20px] font-bold mb-2">
-              Sudha Multispeciality Hospital
-            </h3>
-            <hr className="border-light" />
-            <ul className="space-y-4 text-start mt-4">
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">
-                <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert
-                dermatologists for both medical and cosmetic concerns.
-              </li>
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">
-                <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />
-                Safe and effective skin rejuvenation and anti-aging solutions.
-              </li>
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">
-                <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />
-                Personalized treatment plans for chronic and recurring skin issues.
-              </li>
-            </ul>
+            {/* Text Section */}
+            <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
+              <h3
 
-            <button className="btn-white mt-5">
-              Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
-            </button>
-          </div>
-
-          {/* Find a Doctor Box */}
-
-          <Link href="/find-a-doctor" >
-
-            <div
-              className="mt-2 rounded-2xl md:px-6 px-6 md:py-6 py-6  flex flex-col md:flex-row flex-row items-center justify-between text-white"
-              style={{
-                background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
-              }}
-            >
-              {/* Text Section */}
-              <div className="text-center sm:text-left mb-4 sm:mb-0 sm:mr-4">
-                <h3
-
-                  className="text-[24px] sm:text-xl  font-bold leading-snug"
-                >
-                  Find a <br className="hidden sm:block" /> Doctor?
-                </h3>
-              </div>
-
-              {/* Image Section */}
-              <div className="">
-                <Image
-                  src={doctorImg}
-                  alt="Doctor"
-                  className="rounded-lg w-full customposition  h-auto object-cover"
-                />
-              </div>
+                className="text-[24px] sm:text-xl  font-bold leading-snug"
+              >
+                Find a <br className="hidden sm:block" /> Doctor?
+              </h3>
             </div>
-          </Link>
-        </div>
+
+            {/* Image Section */}
+            <div className="">
+              <Image
+                src={doctorImg}
+                alt="Doctor"
+                className="rounded-lg w-full customposition  h-auto object-cover"
+              />
+            </div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }
