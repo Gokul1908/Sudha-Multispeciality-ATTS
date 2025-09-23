@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Banner from "@/assets/facilities/health-package.webp";
+import Banner from "@/assets/facilities/health-packages.webp";
 import Accordion from "../../components/Accordion";
 import HandIcon from "@/assets/healthpackage/nephrology.svg";
 import Doctors from "@/assets/healthpackage/doctors.webp";
