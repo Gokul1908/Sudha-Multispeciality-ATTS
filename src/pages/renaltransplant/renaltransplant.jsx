@@ -209,7 +209,7 @@ function Organtransplant() {
       </section >
 
 
-      <section className="max-w-7xl mx-auto pt-0 pb-2">
+      <section className="max-w-7xl mx-auto  pb-2 py-8">
         <div>
           <DonorDataTable />
         </div>

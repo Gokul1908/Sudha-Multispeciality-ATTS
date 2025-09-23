@@ -3,8 +3,9 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import Senthur from "@/assets/home/doc/senthur.webp";
-import Chitra from "@/assets/renal/chitra.png";
+import Thiagarajan from "@/assets/home/doc/thiyagarajan-liver.png";
+import SoundaraRajan from "@/assets/home/doc/soundararajan.png";
+import Srikanth from "@/assets/home/doc/srikanth-thummala.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import "slick-carousel/slick/slick.css";
@@ -12,10 +13,25 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Faculties = () => {
     const team = [
-        { image: Senthur, post: "Senior Medical Resident", name: "Dr.C.Senthur Raj", specilist: "MBBS" },
-        { image: Chitra, post: "Professional Transplant Coordinator", name: "Mrs.G.Chitra", specilist: "Dialysis Tech" },
-
-    ]
+        {
+            image: Thiagarajan,
+            post: "Senior Consultant & Director",
+            name: "Dr.Thiagarajan Srinivasan",
+            specilist: "Institute of Liver Diseases, Transplant & HPB Surgery",
+        },
+        {
+            image: Srikanth,
+            post: "Consultant Liver Transplant",
+            name: "Dr.Srikanth Thummala",
+            specilist: "Institute of Liver Diseases, Transplant & HPB Surgery",
+        },
+        {
+            image: SoundaraRajan,
+            post: "Consultant Liver Transplant",
+            name: "Dr.L SoundaraRajan",
+            specilist: "Institute of Liver Diseases, Transplant & HPB Surgery",
+        },
+    ];
 
     // Mobile slider settings (dots removed)
     const settings = {
@@ -76,9 +92,9 @@ const Faculties = () => {
                             <Image
                                 src={member.image}
                                 alt={member.name}
-                                width={295}
-                                height={200}
-                                className="rounded-full object-cover mx-auto w-full h-[300px]"
+                                width={150}
+                                height={150}
+                                className="rounded-full object-cover mx-auto"
                             />
                             <div className="text-center mt-4">
                                 <span className="text-[#000000] font-bold text-[14px]">
@@ -99,19 +115,16 @@ const Faculties = () => {
                 {team.map((member, index) => (
                     <div
                         key={index}
-                        className="flex flex-col max-w-[300px] text-center items-center bg-white rounded-3xl "
+                        className="flex flex-col text-center items-center bg-white rounded-3xl p-4 w-[250px]"
                     >
-                        <div className="executeimg relative w-full">
-                              <Image
-                                src={member.image}
-                                alt={member.name}
-                                width={295}
-                                height={200}
-                                className="rounded-t-2xl object-cover mx-auto w-full h-[300px]"
-                            />
-                        </div>
-                      
-                        <div className="text-center p-4">
+                        <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={150}
+                            height={150}
+                            className="rounded-full object-cover"
+                        />
+                        <div className="text-center mt-4">
                             <span className="text-[#000000] font-bold text-[14px]">
                                 {member.post}
                             </span>

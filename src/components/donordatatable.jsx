@@ -7,6 +7,9 @@ const DonorDataTable = () => {
   const [selectedYear, setSelectedYear] = useState('All');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedDonor, setSelectedDonor] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const donorsPerPage = 10;
 
   const donorData = {
     2025: {
@@ -32,11 +35,11 @@ const DonorDataTable = () => {
 
         { id: 18, shid: 'SH/24/283291', name: 'MRS GOWTHAM', age: '19/M', bGroup: 'A1+', relationship: 'MOTHER', organ: 'KIDNEY', committee: '17/7/2025//12197/E8/2025', status: 'STABLE', dateOfSurgery: '17-07-2025', dateOfDischarge: '08-08-2025' },
 
-         { id: 19, shid: 'SH/24/276653', name: 'Mast. Sridhar.S', age: '11/M', bGroup: 'A1+', relationship: 'CADAVER', organ: 'KIDNEY', committee: 'TNOS 45078', status: 'STABLE', dateOfSurgery: '31-08-2025', dateOfDischarge: 'On Treatment' },
+        { id: 19, shid: 'SH/24/276653', name: 'Mast. Sridhar.S', age: '11/M', bGroup: 'A1+', relationship: 'CADAVER', organ: 'KIDNEY', committee: 'TNOS 45078', status: 'STABLE', dateOfSurgery: '31-08-2025', dateOfDischarge: 'On Treatment' },
 
-         { id: 20, shid: 'SH/24/258147', name: 'Ms.Kanimoyli', age: '31/F	', bGroup: 'O+', relationship: 'CADAVER', organ: 'KIDNEY', committee: '13133/E8/2025', status: 'STABLE', dateOfSurgery: '04/09/2025', dateOfDischarge: 'On Treatment' },
+        { id: 20, shid: 'SH/24/258147', name: 'Ms.Kanimoyli', age: '31/F	', bGroup: 'O+', relationship: 'CADAVER', organ: 'KIDNEY', committee: '13133/E8/2025', status: 'STABLE', dateOfSurgery: '04/09/2025', dateOfDischarge: 'On Treatment' },
 
-         { id: 21, shid: 'SH/24/292912', name: 'Mr.Vellaichamy', age: '53/M	', bGroup: 'O+', relationship: 'Mother', organ: 'KIDNEY', committee: '14929/E8/2025', status: 'STABLE', dateOfSurgery: '11/09/2025', dateOfDischarge: 'On Treatment' },
+        { id: 21, shid: 'SH/24/292912', name: 'Mr.Vellaichamy', age: '53/M	', bGroup: 'O+', relationship: 'Mother', organ: 'KIDNEY', committee: '14929/E8/2025', status: 'STABLE', dateOfSurgery: '11/09/2025', dateOfDischarge: 'On Treatment' },
 
       ]
     },
@@ -90,12 +93,17 @@ const DonorDataTable = () => {
     if (selectedYear === 'All') {
       return Object.values(donorData).flatMap((yearData) => yearData.donors);
     }
-
     return donorData[selectedYear]?.donors || [];
   };
 
   const filteredDonors = getFilteredDonors();
   const availableYears = Object.keys(donorData);
+
+  // Pagination logic
+  const indexOfLastDonor = currentPage * donorsPerPage;
+  const indexOfFirstDonor = indexOfLastDonor - donorsPerPage;
+  const currentDonors = filteredDonors.slice(indexOfFirstDonor, indexOfLastDonor);
+  const totalPages = Math.ceil(filteredDonors.length / donorsPerPage);
 
   const handleViewDonor = (donor) => {
     setSelectedDonor(donor);
@@ -107,43 +115,42 @@ const DonorDataTable = () => {
     setSelectedDonor(null);
   };
 
-
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   return (
-    <div className="p-4 md:p-0  min-h-screen my-16">
-      <div className=" rounded-lg  overflow-hidden">
+    <div className="p-4 md:p-0 min-h-screen my-16">
+      <div className="rounded-lg overflow-hidden">
         {/* Header */}
-        <div className=" text-black ">
-          <div className="flex justify-between items-center pb-8">
-            <h1 className="text-[24px]">Donor List</h1>
-            <div className="flex gap-4">
-              {/* Year Dropdown */}
-              <div className="relative ">
-                <select
-                  value={selectedYear}
-                  onChange={(e) => {
-                    setSelectedYear(e.target.value);
-                  }}
-                   className="appearance-none bg-white text-black px-3 md:px-4 py-2 pr-8 rounded-md border border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-800"
-                >
-                  <option value="All">All</option>
-                  {availableYears.map((year) => (
-                    <option key={year} value={year}>
-                      {year}
-                    </option>
-                  ))}
-                </select>
-                <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 pointer-events-none" />
-              </div>
-
+        <div className="text-black flex justify-between items-center pb-4">
+          <h1 className="text-[24px] font-bold">Donor List</h1>
+          <div className="flex gap-4">
+            <div className="relative">
+              <select
+                value={selectedYear}
+                onChange={(e) => {
+                  setSelectedYear(e.target.value);
+                  setCurrentPage(1); // reset page when year changes
+                }}
+                className="appearance-none bg-white text-black px-3 md:px-4 py-2 pr-8 rounded-md  "
+              >
+                <option value="All">All</option>
+                {availableYears.map((year) => (
+                  <option key={year} value={year}>
+                    {year}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 pointer-events-none" />
             </div>
           </div>
         </div>
 
         {/* Table */}
-        <div className="overflow-x-auto w-full scrollbar-hide">
+        <div className="overflow-x-auto overflow-y-auto w-full scrollbar-hide">
           <table className="min-w-[1200px] w-full table-auto">
-            <thead className="bg-blue-900 ">
+            <thead className="bg-[#2B3990]">
               <tr>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-white uppercase tracking-wider">S.no</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-white uppercase tracking-wider">R/SHID</th>
@@ -159,10 +166,10 @@ const DonorDataTable = () => {
                 <th className="px-4 py-3 text-left text-xs font-semibold text-white uppercase tracking-wider">Action</th>
               </tr>
             </thead>
-            <tbody className="bg-white divide-y divide-blue-200">
-              {filteredDonors.map((donor, index) => (
+            <tbody className="bg-white divide-y divide-blue-100">
+              {currentDonors.map((donor, index) => (
                 <tr key={`${donor.shid}-${index}`} className="hover:bg-blue-50 transition-colors duration-150">
-                  <td className="px-4 py-3 text-sm text-black-900">{String(index + 1).padStart(2, '0')}</td>
+                  <td className="px-4 py-3 text-sm text-black-900">{String(indexOfFirstDonor + index + 1).padStart(2, '0')}</td>
                   <td className="px-4 py-3 text-sm text-black-900 font-medium">{donor.shid}</td>
                   <td className="px-4 py-3 text-sm text-black-900 font-medium">{donor.name}</td>
                   <td className="px-4 py-3 text-sm text-black-600">{donor.age}</td>
@@ -188,14 +195,27 @@ const DonorDataTable = () => {
             </tbody>
           </table>
         </div>
+
+
+        {/* Pagination */}
+        <div className="flex justify-center items-center gap-2 mt-4 flex-wrap">
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i}
+              onClick={() => handlePageChange(i + 1)}
+              className={`px-3 py-1 rounded-md border ${currentPage === i + 1 ? 'bg-blue-900 text-white' : 'bg-white text-blue-900 border-blue-900'
+                }`}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Modal */}
       {isModalOpen && selectedDonor && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg w-full max-w-md mx-2 sm:mx-4">
-
-            {/* Modal Header */}
             <div className="flex justify-between items-center p-4 border-b border-gray-200">
               <h2 className="text-lg font-semibold text-gray-800">View Donor</h2>
               <button
@@ -205,8 +225,6 @@ const DonorDataTable = () => {
                 <X className="w-4 h-4 text-gray-600" />
               </button>
             </div>
-
-            {/* Modal Content - 2 column layout */}
             <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <div className="text-sm font-medium text-gray-900 mb-2">Donor ID</div>
@@ -228,7 +246,6 @@ const DonorDataTable = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };

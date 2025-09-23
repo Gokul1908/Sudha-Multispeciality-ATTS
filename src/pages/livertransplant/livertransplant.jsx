@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/liver-transplant.webp";
 import Faculties from '@/components/renalfaculties';
+import LiverFaculties from '@/components/liverfaculties';
 
 import Clinic from "@/assets/common/general-consultation.webp";
 import Image from "next/image";
@@ -265,7 +266,20 @@ function LiverTransplant() {
         </div>
       </section > */}
 
-      <section className="max-w-7xl mx-auto  md:px-0 px-4">
+      <section className="max-w-7xl mx-auto  md:px-0 px-4 py-16 pb-0">
+        <div className="flex justify-center">
+          <h6 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
+            Our Medical Team
+          </h6>
+        </div>
+        <h2 className="text-center text-[30px]  mt-4 mb-8">
+          Our Transplant Team
+        </h2>
+
+        <LiverFaculties />
+      </section >
+
+      <section className="max-w-7xl mx-auto  md:px-0 px-4 py-16">
         <h2 className="text-center text-[30px]  mt-4 mb-8">
           Our Transplant Co-Ordinators
         </h2>

@@ -65,28 +65,28 @@ export default function Sliderdoctor() {
     <section className="max-w-7xl mx-auto pt-16 pb-20 px-4 md:px-6 lg:px-8">
      
       <div className="flex justify-center">
-        <h2 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
+        <h6 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
           Our Medical Team
-        </h2>
+        </h6>
       </div>
 
-      <h1 className="text-center text-[30px] text-black mt-4 ">
+      <h2 className="text-center text-[30px] text-black mt-4 ">
         Our Transplant Team
-      </h1>
+      </h2>
 
       
       <div className="relative mt-10">
         <Slider {...settings}>
           {doctorsDatarenal.map((doc, index) => (
             <div key={index} className="px-2">
-              <div className="bg-white h-[480px] md:h-[500px] max-w-[300px] mx-auto rounded-2xl text-start flex flex-col overflow-hidden ">
+              <div className="bg-white h-[450px] max-w-[300px] mx-auto rounded-2xl text-start flex flex-col overflow-hidden ">
                 {/* Doctor Image */}
                 <Image
                   src={doc.image}
                   alt={doc.name}
                   width={300}
                   height={300}
-                  className="w-full h-[260px] object-cover rounded-t-2xl"
+                  className="w-full h-[280px] object-cover rounded-t-2xl"
                 />
 
                 {/* Doctor Content */}
@@ -100,12 +100,12 @@ export default function Sliderdoctor() {
                   </div>
 
                   {/* CTA */}
-                  <Link
+                  {/* <Link
                     href={`/doctor-detail/${doc.id}`}
                     className="btn-diagonal-outline px-6 sm:px-8 w-full mt-6 flex items-center justify-center gap-2 text-sm sm:text-base"
                   >
                     View Profile <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
