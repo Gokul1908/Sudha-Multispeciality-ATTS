@@ -87,9 +87,9 @@ function Dentistryandoralsurgery() {
               className="flex justify-start"
             >
               <Link
-                href="#"
+                href="#contactus"
                 className="btn-white ">
-                Book an Appointment <ArrowUpRight className="w-5 h-5" />
+                Book an Appointment <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </motion.div>
           </div>
