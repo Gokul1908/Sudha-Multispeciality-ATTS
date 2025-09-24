@@ -273,21 +273,24 @@ const Healthpackage = () => {
             title: "Comprehensive Health Checkup - Rs. 4000/-",
             testCount: "13",
             leftColumn: [
-                "CBC",
-                "RFT",
+                "CBC ",
+                "RFT ",
                 "LFT",
                 "FBS",
                 "PPBS",
                 "TSH",
                 "Lipid Profile",
+                "Echo ",
+
             ],
             rightColumn: [
+                "TMT ",
                 "PFT",
                 "HbA1C",
                 "USG Abdomen",
                 "Chest X-ray",
                 "Eye Checkup",
-                "Diet COunseling",
+                "Diet Counseling",
                 "Dental Opinion & Specialist Opinion",
             ]
         },

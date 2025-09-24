@@ -147,7 +147,7 @@ const tabs = [
           Continuous surveillance and antimicrobial resistance monitoring help clinicians choose the most effective therapy, reducing complications and
           hospital-acquired infections.
         </p>
-        <ul className="flex flex-col list-none space-y-4 mt-4">
+        {/* <ul className="flex flex-col list-none space-y-4 mt-4">
           {checklist.map((item, index) => (
             <li key={index} className="flex items-start gap-2 text-[#5E566A] font-semibold text-sm">
               <Image
@@ -159,7 +159,7 @@ const tabs = [
               <span>{item}</span>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     ),
   },
@@ -656,12 +656,14 @@ function Laboratory() {
               Sudha Laboratory
             </h6>
             <h2 className="text-[30px] mb-4">
-              Laboratory Overview
+              Sudha Hospital Laboratory
             </h2>
+            <p className="mb-3">
+              The Sudha Hospital Laboratory is a modern laboratory facility in Erode, equipped with advanced diagnostic technologies to ensure precision and reliability in every test. Offering comprehensive laboratory facilities at an affordable cost, the lab operates round the clock to support all clinical departments with timely reports and accurate results.
+            </p>
             <p className="">
-              The Laboratory Services at Sudha Multispeciality Hospital are equipped with advanced diagnostic technologies to ensure precision and reliability in every test.
-              Our lab operates round the clock, supporting all clinical departments with timely reports and accurate results. From routine investigations to complex diagnostic
-              procedures, we maintain high standards of hygiene, accuracy, and efficiency. All tests are conducted by trained specialists, ensuring the best diagnostic outcomes for patient care.
+              From routine investigations to complex diagnostic procedures, every test is conducted by trained specialists, maintaining high standards of hygiene, accuracy, and efficiency. The Sudha Hospital Laboratory ensures the best diagnostic outcomes, supporting quality patient care across all specialties. 
+
             </p>
 
           </motion.div>

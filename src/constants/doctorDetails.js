@@ -1,14 +1,14 @@
 import Kandasamy from "@/assets/home/doc/kandhasami.webp";
 import Sudhakar from "@/assets/home/doc/sudhakar.webp";
-import Gopinath from "@/assets/home/doc/gopinath.webp";
-import Mohan from "@/assets/home/doc/mohan.webp";
-import Vikram from "@/assets/home/doc/vikram.webp";
+import Gopinath from "@/assets/home/doc/new/gobinath.webp";
+import Mohan from "@/assets/home/doc/new/mohan.webp";
+import Vikram from "@/assets/home/doc/new/vikramraj.webp";
 import Nagendran from "@/assets/home/doc/nagendran.webp";
 import Balamurugan from "@/assets/home/doc/male-dummy.png";
-import Gnanasekaran from "@/assets/home/doc/ganasekaran.jpg";
+import Gnanasekaran from "@/assets/home/doc/new/ganasekaran.webp";
 import Minnathulla from "@/assets/home/doc/minnathula.jpg";
 
-import Senthur from "@/assets/home/doc/senthur.webp";
+import Senthur from "@/assets/home/doc/new/senthur.webp";
 import Sakthi from "@/assets/home/doc/sakthi.jpg";
 import Lakshmanan from "@/assets/home/doc/lakshmanan.jpg";
 import Kamall from "@/assets/home/doc/kamall.png";
@@ -16,10 +16,10 @@ import Krishna from "@/assets/home/doc/male-dummy.png";
 import Thriuvenkata from "@/assets/home/doc/male-dummy.png";
 import Sathiya from "@/assets/fellownationalboard/user-dummy.avif";
 
-import Duraikannan from "@/assets/home/doc/duraikannan.webp";
+import Duraikannan from "@/assets/home/doc/new/duraikannan.webp";
 import Sangeeth from "@/assets/home/doc/sangeeth.webp";
-import Renuka from "@/assets/home/doc/renuka.webp";
-import Subhashree from "@/assets/home/doc/subhashree.webp";
+import Renuka from "@/assets/home/doc/new/renuka.webp";
+import Subhashree from "@/assets/home/doc/new/subhashree.webp";
 import Ganesha from "@/assets/home/doc/ganesha.webp";
 import Sathishkumar from "@/assets/home/doc/sathishkumar.webp";
 import Sathishkumar1 from "@/assets/home/doc/sathishkumar1.webp";
@@ -27,13 +27,13 @@ import Bhuvaneswaran from "@/assets/home/doc/bhuvaneswaran.webp";
 import Murali from "@/assets/home/doc/murali.webp";
 import Vanitha from "@/assets/home/doc/vanitha.webp";
 import Deepika from "@/assets/home/doc/deepika.webp";
-import Gowrishankar from "@/assets/home/doc/gowrishankar.webp";
-import Rangesh from "@/assets/home/doc/rangesh.webp";
-import Anand from "@/assets/home/doc/anand.webp";
-import Sugeshwaran from "@/assets/home/doc/sugeshwaran.jpg";
+import Gowrishankar from "@/assets/home/doc/new/gowrishankar.webp";
+import Rangesh from "@/assets/home/doc/new/rangesh.webp";
+import Anand from "@/assets/home/doc/new/anand.webp";
+import Sugeshwaran from "@/assets/home/doc/new/sugeshwaran.webp";
 import Prabakaran from "@/assets/home/doc/prabakaran.webp";
 import Roopak from "@/assets/home/doc/roopak.webp";
-import Prathap from "@/assets/home/doc/prathap.jpg";
+import Prathap from "@/assets/home/doc/new/prathap.webp";
 import Praveen from "@/assets/home/doc/praveen.webp";
 import Rajasekar from "@/assets/home/doc/rajasekar.webp";
 
@@ -62,13 +62,13 @@ import Sharath from "../assets/specialites/dental/sharath-asokan.webp";
 import Chakravarthi from "../assets/specialites/dermatology/chakravarthi.webp";
 
 import Kavin from "../assets/specialites/ent/kavin-kumar.webp";
-import Subhashree1 from "../assets/specialites/radiology/subhashree.webp";
-import Thirunavukarasu from "../assets/specialites/radiology/thirunavukarasu.webp";
+import Subhashree1 from "@/assets/home/doc/new/subhashree.webp";
+import Thirunavukarasu from "@/assets/home/doc/new/thirunavukarasu.webp";
 
 import Sathish from "../assets/specialites/generalmedicine/sathish.jpg";
-import Attiyanan from "../assets/specialites/orthopaedic/attiyanan.webp";
+import Attiyanan from "@/assets/home/doc/new/attiyanan.webp";
 
-import Janarthanan from "../assets/specialites/orthopaedic/janarthanan.webp";
+import Janarthanan from "@/assets/home/doc/new/janarthanan.webp";
 
 
 

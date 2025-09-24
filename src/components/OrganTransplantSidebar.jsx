@@ -13,13 +13,13 @@ import "./bookappointment.css";
 const rightbar = [
   {
     head: "Renal Transplant",
-    label: "Leading You to a Healthier Tomorrow.",
+    label: "Expert Renal Transplant ensuring healthier kidney function",
     image: sidebar1,
     link: "/facilities/organ-transplant/renal-transplant",
   },
   {
     head: "Liver Transplant",
-    label: "Leading Excellence in Liver Transplantation",
+    label: "Transforming lives with safe, advanced Liver Transplant.",
     image: sidebar2,
     link: "/facilities/organ-transplant/liver-transplant",
   },
@@ -66,7 +66,7 @@ const OrganTransplantSidebar = () => {
 
           <div>
             <h2 className="text-[30px] pb-4">
-              Advanced Allied Healthcare for Complete Recovery
+              Comprehensive Organ Transplant Services
             </h2>
             <p className="mb-4">
               At Sudha Multispeciality Hospital, our Allied Health Care Services

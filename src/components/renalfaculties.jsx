@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import Senthur from "@/assets/home/doc/senthur.webp";
+import Senthur from "@/assets/home/doc/new/senthur.webp";
 import Chitra from "@/assets/renal/chitra.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 

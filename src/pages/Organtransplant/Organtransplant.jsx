@@ -241,7 +241,7 @@ const OrganTransplant = () => {
               transition={{ duration: 0.6 }}
               className="text-white mb-4"
             >
-              Comprehensive Support for Complete Recovery
+              Advanced Organ Transplant Care at Sudha Multispeciality Hospital.
             </motion.p>
 
             {/* Button */}

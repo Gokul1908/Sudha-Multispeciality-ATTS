@@ -46,7 +46,7 @@ const hospitalscards = [
         icon: hospitalTwo,
     },
     {
-        number: <h3 className="text-[48px] text-[#2B3990]">24+</h3>,
+        number: <h3 className="text-[48px] text-[#2B3990]">30+</h3>,
         title: <p className="text-md font-bold text-black">Departments</p>,
         link: "/specialities",
         icon: hospitalThree,

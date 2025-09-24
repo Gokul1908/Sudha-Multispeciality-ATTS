@@ -559,8 +559,7 @@ function Home() {
               </p>
 
               <p className=" mb-6">
-                This unwavering allegiance to healthcare has made us the trusted
-                choice and the best hospital in Erode.
+                This unwavering allegiance to healthcare has made us the trusted choice and the best multispeciality hospital in Erode.
               </p>
 
               <Link href="/about-us/why-choose-sudha-hospital">

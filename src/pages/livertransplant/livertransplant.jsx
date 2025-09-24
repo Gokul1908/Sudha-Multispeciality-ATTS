@@ -336,12 +336,12 @@ function LiverTransplant() {
             className="rounded-2xl"
           />
           <div className="absolute inset-0 bg-opacity-80 rounded-2xl flex flex-col justify-end p-6 text-white">
-            <h3 className="text-[24px] font-semibold mb-2">
-              Virtual Care from Every Where
+             <h3 className="text-[24px] font-semibold mb-2">
+              Advanced Care for Every Health Need 
+
             </h3>
             <p className="text-white text-sm mb-4">
-              Experience the great virtual care from anywhere and connect with
-              medical professionals for expert guidance.
+              Sudha Multispeciality Hospital offers comprehensive healthcare services to every health concern at every age.
             </p>
             <Link href="/contact-us" className="btn-white flex items-center gap-2 bg-white text-[#2B3990] font-semibold text-sm pt-3 pb-3 pr-7 pl-7 rounded-full w-fit hover:-translate-y-[3px] transition-transform duration-200">
               Call for More Information <ArrowUpRight className="w-5 h-5" />

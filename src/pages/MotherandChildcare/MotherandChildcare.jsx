@@ -257,7 +257,7 @@ const ourcommitment = [
   {
     title: "Personalized Care For Every Patient",
     content:
-      "We believe care is not complete without compassion. At Sudha, we support you with empathy at every step. ",
+      "At Sudha, we understand your concerns and personalise treatments to suit your healthcare needs. ",
   },
 ];
 
@@ -771,7 +771,8 @@ function MotherandChildcare() {
               Joyful as It Should Be
             </h2>
             <p className="mb-4">
-              At the best Mother and Child Care Hospital in Erode, we’re committed to turning your hopes into happiness with compassionate, personalised care at every step. From first scan to postnatal support, we walk with you through every stage of your journey, ensuring it’s filled with trust, comfort, and joy.
+             As the best Mother and Child Care Hospital in Erode, we’re committed to turning your hopes into happiness with compassionate, personalised care at every step. From first scan to postnatal support, we walk with you through every stage of your journey, ensuring it’s filled with trust, comfort, and joy. 
+
             </p>
 
             {/* Accordion */}
@@ -1268,10 +1269,10 @@ function MotherandChildcare() {
           {/* Heading */}
           <div className="text-center">
             <div className="px-5 py-2 bg-white text-primary-blue inline-block font-semibold rounded-full ">
-              <p className="text-[#2A3D90]">Sudha Care</p>
+              <p className="text-[#2A3D90]">Our Doctors</p>
             </div>
             <h2 className="text-[30px] text-center text-[#2A3D90] mt-4 mb-6">
-              Dedicated to your fertility <br /> journey success
+             Dedicated Doctors To Help You in <br/>Every Healthcare Need. 
             </h2>
           </div>
 

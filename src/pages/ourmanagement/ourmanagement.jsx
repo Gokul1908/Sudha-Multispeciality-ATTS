@@ -207,7 +207,7 @@ const Ourmanagement = () => {
         className="py-16"
       >
         <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
-          Trusted Healthcare Partners + Trusted Healthcare Partners
+          Trusted Healthcare Partners Trusted Healthcare Partners
         </span>
       </Marquee>
     </div>

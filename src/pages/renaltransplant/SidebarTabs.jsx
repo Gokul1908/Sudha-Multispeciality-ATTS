@@ -385,7 +385,7 @@ export default function SidebarTabs() {
                     <div className="md:w-1/2">
 
                       <p className="">
-                        At Sudha Multispeciality Hospital, our dedicated renal transplant unit is equipped to deliver comprehensive, patient-centric care before, during, and after the procedure. Our transplant care team includes nurses specifically trained in post-operative recovery to ensure every recipient gets the attentive and expert support needed for a successful recovery. We specialize in various types of kidney transplants using advanced protocols and proven methodologies.
+                       At Sudha Multispeciality Hospital, the best hospital for renal transplant in Erode, our dedicated renal transplant unit is equipped to deliver comprehensive, patient-centric care before, during, and after the procedure. Our transplant care team includes nurses specifically trained in post-operative recovery to ensure every recipient gets the attentive and expert support needed for a successful recovery. We specialize in various types of kidney transplants using advanced protocols and proven methodologies. 
                       </p>
                     </div>
                     <div className="md:w-1/2 flex justify-center">

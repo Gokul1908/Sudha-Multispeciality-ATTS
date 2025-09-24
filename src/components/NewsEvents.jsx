@@ -20,8 +20,7 @@ export default function NewsEvents() {
           News & Events
         </span>
         <h2 className="text-center text-[30px] mt-4">
-          Premium Healthcare Services for Every <br />
-          Health Requirement
+          Find All the Latest <br/> News and Event Updates
         </h2>
       </div>
 
