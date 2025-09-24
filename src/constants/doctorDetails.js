@@ -3,30 +3,30 @@ import Sudhakar from "@/assets/home/doc/sudhakar.webp";
 import Gopinath from "@/assets/home/doc/new/gobinath.webp";
 import Mohan from "@/assets/home/doc/new/mohan.webp";
 import Vikram from "@/assets/home/doc/new/vikramraj.webp";
-import Nagendran from "@/assets/home/doc/nagendran.webp";
+import Nagendran from "@/assets/home/doc/new/nagendran.webp";
 import Balamurugan from "@/assets/home/doc/male-dummy.png";
 import Gnanasekaran from "@/assets/home/doc/new/ganasekaran.webp";
-import Minnathulla from "@/assets/home/doc/minnathula.jpg";
+import Minnathulla from "@/assets/home/doc/new/minnathulla.webp";
 
 import Senthur from "@/assets/home/doc/new/senthur.webp";
-import Sakthi from "@/assets/home/doc/sakthi.jpg";
-import Lakshmanan from "@/assets/home/doc/lakshmanan.jpg";
-import Kamall from "@/assets/home/doc/kamall.png";
-import Krishna from "@/assets/home/doc/male-dummy.png";
-import Thriuvenkata from "@/assets/home/doc/male-dummy.png";
+import Sakthi from "@/assets/home/doc/new/sakthi-saravanan.webp";
+import Lakshmanan from "@/assets/home/doc/new/lakshmanan.webp";
+import Kamall from "@/assets/home/doc/new/kamall.webp";
+import Krishna from "@/assets/home/doc/new/krishnakumar.webp";
+import Thriuvenkata from "@/assets/home/doc/new/thiruvenkata-lakshmanan.webp";
 import Sathiya from "@/assets/fellownationalboard/user-dummy.avif";
 
 import Duraikannan from "@/assets/home/doc/new/duraikannan.webp";
-import Sangeeth from "@/assets/home/doc/sangeeth.webp";
+import Sangeeth from "@/assets/home/doc/new/sangeeth.webp";
 import Renuka from "@/assets/home/doc/new/renuka.webp";
 import Subhashree from "@/assets/home/doc/new/subhashree.webp";
-import Ganesha from "@/assets/home/doc/ganesha.webp";
-import Sathishkumar from "@/assets/home/doc/sathishkumar.webp";
-import Sathishkumar1 from "@/assets/home/doc/sathishkumar1.webp";
+import Ganesha from "@/assets/home/doc/new/ganesha-moorthy.webp";
+import Sathishkumar from "@/assets/home/doc/new/g-sathish-kumar.webp";
+import SathishkumarS from "@/assets/home/doc/new/s-satishkumar.webp";
 import Bhuvaneswaran from "@/assets/home/doc/bhuvaneswaran.webp";
 import Murali from "@/assets/home/doc/murali.webp";
-import Vanitha from "@/assets/home/doc/vanitha.webp";
-import Deepika from "@/assets/home/doc/deepika.webp";
+import Vanitha from "@/assets/home/doc/new/vanitha.webp";
+import Deepika from "@/assets/home/doc/new/deepika.webp";
 import Gowrishankar from "@/assets/home/doc/new/gowrishankar.webp";
 import Rangesh from "@/assets/home/doc/new/rangesh.webp";
 import Umashankar from "@/assets/home/doc/new/umashankar.webp";
@@ -37,20 +37,18 @@ import Prabakaran from "@/assets/home/doc/prabakaran.webp";
 import Roopak from "@/assets/home/doc/roopak.webp";
 import Prathap from "@/assets/home/doc/new/prathap.webp";
 import Praveen from "@/assets/home/doc/praveen.webp";
-import Rajasekar from "@/assets/home/doc/rajasekar.webp";
+import Rajasekar from "@/assets/home/doc/new/rajasekar.webp";
 
-import Emptydoctor from "@/assets/home/doc/emptydoctor.webp";
-import Nanthetha from "@/assets/home/doc/nanthetha.webp";
-import Aafiaparveen from "@/assets/home/doc/aafiaparveen.webp";
-import Kavinkumar from "@/assets/home/doc/kavinkumar.webp";
+
+
 
 ///Anaesthesis
-import Nithiyanandhan from "../assets/specialites/Anaesthesia/dr.p.nithiyanandhan.webp";
-import Kumaravel from "../assets/specialites/Anaesthesia/kumaravel-pandian.webp";
-import Amutha from "../assets/specialites/Anaesthesia/dr.v.amutha.webp";
-import Balaji from "../assets/specialites/Anaesthesia/balajimani.webp";
-import Aarthi from "../assets/specialites/Anaesthesia/aarthi.webp";
-import Sountharajan from "../assets/specialites/Anaesthesia/soundhararjan.webp";
+import Nithiyanandhan from "@/assets/home/doc/new/nithiyanandhan.webp";
+import Kumaravel from "@/assets/home/doc/new/kumaravel-pandiyan.webp";
+import Amutha from "@/assets/home/doc/new/amutha.webp";
+import Balaji from "@/assets/home/doc/new/balaji-mani.webp";
+import Aarthi from "@/assets/home/doc/new/aarthi.webp";
+import Sountharajan from "@/assets/home/doc/new/sountharajan.webp";
 
 import Doctor2 from "@/assets/ourmanagement/vice-president.webp";
 import Kandaswami from "../assets/specialites/cardiology/kandhasami.webp";
@@ -58,12 +56,12 @@ import Kandaswami from "../assets/specialites/cardiology/kandhasami.webp";
 import Doctor1 from "@/assets/ourmanagement/president.webp";
 //Cardiology
 // import Rajasekar from "../assets/specialites/cardiology/rajasekar.jpg";
-import Aafia from "../assets/specialites/dental/aafia-parveen.webp";
-import Sharath from "../assets/specialites/dental/sharath-asokan.webp";
+import Aafia from "@/assets/home/doc/new/aafia-parveen.webp";
+import Sharath from "@/assets/home/doc/new/sharath-ashokan.webp";
 
-import Chakravarthi from "../assets/specialites/dermatology/chakravarthi.webp";
+import Chakravarthi from "@/assets/home/doc/new/chakravarthi.webp";
 
-import Kavin from "../assets/specialites/ent/kavin-kumar.webp";
+import Kavin from "@/assets/home/doc/new/kavin-kumar.webp";
 import Subhashree1 from "@/assets/home/doc/new/subhashree.webp";
 import Thirunavukarasu from "@/assets/home/doc/new/thirunavukarasu.webp";
 
@@ -3637,12 +3635,12 @@ export const doctorsDatarenal = [
     speciality: "General Surgery",
     qualification: "General & Laparoscopic Surgeon",
     degrees: "MS,DNB,FMAS (General Surgery)",
-    image: Sathishkumar1,
+    image: SathishkumarS,
     doctordetail: [
       {
         name: "Dr.G.Sathishkumar",
         specialist: "General Surgery",
-        image: Sathishkumar1,
+        image: SathishkumarS,
         menulabel: "MS,DNB,FMAS (General Surgery)",
         role: "General & Laparoscopic Surgeon",
         experience: "33",
