@@ -107,7 +107,7 @@ const Contactus = () => {
               transition={{ duration: 0.6 }}
               className="text-white mb-6"
             >
-              Schedule An Appointment
+              Book Your Appointment in Just One Click
               {/* Expert Hands to Take Care Of You At Every Step */}.
             </motion.p>
 

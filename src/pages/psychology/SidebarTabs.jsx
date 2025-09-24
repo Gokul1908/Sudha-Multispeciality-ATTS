@@ -107,7 +107,8 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-          Depression is more than sadness—it can affect sleep, appetite, and motivation. Our experts offer personalized therapy sessions to help patients understand the roots of depression, cope with triggers, and regain emotional balance.
+          Depression is more than sadness, it can affect sleep, appetite, and motivation. Our experts offer personalized therapy sessions to help patients understand the roots of depression, cope with triggers, and regain emotional balance.
+
         </p>
 
       </div>
@@ -461,14 +462,15 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Comprehensive Psychological Care and Mental Wellness Services
+                    Comprehensive Psychological Care and Mental Wellness Services by the Best Psychologists in 
+                      <span className="text-[#2B3990]"> Erode </span>
                   </h2>
                   <p className="mb-4">
-                    Mental health plays a crucial role in overall well-being, and our Psychology Department is committed to offering compassionate, confidential, and evidence-based care. With experienced psychologists and trained therapists, we address a wide range of psychological concerns in both adults and children.
+                    Mental health plays a crucial role in overall well-being, and our Psychology Department is committed to offering compassionate, confidential, and evidence-based care. As the best multispeciality hospital in Erode for psychology, Sudha Multispeciality hospital is equipped with experienced psychologists and trained therapists, we address a wide range of psychological concerns in both adults and children.
                   </p>
 
                   <p className="mt-4 mb-4">
-                    Whether it’s anxiety, depression, behavioural issues, or stress, our goal is to support patients in understanding and managing their emotions for a healthier, more balanced life. Our services are designed to integrate psychological support within a broader healthcare framework to ensure holistic care.
+                   With the best psychologists in Erode, our hospital treats and supports patients who need mental health assistance. Whether it is anxiety, depression, behavioural issues, or stress, the goal is to help patients understand and manage their emotions for a healthier, more balanced life. Our services are designed to integrate psychological support within a broader healthcare framework, ensuring holistic care.
                   </p>
                 </div>
               </>
