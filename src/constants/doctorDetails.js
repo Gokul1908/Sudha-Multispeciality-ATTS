@@ -29,6 +29,8 @@ import Vanitha from "@/assets/home/doc/vanitha.webp";
 import Deepika from "@/assets/home/doc/deepika.webp";
 import Gowrishankar from "@/assets/home/doc/new/gowrishankar.webp";
 import Rangesh from "@/assets/home/doc/new/rangesh.webp";
+import Umashankar from "@/assets/home/doc/new/umashankar.webp";
+
 import Anand from "@/assets/home/doc/new/anand.webp";
 import Sugeshwaran from "@/assets/home/doc/new/sugeshwaran.webp";
 import Prabakaran from "@/assets/home/doc/prabakaran.webp";
@@ -2198,6 +2200,58 @@ export const doctorsData = [
         image: Gowrishankar,
         menulabel: "DNB .,Consultant Paediatrics",
         role: "Consultant Pediatrics & Neonatology",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+  
+  {
+    id: 46,
+    name: "Dr.Umashankar Palanisamy	",
+    speciality: "Paediatrician",
+    qualification: "Consultant Pediatric Surgeon",
+    degrees: "MBBS., M.S.(Gen. Surgery), M.Ch.(Pediatric Surgery)",
+    image: Umashankar,
+    doctordetail: [
+      {
+        name: "Dr.Umashankar Palanisamy",
+        specialist: "Consultant Pediatric Surgeon",
+        image: Umashankar,
+        menulabel: "MBBS., M.S. (Gen. Surgery), M.Ch.(Pediatric Surgery)",
+        role: "Consultant Pediatric Surgeon",
         experience: "33",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
