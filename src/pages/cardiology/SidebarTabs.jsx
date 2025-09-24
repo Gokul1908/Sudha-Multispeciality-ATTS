@@ -32,16 +32,10 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          A branch of cardiology focused on diagnosing and treating heart and
-          blood vessel disorders in adults. Our expert cardiologists provide
-          comprehensive care for conditions such as congenital heart disease,
-          heart failure, coronary artery disease, valvular heart disease, and
-          arrhythmias.
+          A branch of cardiology focused on diagnosing and treating heart and blood vessel disorders in adults. Our expert cardiologists provide comprehensive care for a range of conditions, including adult congenital heart disease, heart failure, coronary artery disease, valvular heart disease, and arrhythmias.  
         </p>
         <p>
-          Our hospital offers a full range of advanced diagnostics: ECG,
-          Echocardiogram, TMT, Holter Monitoring, Ambulatory BP Monitoring,
-          Tilt Table Testing, Cardiac CT, MRI, and Nuclear Heart Scanning.
+          Our multispeciality hospital offers a complete range of advanced diagnostic tests, including ECG, Echocardiogram, Treadmill Test, Holter Monitoring, Ambulatory Blood Pressure Monitoring, Tilt Table Testing, Cardiac CT, Cardiac MRI, and Nuclear Heart Scanning to ensure the best possible care in adult cardiology. 
         </p>
       </div>
     ),
@@ -51,35 +45,61 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Our Interventional Cardiology Centre is renowned for its Primary
-          Angioplasty Program – the gold standard in heart attack treatment.
-          Coronary angiograms and elective stenting are performed daily with
-          high success rates.
+          Our Interventional Cardiology Centre is renowned for its Primary Angioplasty Program, the gold standard in the treatment of heart attacks. Coronary angiograms and elective coronary artery stenting are performed daily in high volumes by our team of experienced specialists. 
         </p>
 
         <p>
-          We also perform advanced structural interventions like TAVI, BMV,
-          TEVAR, EVAR, renal artery stenting, and subclavian artery stenting.
-          Most patients are discharged within 1–2 days.
+         We also offer advanced structural heart disease interventions, including Transcatheter Aortic Valve Implantation (TAVI), along with other catheter-based procedures such as Balloon Mitral Valvotomy (BMV), Thoracic Endovascular Aortic Repair (TEVAR), Endovascular Aneurysm Repair (EVAR), renal artery stenting, and subclavian artery stenting. These procedures are carried out with high success rates, enabling most patients to return home within a day or two without complications.  
         </p>
 
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-            FFR / iFR
+            Fractional Flow Reserve (FFR) / Instantaneous Wave-Free Ratio (iFR)  
           </h4>
           <p>
-            Used in cath labs to assess coronary artery narrowing and avoid
-            unnecessary stenting.
+           These techniques are used in the cardiac catheterization laboratory to assess the pressure difference across narrowed coronary arteries. They help determine whether a particular narrowing requires stenting, avoiding unnecessary interventions.  
           </p>
         </div>
 
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-            IVUS / OCT
+            Intravascular Ultrasound (IVUS) and Optical Coherence Tomography (OCT)  
           </h4>
           <p>
-            Advanced imaging for precise visualization of blood vessels during
-            angioplasty.
+           These imaging technologies provide clear visualization of the inner walls of blood vessels, allowing accurate identification and assessment of atherosclerotic plaques. They play a crucial role in ensuring high-precision angioplasty.  
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
+            TEVAR – Thoracic Endovascular Aortic Repair 
+          </h4>
+          <p>
+           TEVAR is a minimally invasive percutaneous procedure in which a metal stent is placed across a weakened section (aneurysm) of the thoracic aorta. As it avoids open surgery, patients typically recover faster and are discharged within three to four days.  
+          </p>
+        </div>
+        <div>
+          <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
+            EVAR – Endovascular Aneurysm Repair  
+          </h4>
+          <p>
+           EVAR is a similar percutaneous procedure used to treat aneurysms or dissections in the lower portion of the aorta. It requires no large abdominal incisions and offers shorter procedure times and quicker recovery.  
+          </p>
+        </div>
+        <div>
+          <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
+           TAVI – Transcatheter Aortic Valve Implantation
+          </h4>
+          <p>
+           TAVI is a state-of-the-art procedure where a bioprosthetic valve is placed across the aortic valve using specialised equipment, eliminating the need for open-heart surgery. Patients usually recover well and are discharged within a few days.   
+          </p>
+        </div>
+        <div>
+          <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
+           BMV – Balloon Mitral Valvotomy
+          </h4>
+          <p>
+           BMV is a safe and effective catheter-based procedure for treating severe mitral valve stenosis. Patients are selected based on clinical evaluation and echocardiographic findings. Given the prevalence of rheumatic fever in our country, which can lead to mitral stenosis, BMV offers significant benefits.  
           </p>
         </div>
       </div>
@@ -89,9 +109,7 @@ const accordionData = [
     title: <>Electrophysiology</>,
     content: (
       <p className="text-sm mt-2">
-        Focuses on diagnosing and treating abnormal heart rhythms. We provide
-        3D mapping, RF ablation, pacemaker implantation, ICDs, and cardiac
-        resynchronization therapy, performed by expert electrophysiologists.
+       Cardiac Electrophysiology is a subspecialty of cardiology focused on diagnosing and treating abnormal heart rhythms, whether too fast or too slow. Our Cardiac Electrophysiology centre is well-established and offers advanced treatments, including electrophysiological studies with 3D mapping, radiofrequency ablation, pacemaker implantation, Implantable Cardioverter Defibrillator (ICD), and cardiac resynchronization therapy. These procedures are carried out by highly skilled electrophysiologists to help manage arrhythmias and improve symptoms of heart failure effectively.
       </p>
     ),
   },
@@ -99,9 +117,7 @@ const accordionData = [
     title: <>Paediatric Cardiology</>,
     content: (
       <p className="text-sm mt-2">
-        Specialized care for congenital heart defects, pediatric heart failure,
-        and rhythm disturbances using both interventional and non-invasive
-        methods.
+        Paediatric Cardiology is an emerging subspecialty of cardiology that focuses on diagnosing and managing a wide range of heart conditions in children, including birth defects, heart failure, and rhythm disturbances. As one of the leading Paediatric Cardiology Hospitals, we offer state-of-the-art cardiac care for children through both interventional procedures and non-interventional approaches.
       </p>
     ),
   },
@@ -118,23 +134,27 @@ const accordionData = [
     title: <>Cardiac Rehabilitation</>,
     content: (
       <p className="text-sm mt-2">
-        Supports patients in regaining strength and independence post-surgery
-        with guided exercise and recovery programs.
+        This branch of cardiology provides thorough and essential care through diagnostic services such as electrocardiogram, echocardiogram, treadmill test, Holter monitoring, ambulatory blood pressure monitoring, Dobutamine stress echocardiogram, transesophageal echocardiogram, tilt table testing, and more, all under the expert supervision of qualified cardiologists.  
       </p>
     ),
   },
+  
   {
     title: <>Preventive Cardiology</>,
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Helps reduce heart disease risk by managing diabetes, hypertension,
-          cholesterol, obesity, and family history.
+          Preventive Cardiology focuses on reducing the risk of heart disease before it develops and managing existing risk factors to prevent complications. At Sudha Multispeciality Hospital, we help patients identify and control issues such as high blood pressure, diabetes, high cholesterol, obesity, and a family history of heart problems.
         </p>
+
         <p>
-          Includes personalized diet, exercise, stress management, and regular
-          screenings for long-term heart health.
+         Our expert team offers lifestyle guidance, including personalised diet plans, exercise routines, and stress management support. Regular screenings and heart health check-ups are conducted to ensure early detection and intervention.
         </p>
+
+        <p>
+        Whether you're at risk or recovering from a cardiac event, our preventive care services are designed to support long-term heart health and improve quality of life. Prevention is the first step toward a healthier heart. 
+        </p>
+       
       </div>
     ),
   },
@@ -382,19 +402,15 @@ export default function SidebarTabs() {
                 />
                 <div className="mt-6 space-y-2">
                   <h2 className="text-[24px]">
-                    Best Cardiology Hospital in{" "}
+                    Best Cardiology Hospital in {" "}
                     <span className="text-[#2B3990]">Erode</span>
+                    for The Best Heart Care
                   </h2>
                   <p>
-                    The cardiology department at Sudha Multispeciality Hospital
-                    has treated lakhs of patients since being founded by
-                    Dr. D. Kandaswamy. With the best cardiologists in Erode, we
-                    remain a pioneer in heart care.
+                    The cardiology department of Sudha Multispeciality Hospital is well recognised for its trusted name in diagnosing and treating heart-related conditions. Beginning its journey as a hospital focusing on cardiology by Dr.D.Kandaswamy, the cardiology department has helped lakhs of patients recover from heart conditions. Backed by the best heart specialists in Erode and highly skilled surgeons, Sudha Multispeciality Hospitals remains the best multispeciality hospital and the leading cardiology hospital by providing the best treatment for heart and related issues in Erode.
                   </p>
                   <p>
-                    We specialize in everything from pediatric to adult heart
-                    diseases, providing world-class care backed by
-                    international facilities.
+                    We are one of the best heart care hospitals in Erode, with the best cardiologists. We are driven by the motto to serve people with heartfelt care, offering the best healthcare solutions with the best doctors and international facilities. We are specialised in treating from paediatric heart conditions to coronary heart diseases and other heart-related conditions. Our dedication and excellence have made us a pioneer in cardiology healthcare services.
                   </p>
                 </div>
               </>
@@ -406,7 +422,8 @@ export default function SidebarTabs() {
                 <ul className="space-y-3 mt-3 text-[#5E566A] text-[15px] font-semibold">
                   <li>
                     <span className="inline-block w-2 h-2 mr-2 rounded bg-[#2B3990]" />
-                    World-class ICCUs Cardiac catheterization laboratories with advanced facilities and equipment for 24/7 emergency cardiovascular procedures.
+                    World-class ICCUs
+                    Cardiac catheterization laboratories with advanced facilities and equipment for 24/7 emergency cardiovascular procedures.
                   </li>
                   <li>
                     <span className="inline-block w-2 h-2 mr-2 rounded bg-[#2B3990]" />

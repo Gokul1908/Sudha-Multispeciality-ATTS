@@ -181,7 +181,7 @@ const Centreofexcellence = () => {
                             transition={{ duration: 0.4 }}
                             className=" mb-4 text-white"
                         >
-                            Trust Us to Guide Your Wellness Journey
+                            Transforming healthcare through excellence.
                         </motion.p>
                     </div>
 
