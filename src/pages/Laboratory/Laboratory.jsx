@@ -444,7 +444,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital is known for its modern laboratory facility in Erode. The hospital ensures accurate lab results with the support of advanced technology and trained professionals.
+          Sudha Multispeciality Hospital is known for its modern laboratory facility in Erode. The hospital ensures accurate lab results with the support of advanced technology and trained professionals. 
         </p>
 
 
@@ -463,7 +463,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Sudha Multispeciality Hospital in Erode offers a wide range of laboratory services including biochemistry, haematology, microbiology, pathology, and preventive health check-ups, all supported by advanced technology and expert staff.
+         Sudha Multispeciality Hospital in Erode offers a wide range of laboratory services including biochemistry, haematology, microbiology, pathology, and preventive health check-ups, all supported by advanced technology and expert staff. 
         </p>
 
 
@@ -482,7 +482,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          The master health check-up at Sudha Multispeciality Hospital in Erode includes blood tests, urine tests, imaging scans, and other essential screenings designed to detect health issues early and promote preventive care.
+          The master health check-up at Sudha Multispeciality Hospital in Erode includes blood tests, urine tests, imaging scans, and other essential screenings designed to detect health issues early and promote preventive care. 
         </p>
 
 
@@ -501,7 +501,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital provides laboratory facilities at affordable cost in Erode while maintaining accuracy and high-quality standards in all its reports.
+          Sudha Multispeciality Hospital provides laboratory facilities at affordable cost in Erode while maintaining accuracy and high-quality standards in all its reports. 
         </p>
 
       </div>
@@ -538,7 +538,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital in Erode provides 24/7 laboratory services, including emergency support, to ensure timely care whenever needed.
+          Sudha Multispeciality Hospital in Erode provides 24/7 laboratory services, including emergency support, to ensure timely care whenever needed. 
         </p>
 
       </div>
@@ -556,7 +556,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          All laboratory tests at Sudha Multispeciality Hospital in Erode are carried out with strict quality protocols, ensuring accurate and reliable results for diagnosis and treatment.
+          All laboratory tests at Sudha Multispeciality Hospital in Erode are carried out with strict quality protocols, ensuring accurate and reliable results for diagnosis and treatment. 
         </p>
 
       </div>

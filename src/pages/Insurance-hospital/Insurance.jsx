@@ -33,20 +33,20 @@ import Breadcrumb from "@/components/Breadcrumb";
 const faqData = [
   {
     question: "Does Sudha Hospital cover insurance?",
-    answer: "Sudha Multispeciality Hospital in Erode offers insurance facilities. Patients can avail cashless or reimbursement options depending on their eligibility and policy terms. The insurance desk at the hospital will assist with the entire insurance process.",
+    answer: "Sudha Multispeciality Hospital in Erode offers insurance facilities. Patients can avail cashless or reimbursement options depending on their eligibility and policy terms. The insurance desk at the hospital will assist with the entire insurance process. ",
   },
   {
     question: "What insurance plans are accepted at Sudha Hospitals?",
-    answer: "Sudha Multispeciality Hospital accepts a variety of national and private health insurance plans. The staff of insurance desk at the hospital will provide detailed guidance on eligibility and coverage. ",
+    answer: "Sudha Multispeciality Hospital accepts a variety of national and private health insurance plans. The staff of insurance desk at the hospital will provide detailed guidance on eligibility and coverage.  ",
   },
 
   {
-    question: "What is the time limit for health insurance claims? ",
+    question: "What is the time limit for health insurance claims?  ",
     answer: "The time limit for submitting claims depends on the terms of the individual insurance policy. Patients are advised to contact the insurance provider for specific claim timelines. ",
   },
   {
     question: "How to use health insurance in a hospital?  ",
-    answer: "To use health insurance, patients must present valid insurance documents at the hospital. Sudha Multispeciality Hospital’s insurance desk assists with the process for both cashless and reimbursement options.  ",
+    answer: "To use health insurance, patients must present valid insurance documents at the hospital. Sudha Multispeciality Hospital’s insurance desk assists with the process for both cashless and reimbursement options. ",
   },
   {
     question: "Is health insurance valid in all hospitals? ",
@@ -54,7 +54,7 @@ const faqData = [
   },
   {
     question: "Which illness is not covered by health insurance? ",
-    answer: "Some pre-existing conditions, cosmetic procedures, and treatments not mentioned in the policy may not be covered. For detailed information, patients should consult the hospital’s insurance desk or their insurance provider.  ",
+    answer: "Some pre-existing conditions, cosmetic procedures, and treatments not mentioned in the policy may not be covered. For detailed information, patients should consult the hospital’s insurance desk or their insurance provider.   ",
   },
 
 
@@ -303,8 +303,8 @@ const Insurance = () => {
                     key={label}
                     onClick={() => setActive(label)}
                     className={`px-4 py-2 text-sm rounded-xl font-semibold whitespace-nowrap transition ${active === label
-                        ? "bg-[#2B3990] text-white"
-                        : "text-black hover:bg-blue-100"
+                      ? "bg-[#2B3990] text-white"
+                      : "text-black hover:bg-blue-100"
                       }`}
                   >
                     {label}
