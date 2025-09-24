@@ -240,7 +240,7 @@ const Fellownationalboard = () => {
                             transition={{ duration: 0.6 }}
                             className="mb-6 text-white"
                         >
-                            Offering the best medical courses in Erode
+                            Offering the best medical courses in Erode 
                         </motion.p>
 
                         <motion.div className='mt-12'
@@ -317,16 +317,16 @@ const Fellownationalboard = () => {
                         </h5>
 
                         <h2 className="text-[30px] mt-2 ">
-                            Reproductive Medicine
+                           Reproductive Medicine – NBMS Accredited Fellowship Program (2021) 
                         </h2>
                         <p className="mb-4 mt-4">
-                            The Fellow of National Board (FNB) is a prestigious post-doctoral qualification awarded by the National Board of Examinations in Medical Sciences (NBEMS),
-                            Government of India. It is offered in approved super-specialties and sub-specialties to promote advanced clinical expertise and academic excellence.
+                            Sudha Fertility Centre, a part of the renowned Sudha Hospitals network and a pioneer in fertility and maternal healthcare, offers the prestigious Fellow of National Board (FNB) programme in Reproductive Medicine. This super-specialty fellowship is fully accredited by the National Board of Examination in Medical Specialities (NBEMS) since 2021. 
                         </p>
                         <p className="mb-4 mt-4">
-                            Sudha Multispeciality Hospital, accredited by NBEMS, offers structured training for FNB trainees with expert faculty support and access to advanced
-                            medical facilities. The FNB qualification is recognized by the Government of India, included in the First Schedule of the IMC Act, 1956, and considered
-                            equivalent to DM/MCh degrees—eligible for specialist and faculty roles across hospitals and teaching institutions nationwide.
+                            Our three-year comprehensive training programme is specially designed for NEET PG-qualified doctors, providing advanced clinical exposure, rigorous research opportunities, and extensive hands-on experience. Under the mentorship of highly experienced specialists, fellows gain in-depth knowledge and practical skills essential for excellence in reproductive and maternal medicine. 
+                        </p>
+                        <p className="mb-4 mt-4">
+                           To support our trainees, we offer free accommodation throughout the fellowship duration, ensuring a focused and comfortable learning environment. Sudha Fertility Centre is committed to shaping the next generation of leaders in reproductive healthcare with world-class education and patient care standards. 
                         </p>
                     </div>
 
