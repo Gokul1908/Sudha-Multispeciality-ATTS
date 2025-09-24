@@ -28,7 +28,7 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">Which is the Best Emergency Care Hospital in Erode? </div>
+        <div className="flex gap-3">Which is the Best Emergency Care Hospital in Erode?  </div>
       </>
     ),
     content: (
@@ -46,7 +46,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>You should call emergency services immediately if someone experiences chest pain, severe injury, breathing difficulty, unconsciousness, stroke symptoms, or heavy bleeding. Quick action in such cases saves lives. Sudha Multispeciality Hospital, the best emergency care hospital in Erode, provides 24/7 emergency response with highly trained doctors and nurses specializing in critical care and trauma care.</p>,
+    content: <p>You should call emergency services immediately if someone experiences chest pain, severe injury, breathing difficulty, unconsciousness, stroke symptoms, or heavy bleeding. Quick action in such cases saves lives. Sudha Multispeciality Hospital, the best emergency care hospital in Erode, provides 24/7 emergency response with highly trained doctors and nurses specializing in critical care and trauma care. </p>,
   },
   {
     title: (
@@ -57,7 +57,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Cardiopulmonary Resuscitation (CPR) involves chest compressions and rescue breaths to maintain blood flow and oxygen supply when someone’s heart has stopped. The standard method includes 30 compressions followed by 2 rescue breaths, repeated until help arrives. At Sudha Multispeciality Hospital, the emergency team is trained in advanced life support and provides immediate CPR and critical care for cardiac arrest and trauma patients. </p>,
+    content: <p>Cardiopulmonary Resuscitation (CPR) involves chest compressions and rescue breaths to maintain blood flow and oxygen supply when someone’s heart has stopped. The standard method includes 30 compressions followed by 2 rescue breaths, repeated until help arrives. At Sudha Multispeciality Hospital, the emergency team is trained in advanced life support and provides immediate CPR and critical care for cardiac arrest and trauma patients.  </p>,
   },
   {
     title: (
@@ -68,7 +68,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>During emergencies such as cardiac arrest, drowning, or sudden collapse, CPR is the first step in keeping the brain and vital organs alive until advanced treatment is given. Performing CPR quickly and correctly increases survival chances. Sudha Multispeciality Hospital, the best emergency care hospital in Erode, has specialists trained in advanced CPR techniques as part of their emergency and trauma care services. </p>,
+    content: <p>During emergencies such as cardiac arrest, drowning, or sudden collapse, CPR is the first step in keeping the brain and vital organs alive until advanced treatment is given. Performing CPR quickly and correctly increases survival chances. Sudha Multispeciality Hospital, the best emergency care hospital in Erode, has specialists trained in advanced CPR techniques as part of their emergency and trauma care services.  </p>,
   },
   {
     title: (
@@ -79,7 +79,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Emergency care begins with assessing the patient’s condition, securing the airway, supporting breathing and circulation, controlling bleeding, stabilizing vital signs, and shifting the patient to intensive or trauma care if required. Sudha Multispeciality, the best emergency care hospital in Erode follows global emergency protocols and provides seamless transition from first aid to advanced critical care. </p>,
+    content: <p>Emergency care begins with assessing the patient’s condition, securing the airway, supporting breathing and circulation, controlling bleeding, stabilizing vital signs, and shifting the patient to intensive or trauma care if required. Sudha Multispeciality, the best emergency care hospital in Erode follows global emergency protocols and provides seamless transition from first aid to advanced critical care.  </p>,
   },
   {
     title: (
@@ -90,7 +90,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Emergency services typically include accident and trauma care, cardiac emergency treatment, stroke management, poison and burn care, ventilator support, and 24/7 ambulance availability. As the best emergency care hospital, Sudha Multispeciality Hospital offers comprehensive emergency and critical care services, ensuring patients receive immediate and specialized treatment when every second counts.</p>,
+    content: <p>Emergency services typically include accident and trauma care, cardiac emergency treatment, stroke management, poison and burn care, ventilator support, and 24/7 ambulance availability. As the best emergency care hospital, Sudha Multispeciality Hospital offers comprehensive emergency and critical care services, ensuring patients receive immediate and specialized treatment when every second counts. </p>,
   },
   {
     title: (
@@ -101,7 +101,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Hospitals provide dedicated emergency contact numbers to ensure quick medical help when needed. Sudha Multispeciality Hospital, one of the leading emergency care hospitals in Erode, offers 24/7 critical and trauma care support. In case of an emergency, call 042-424-54545 for immediate assistance. </p>,
+    content: <p>Hospitals provide dedicated emergency contact numbers to ensure quick medical help when needed. Sudha Multispeciality Hospital, one of the leading emergency care hospitals in Erode, offers 24/7 critical and trauma care support. In case of an emergency, call 042-424-54545 for immediate assistance.  </p>,
   },
 ];
 

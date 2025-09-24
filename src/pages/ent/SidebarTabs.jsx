@@ -46,7 +46,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>The cost of an ENT check-up depends on the consultation fees and any diagnostic tests recommended. Sudha Multispeciality Hospital, the best ENT hospital in Erode, provides affordable ENT treatments and expert consultation with ENT specialists. </p>,
+    content: <p>The cost of an ENT check-up depends on the consultation fees and any diagnostic tests recommended. Sudha Multispeciality Hospital, the best ENT hospital in Erode, provides affordable ENT treatments and expert consultation with ENT specialists.  </p>,
   },
   {
     title: (
@@ -57,7 +57,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>A super-specialty hospital offering ENT treatments should cover medical and surgical care for ear, nose, and throat problems. Sudha Multispeciality Hospital is a trusted super-specialty hospital in Erode, providing the best treatment for ear, nose, and throat conditions, supported by advanced technology and skilled ENT specialists. </p>,
+    content: <p>A super-specialty hospital offering ENT treatments should cover medical and surgical care for ear, nose, and throat problems. Sudha Multispeciality Hospital is a trusted super-specialty hospital in Erode, providing the best treatment for ear, nose, and throat conditions, supported by advanced technology and skilled ENT specialists.  </p>,
   },
   {
     title: (
@@ -79,7 +79,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Recovery time after ENT surgery depends on the type of procedure. Minor surgeries may require only a few days, while major ones like sinus or ear surgery may take a few weeks. At Sudha Multispeciality Hospital, ENT specialists provide personalized care plans to ensure faster recovery and complete follow-up support.  </p>,
+    content: <p>Recovery time after ENT surgery depends on the type of procedure. Minor surgeries may require only a few days, while major ones like sinus or ear surgery may take a few weeks. At Sudha Multispeciality Hospital, ENT specialists provide personalized care plans to ensure faster recovery and complete follow-up support.   </p>,
   },
   {
     title: (
@@ -90,7 +90,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Common ENT surgeries include tonsillectomy, adenoidectomy, sinus surgery, and ear tube insertion. These procedures are performed to relieve chronic infections, improve breathing, and restore hearing. Sudha Multispeciality Hospital, the best hospital for ear, nose, and throat issues in Erode, offers advanced surgical care with skilled ENT specialists. </p>,
+    content: <p>Common ENT surgeries include tonsillectomy, adenoidectomy, sinus surgery, and ear tube insertion. These procedures are performed to relieve chronic infections, improve breathing, and restore hearing. Sudha Multispeciality Hospital, the best hospital for ear, nose, and throat issues in Erode, offers advanced surgical care with skilled ENT specialists.  </p>,
   },
   {
     title: (
@@ -101,7 +101,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>The cost of sinus surgery varies based on the severity of the condition, the surgical method, and hospital facilities. Sudha Multispeciality Hospital in Erode provides sinus treatment and surgery from expert ENT specialists with advanced care at an affordable price.  </p>,
+    content: <p>The cost of sinus surgery varies based on the severity of the condition, the surgical method, and hospital facilities. Sudha Multispeciality Hospital in Erode provides sinus treatment and surgery from expert ENT specialists with advanced care at an affordable price.   </p>,
   },
 ];
 

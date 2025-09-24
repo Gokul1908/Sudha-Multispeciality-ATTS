@@ -62,10 +62,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital is recognised as the best
-          multispecialty hospital in Erode, offering advanced tertiary care with
-          modern infrastructure, specialised departments, and expert consultants
-          across a wide range of medical fields.
+          Sudha Multispeciality Hospital is recognised as the best multispecialty hospital in Erode, offering advanced tertiary care with modern infrastructure, specialised departments, and expert consultants across a wide range of medical fields.
         </p>
       </div>
     ),
@@ -82,10 +79,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Sudha Multispeciality Hospital known as the best multispeciality
-          hospital in Erode, provides world-class facilities with
-          state-of-the-art technology, advanced diagnostic services, and modern
-          surgical care, ensuring high standards of treatment for all patients.
+          Sudha Multispeciality Hospital known as the best multispeciality hospital in Erode, provides world-class facilities with state-of-the-art technology, advanced diagnostic services, and modern surgical care, ensuring high standards of treatment for all patients.
         </p>
       </div>
     ),
@@ -102,10 +96,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          As the best multispeciality hospital in Erode, Sudha Multispeciality
-          Hospital is equipped with best ENT specialists and laryngologists
-          offering the best and advanced Larynx treatments in Erode at an
-          affordable price.
+          As the best multispeciality hospital in Erode, Sudha Multispeciality Hospital is equipped with best ENT specialists and laryngologists offering the best and advanced Larynx treatments in Erode at an affordable price.
         </p>
       </div>
     ),
@@ -122,10 +113,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital is known for offering affordable
-          treatments without compromising on quality. Patients benefit from
-          cost-effective health packages and transparent pricing across various
-          specialties.
+          Sudha Multispeciality Hospital is known for offering affordable treatments without compromising on quality. Patients benefit from cost-effective health packages and transparent pricing across various specialties.
         </p>
       </div>
     ),
@@ -142,10 +130,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Equipped with best pulmonologists in Erode, Sudha Multispeciality
-          Hospital is considered the best choice for respiratory care, with
-          dedicated pulmonology services, advanced respiratory diagnostics, and
-          comprehensive treatment at an affordable price.
+          Equipped with best pulmonologists in Erode, Sudha Multispeciality Hospital is considered the best choice for respiratory care, with dedicated pulmonology services, advanced respiratory diagnostics, and comprehensive treatment at an affordable price.
         </p>
       </div>
     ),
@@ -163,11 +148,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          With over 40 years of experience and excellence in delivering quality
-          healthcare services, Sudha Multispeciality Hospital has earned its
-          reputation as the most trusted hospital in Erode. Sudha is widely
-          known for its experienced specialists, patient-focused services, and
-          affordable treatments without compromise in quality.
+          With over 40 years of experience and excellence in delivering quality healthcare services, Sudha Multispeciality Hospital has earned its reputation as the most trusted hospital in Erode. Sudha is widely known for its experienced specialists, patient-focused services, and affordable treatments without compromise in quality.
         </p>
       </div>
     ),
@@ -184,10 +165,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Sudha Multispeciality Hospital in Erode provides one of the best
-          intensive care units, equipped with advanced monitoring systems,
-          modern life-support technologies, and round-the-clock critical care
-          specialists.
+          Sudha Multispeciality Hospital in Erode provides one of the best intensive care units, equipped with advanced monitoring systems, modern life-support technologies, and round-the-clock critical care specialists.
         </p>
       </div>
     ),

@@ -26,8 +26,7 @@ const accordionData = [
     title: <>Who is the best ENT specialist in Erode?</>,
     content: (
       <p className="text-sm">
-        The team of doctors in the ENT department at Sudha Multispeciality
-        Hospital is regarded as the best ENT specialists in Erode.
+        The team of doctors in the ENT department at Sudha Multispeciality Hospital is regarded as the best ENT specialists in Erode, offering expert diagnosis and treatment for all ear, nose, and throat conditions using advanced facilities.
       </p>
     ),
   },
@@ -35,8 +34,7 @@ const accordionData = [
     title: <>Who is the best cardiologist in Erode?</>,
     content: (
       <p className="text-sm">
-        The cardiology team at Sudha Multispeciality Hospital is recognised as
-        the best cardiologists in Erode.
+        The team of doctors in the cardiology department at Sudha Multispeciality Hospital is recognised as the best cardiologists in Erode, providing comprehensive heart care, including preventive, diagnostic, and interventional cardiology services.
       </p>
     ),
   },
@@ -44,8 +42,7 @@ const accordionData = [
     title: <>Who is the best anesthesiologist in Erode?</>,
     content: (
       <p className="text-sm">
-        The anaesthesiology team at Sudha Multispeciality Hospital is considered
-        the best anaesthesiologists in Erode.
+        The team of doctors in the anaesthesiology department at Sudha Multispeciality Hospital is considered the best anaesthesiologists in Erode, ensuring safe and effective anaesthesia management for all types of surgical procedures.
       </p>
     ),
   },
@@ -53,8 +50,7 @@ const accordionData = [
     title: <>Who is the leading doctor for general medicine in Erode?</>,
     content: (
       <p className="text-sm">
-        The general medicine specialists at Sudha Multispeciality Hospital are
-        recognised as leaders in treating acute and chronic medical conditions.
+        The team of specialists in general medicine department at Sudha Multispeciality Hospital is recognised as the leading general medicine doctors in Erode, delivering expert care for a wide range of acute and chronic medical conditions.
       </p>
     ),
   },
@@ -62,8 +58,7 @@ const accordionData = [
     title: <>How can I book an appointment at the Sudha Hospital in Erode?</>,
     content: (
       <p className="text-sm">
-        Appointments can be booked via the hospital website’s "Book Appointment"
-        option or by calling the helpline at 042-424-54545.
+        Appointments at Sudha Multispeciality Hospital in Erode can be booked conveniently via the hospital website using the "Book Appointment" option or by calling the dedicated helpline at 042-424-54545.
       </p>
     ),
   },

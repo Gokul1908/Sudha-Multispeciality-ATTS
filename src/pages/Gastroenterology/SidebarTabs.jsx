@@ -46,7 +46,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Gastroenterologists diagnose and treat a wide range of stomach and digestive issues such as acidity, gas, bloating, ulcers, and indigestion. At Sudha Multispeciality Hospital, patients receive care from the best gastroenterologists in Erode who provide personalized treatment plans for effective relief.</p>,
+    content: <p>Gastroenterologists diagnose and treat a wide range of stomach and digestive issues such as acidity, gas, bloating, ulcers, and indigestion. At Sudha Multispeciality Hospital, patients receive care from the best gastroenterologists in Erode who provide personalized treatment plans for effective relief. </p>,
   },
   {
     title: (
@@ -57,7 +57,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Common signs of a stomach ulcer include burning stomach pain, bloating, nausea, vomiting, heartburn, and loss of appetite. Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, offers advanced diagnostics and treatment to detect and manage stomach ulcers early, ensuring better outcomes. </p>,
+    content: <p>Common signs of a stomach ulcer include burning stomach pain, bloating, nausea, vomiting, heartburn, and loss of appetite. Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, offers advanced diagnostics and treatment to detect and manage stomach ulcers early, ensuring better outcomes.  </p>,
   },
   {
     title: (
@@ -68,7 +68,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Many gastric problems, including stomach gas, bloating, acidity, and indigestion, can be managed or cured with proper diagnosis, medication, and lifestyle changes. At Sudha Multispeciality Hospital, patients benefit from expert care by the best gastroenterologists in Erode, who provide comprehensive treatment for all digestive issues.</p>,
+    content: <p>Many gastric problems, including stomach gas, bloating, acidity, and indigestion, can be managed or cured with proper diagnosis, medication, and lifestyle changes. At Sudha Multispeciality Hospital, patients benefit from expert care by the best gastroenterologists in Erode, who provide comprehensive treatment for all digestive issues. </p>,
   },
   {
     title: (
@@ -79,7 +79,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Digestive and acidity problems can often be treated with a combination of proper diet, lifestyle modifications, and medical treatment. Avoiding spicy foods, eating smaller meals, staying hydrated, and reducing stress help improve digestion. At Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, specialists provide personalized guidance along with advanced treatment for long-term digestive health. </p>,
+    content: <p>Digestive and acidity problems can often be treated with a combination of proper diet, lifestyle modifications, and medical treatment. Avoiding spicy foods, eating smaller meals, staying hydrated, and reducing stress help improve digestion. At Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, specialists provide personalized guidance along with advanced treatment for long-term digestive health.  </p>,
   },
   {
     title: (
@@ -90,7 +90,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Gastroenterologists are the specialists to consult for stomach ulcers, acidity, bloating, gas, and other digestive issues. At Sudha Multispeciality Hospital, patients can consult the best gastroenterologists in Erode who provide accurate diagnosis and effective treatment for all digestive concerns. </p>,
+    content: <p>Gastroenterologists are the specialists to consult for stomach ulcers, acidity, bloating, gas, and other digestive issues. At Sudha Multispeciality Hospital, patients can consult the best gastroenterologists in Erode who provide accurate diagnosis and effective treatment for all digestive concerns.  </p>,
   },
   {
     title: (
@@ -101,7 +101,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Lifestyle changes such as a balanced diet, regular exercise, adequate hydration, and avoiding trigger foods can significantly reduce gas, bloating, and acidity. Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, offers guidance on diet, exercise, and lifestyle changes alongside medical treatment to prevent digestive problems. </p>,
+    content: <p>Lifestyle changes such as a balanced diet, regular exercise, adequate hydration, and avoiding trigger foods can significantly reduce gas, bloating, and acidity. Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, offers guidance on diet, exercise, and lifestyle changes alongside medical treatment to prevent digestive problems.  </p>,
   },
 ];
 

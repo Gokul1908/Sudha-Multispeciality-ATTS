@@ -46,7 +46,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>General surgery mainly involves organs in the abdomen, including the stomach, intestines, appendix, liver, gallbladder, and hernia-affected areas. Equipped with experienced general surgeons in Erode, Sudha Multispeciality Hospital offers advanced treatments and a personalized recovery plan to every patient.</p>,
+    content: <p>General surgery mainly involves organs in the abdomen, including the stomach, intestines, appendix, liver, gallbladder, and hernia-affected areas. Equipped with experienced general surgeons in Erode, Sudha Multispeciality Hospital offers advanced treatments and a personalized recovery plan to every patient. </p>,
   },
   {
     title: (
@@ -57,7 +57,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>General surgeons treat conditions such as appendicitis, hernias, gallstones, intestinal blockages, tumors, and injuries requiring surgical care. Sudha Multispeciality Hospital, recognized as one of the best hospitals in Erode for general surgery, offers effective surgical management for these conditions with the best surgeons.</p>,
+    content: <p>General surgeons treat conditions such as appendicitis, hernias, gallstones, intestinal blockages, tumors, and injuries requiring surgical care. Sudha Multispeciality Hospital, recognized as one of the best hospitals in Erode for general surgery, offers effective surgical management for these conditions with the best surgeons. </p>,
   },
   {
     title: (
@@ -68,7 +68,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Major surgeries include abdominal operations, tumor removals, gallbladder and liver surgeries, and other complex procedures. At Sudha Multispeciality Hospital, one of the best hospitals in Erode for general surgery, major surgeries are performed by skilled surgeons with proper pre- and post-operative care. </p>,
+    content: <p>Major surgeries include abdominal operations, tumor removals, gallbladder and liver surgeries, and other complex procedures. At Sudha Multispeciality Hospital, one of the best hospitals in Erode for general surgery, major surgeries are performed by skilled surgeons with proper pre- and post-operative care.  </p>,
   },
   {
     title: (
@@ -79,7 +79,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Before surgery, patients may need to fast for a few hours, avoid certain medications, and undergo basic investigations like blood tests and imaging. At Sudha Multispeciality Hospital, the best hospital for general surgery in Erode, doctors guide patients through all pre-operative steps to ensure safety and smooth recovery.</p>,
+    content: <p>Before surgery, patients may need to fast for a few hours, avoid certain medications, and undergo basic investigations like blood tests and imaging. At Sudha Multispeciality Hospital, the best hospital for general surgery in Erode, doctors guide patients through all pre-operative steps to ensure safety and smooth recovery. </p>,
   },
   {
     title: (
@@ -90,7 +90,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>The duration of surgery depends on the type and complexity of the procedure. Minor surgeries may take less than an hour, while major procedures can take several hours. Recovery can range from a few days to several weeks. Sudha Multispeciality Hospital, recognized as one of the best hospitals in Erode for general surgery, ensures proper post-operative care and follow-up for faster recovery. </p>,
+    content: <p>The duration of surgery depends on the type and complexity of the procedure. Minor surgeries may take less than an hour, while major procedures can take several hours. Recovery can range from a few days to several weeks. Sudha Multispeciality Hospital, recognized as one of the best hospitals in Erode for general surgery, ensures proper post-operative care and follow-up for faster recovery.  </p>,
   },
   {
     title: (
@@ -101,7 +101,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>The team of experienced and highly skilled general surgeons at Sudha Multispeciality Hospital is recognised as the best general surgeons in Erode, offering advanced treatments, modern surgical techniques, and personalised care for every patient.</p>,
+    content: <p>The team of experienced and highly skilled general surgeons at Sudha Multispeciality Hospital is recognised as the best general surgeons in Erode, offering advanced treatments, modern surgical techniques, and personalised care for every patient. </p>,
   },
 ];
 

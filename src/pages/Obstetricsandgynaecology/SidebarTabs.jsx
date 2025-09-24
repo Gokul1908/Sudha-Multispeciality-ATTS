@@ -46,7 +46,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Sudha Multispeciality Hospital is recognized as the best obstetrics & gynaecology hospital in Erode, offering expert care for women’s health, pregnancy, fertility, and advanced gynaecological treatments. </p>,
+    content: <p>Sudha Multispeciality Hospital is recognized as the best obstetrics & gynaecology hospital in Erode, offering expert care for women’s health, pregnancy, fertility, and advanced gynaecological treatments.  </p>,
   },
   {
     title: (
@@ -57,7 +57,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>When choosing the best gynaecologist in Erode, it is important to consider the doctor’s experience, patient care approach, availability, and the hospital’s facilities for diagnostics and treatment. Sudha Multispeciality Hospital is equipped with a team of best gynaecologists in Erode providing comprehensive care and advanced treatments to patients. </p>,
+    content: <p>When choosing the best gynaecologist in Erode, it is important to consider the doctor’s experience, patient care approach, availability, and the hospital’s facilities for diagnostics and treatment. Sudha Multispeciality Hospital is equipped with a team of best gynaecologists in Erode providing comprehensive care and advanced treatments to patients.  </p>,
   },
   {
     title: (

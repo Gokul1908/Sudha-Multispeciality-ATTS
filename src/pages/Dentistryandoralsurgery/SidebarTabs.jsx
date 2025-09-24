@@ -34,12 +34,7 @@ const faq = [
     title: "Which is the Best Dentistry and Oral Surgery Hospital in Erode?",
     content: (
       <p>
-        The best dental and oral surgery hospital should offer advanced
-        treatments, experienced dentists, and facilities for both routine care
-        and complex surgeries. In Erode, Sudha Multispeciality Hospital is known
-        as one of the best dental hospitals, providing comprehensive dental
-        treatments and oral surgery with expert care from the best dentists in
-        Erode.
+        The best dental and oral surgery hospital should offer advanced treatments, experienced dentists, and facilities for both routine care and complex surgeries. In Erode, Sudha Multispeciality Hospital is known as one of the best dental hospitals, providing comprehensive dental treatments and oral surgery with expert care from the best dentists in Erode.
       </p>
     ),
   },
@@ -47,11 +42,7 @@ const faq = [
     title: "What does oral surgery mean in dentistry?",
     content: (
       <p>
-        Oral surgery refers to surgical procedures performed in the mouth, such
-        as wisdom tooth extraction, dental implants, jaw correction, or
-        treatment of oral infections. At Sudha Multispeciality Hospital, patients
-        receive specialized oral surgery services performed by skilled dental
-        surgeons, ensuring safe and effective outcomes.
+        Oral surgery refers to surgical procedures performed in the mouth, such as wisdom tooth extraction, dental implants, jaw correction, or treatment of oral infections. At Sudha Multispeciality Hospital, patients receive specialized oral surgery services performed by skilled dental surgeons, ensuring safe and effective outcomes.
       </p>
     ),
   },
@@ -59,11 +50,7 @@ const faq = [
     title: "How do I find the best dentist in Erode?",
     content: (
       <p>
-        Finding the best dentist involves looking for qualifications, experience,
-        modern facilities, and patient reviews. A good dentist provides
-        personalized treatment and ensures comfort throughout the procedure.
-        Sudha Multispeciality Hospital houses some of the best dentists in Erode,
-        offering advanced dental care and treatments under one roof.
+        Finding the best dentist involves looking for qualifications, experience, modern facilities, and patient reviews. A good dentist provides personalized treatment and ensures comfort throughout the procedure. Sudha Multispeciality Hospital houses some of the best dentists in Erode, offering advanced dental care and treatments under one roof.
       </p>
     ),
   },
@@ -71,11 +58,7 @@ const faq = [
     title: "What is the cost of cavity removal?",
     content: (
       <p>
-        The cost of cavity removal depends on the size of the cavity, the
-        material used for filling, and the overall treatment required. While
-        prices may vary, at Sudha Multispeciality Hospital, the best dental
-        hospital in Erode, patients receive the best dental treatments at
-        affordable prices with expert guidance.
+        The cost of cavity removal depends on the size of the cavity, the material used for filling, and the overall treatment required. While prices may vary, at Sudha Multispeciality Hospital, the best dental hospital in Erode, patients receive the best dental treatments at affordable prices with expert guidance.
       </p>
     ),
   },
@@ -83,12 +66,7 @@ const faq = [
     title: "What is root canal treatment?",
     content: (
       <p>
-        A root canal treatment is a dental procedure used to treat infection or
-        damage inside the tooth, saving it from extraction. It involves cleaning,
-        disinfecting, and sealing the affected tooth. At Sudha Multispeciality
-        Hospital, one of the best dental hospitals in Erode, root canal
-        treatments are performed using advanced techniques to ensure long-term
-        tooth health.
+        A root canal treatment is a dental procedure used to treat infection or damage inside the tooth, saving it from extraction. It involves cleaning, disinfecting, and sealing the affected tooth. At Sudha Multispeciality Hospital, one of the best dental hospitals in Erode, root canal treatments are performed using advanced techniques to ensure long-term tooth health.
       </p>
     ),
   },
@@ -96,11 +74,7 @@ const faq = [
     title: "Is root canal treatment a painful procedure?",
     content: (
       <p>
-        With modern techniques and anesthesia, root canal treatment is generally
-        not painful. Most patients feel only mild discomfort during or after the
-        procedure. At Sudha Multispeciality Hospital, the best dentists in Erode
-        ensure pain-free dental care, making root canal treatments comfortable
-        and effective.
+        With modern techniques and anesthesia, root canal treatment is generally not painful. Most patients feel only mild discomfort during or after the procedure. At Sudha Multispeciality Hospital, the best dentists in Erode ensure pain-free dental care, making root canal treatments comfortable and effective.
       </p>
     ),
   },
@@ -108,11 +82,7 @@ const faq = [
     title: "What is the treatment for a tooth gap?",
     content: (
       <p>
-        Tooth gaps can be treated with options such as braces, aligners, dental
-        bonding, veneers, or implants, depending on the severity and patient’s
-        preference. At Sudha Multispeciality Hospital, patients receive
-        personalized advice and some of the best dental treatments in Erode for
-        correcting tooth gaps and restoring confident smiles.
+        Tooth gaps can be treated with options such as braces, aligners, dental bonding, veneers, or implants, depending on the severity and patient’s preference. At Sudha Multispeciality Hospital, patients receive personalized advice and some of the best dental treatments in Erode for correcting tooth gaps and restoring confident smiles.
       </p>
     ),
   },

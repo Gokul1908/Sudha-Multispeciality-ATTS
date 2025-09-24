@@ -215,7 +215,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Deficiencies in vitamins such as A, D, B12, and C can lead to vision problems, weakened immunity, anaemia, and bone disorders. At Sudha Multispeciality Hospital, recognised as the best dietetics hospital in Erode, these deficiencies are detected early and managed with expert guidance.</p>,
+    content: <p>Deficiencies in vitamins such as A, D, B12, and C can lead to vision problems, weakened immunity, anaemia, and bone disorders. At Sudha Multispeciality Hospital, recognised as the best dietetics hospital in Erode, these deficiencies are detected early and managed with expert guidance. </p>,
   },
   {
     title: (
@@ -226,7 +226,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Signs of good nutrition include healthy skin and hair, proper weight, strong immunity, high energy levels, and good mental focus. The best dietitians in Erode at Sudha Multispeciality Hospital design personalised diets to help achieve and maintain these health indicators. </p>,
+    content: <p>Signs of good nutrition include healthy skin and hair, proper weight, strong immunity, high energy levels, and good mental focus. The best dietitians in Erode at Sudha Multispeciality Hospital design personalised diets to help achieve and maintain these health indicators.  </p>,
   },
   {
     title: (
@@ -237,7 +237,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Poor dietary habits can contribute to obesity, diabetes, heart disease, hypertension, digestive disorders, and nutrient deficiencies. Sudha Multispeciality Hospital, the best dietetics hospital in Erode, offers dietary counselling to prevent and manage these conditions effectively.</p>,
+    content: <p>Poor dietary habits can contribute to obesity, diabetes, heart disease, hypertension, digestive disorders, and nutrient deficiencies. Sudha Multispeciality Hospital, the best dietetics hospital in Erode, offers dietary counselling to prevent and manage these conditions effectively. </p>,
   },
   {
     title: (
@@ -248,7 +248,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>A healthy diet includes balanced portions of proteins, carbohydrates, healthy fats, vitamins, and minerals. Fresh fruits, vegetables, whole grains, lean proteins, and hydration are essential. Expert dietitians at Sudha Multispeciality Hospital provide customized meal plans for optimal health.</p>,
+    content: <p>A healthy diet includes balanced portions of proteins, carbohydrates, healthy fats, vitamins, and minerals. Fresh fruits, vegetables, whole grains, lean proteins, and hydration are essential. Expert dietitians at Sudha Multispeciality Hospital provide customized meal plans for optimal health. </p>,
   },
   {
     title: (
@@ -259,7 +259,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Starting a healthy diet involves gradual changes such as incorporating more whole foods, reducing processed foods, controlling portion sizes, and maintaining regular meal timings. Sudha Multispeciality Hospital, recognised as the best dietetics hospital in Erode, offers guidance and follow-up support for a sustainable healthy lifestyle.</p>,
+    content: <p>Starting a healthy diet involves gradual changes such as incorporating more whole foods, reducing processed foods, controlling portion sizes, and maintaining regular meal timings. Sudha Multispeciality Hospital, recognised as the best dietetics hospital in Erode, offers guidance and follow-up support for a sustainable healthy lifestyle. </p>,
   },
   {
     title: (
@@ -270,7 +270,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Highly processed foods, excessive sugar, trans fats, and deep-fried items should be limited. The best dietitians in Erode at Sudha Multispeciality Hospital provide practical advice on food choices to support long-term health and prevent lifestyle diseases.</p>,
+    content: <p>Highly processed foods, excessive sugar, trans fats, and deep-fried items should be limited. The best dietitians in Erode at Sudha Multispeciality Hospital provide practical advice on food choices to support long-term health and prevent lifestyle diseases. </p>,
   },
 ];
 
@@ -419,9 +419,9 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Advanced Nutrition & Dietetics Support with the Best Dietitians in 
+                    Advanced Nutrition & Dietetics Support with the Best Dietitians in
                     <span className="text-[#2B3990]"> Erode </span>
-                    
+
                   </h2>
                   <p className="mb-4">
                     At Sudha Multispeciality Hospital, Erode, our Dietetics Department plays a vital role in promoting healing, managing chronic diseases, and enhancing overall well-being through personalized medical nutrition therapy. Our experienced dietitians work closely with patients across departments, offering tailored dietary guidance for outpatient care, inpatient recovery, and critical care cases.

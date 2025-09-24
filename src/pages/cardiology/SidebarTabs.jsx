@@ -32,10 +32,10 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          A branch of cardiology focused on diagnosing and treating heart and blood vessel disorders in adults. Our expert cardiologists provide comprehensive care for a range of conditions, including adult congenital heart disease, heart failure, coronary artery disease, valvular heart disease, and arrhythmias.  
+          A branch of cardiology focused on diagnosing and treating heart and blood vessel disorders in adults. Our expert cardiologists provide comprehensive care for a range of conditions, including adult congenital heart disease, heart failure, coronary artery disease, valvular heart disease, and arrhythmias.
         </p>
         <p>
-          Our multispeciality hospital offers a complete range of advanced diagnostic tests, including ECG, Echocardiogram, Treadmill Test, Holter Monitoring, Ambulatory Blood Pressure Monitoring, Tilt Table Testing, Cardiac CT, Cardiac MRI, and Nuclear Heart Scanning to ensure the best possible care in adult cardiology. 
+          Our multispeciality hospital offers a complete range of advanced diagnostic tests, including ECG, Echocardiogram, Treadmill Test, Holter Monitoring, Ambulatory Blood Pressure Monitoring, Tilt Table Testing, Cardiac CT, Cardiac MRI, and Nuclear Heart Scanning to ensure the best possible care in adult cardiology.
         </p>
       </div>
     ),
@@ -45,61 +45,61 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Our Interventional Cardiology Centre is renowned for its Primary Angioplasty Program, the gold standard in the treatment of heart attacks. Coronary angiograms and elective coronary artery stenting are performed daily in high volumes by our team of experienced specialists. 
+          Our Interventional Cardiology Centre is renowned for its Primary Angioplasty Program, the gold standard in the treatment of heart attacks. Coronary angiograms and elective coronary artery stenting are performed daily in high volumes by our team of experienced specialists
         </p>
 
         <p>
-         We also offer advanced structural heart disease interventions, including Transcatheter Aortic Valve Implantation (TAVI), along with other catheter-based procedures such as Balloon Mitral Valvotomy (BMV), Thoracic Endovascular Aortic Repair (TEVAR), Endovascular Aneurysm Repair (EVAR), renal artery stenting, and subclavian artery stenting. These procedures are carried out with high success rates, enabling most patients to return home within a day or two without complications.  
+          We also offer advanced structural heart disease interventions, including Transcatheter Aortic Valve Implantation (TAVI), along with other catheter-based procedures such as Balloon Mitral Valvotomy (BMV), Thoracic Endovascular Aortic Repair (TEVAR), Endovascular Aneurysm Repair (EVAR), renal artery stenting, and subclavian artery stenting. These procedures are carried out with high success rates, enabling most patients to return home within a day or two without complications.
         </p>
 
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-            Fractional Flow Reserve (FFR) / Instantaneous Wave-Free Ratio (iFR)  
+            Fractional Flow Reserve (FFR) / Instantaneous Wave-Free Ratio (iFR)
           </h4>
           <p>
-           These techniques are used in the cardiac catheterization laboratory to assess the pressure difference across narrowed coronary arteries. They help determine whether a particular narrowing requires stenting, avoiding unnecessary interventions.  
+            These techniques are used in the cardiac catheterization laboratory to assess the pressure difference across narrowed coronary arteries. They help determine whether a particular narrowing requires stenting, avoiding unnecessary interventions.
           </p>
         </div>
 
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-            Intravascular Ultrasound (IVUS) and Optical Coherence Tomography (OCT)  
+            Intravascular Ultrasound (IVUS) and Optical Coherence Tomography (OCT)
           </h4>
           <p>
-           These imaging technologies provide clear visualization of the inner walls of blood vessels, allowing accurate identification and assessment of atherosclerotic plaques. They play a crucial role in ensuring high-precision angioplasty.  
+            These imaging technologies provide clear visualization of the inner walls of blood vessels, allowing accurate identification and assessment of atherosclerotic plaques. They play a crucial role in ensuring high-precision angioplasty.
           </p>
         </div>
 
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-            TEVAR – Thoracic Endovascular Aortic Repair 
+            TEVAR – Thoracic Endovascular Aortic Repair
           </h4>
           <p>
-           TEVAR is a minimally invasive percutaneous procedure in which a metal stent is placed across a weakened section (aneurysm) of the thoracic aorta. As it avoids open surgery, patients typically recover faster and are discharged within three to four days.  
+            TEVAR is a minimally invasive percutaneous procedure in which a metal stent is placed across a weakened section (aneurysm) of the thoracic aorta. As it avoids open surgery, patients typically recover faster and are discharged within three to four days.
           </p>
         </div>
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-            EVAR – Endovascular Aneurysm Repair  
+            EVAR – Endovascular Aneurysm Repair
           </h4>
           <p>
-           EVAR is a similar percutaneous procedure used to treat aneurysms or dissections in the lower portion of the aorta. It requires no large abdominal incisions and offers shorter procedure times and quicker recovery.  
+            EVAR is a similar percutaneous procedure used to treat aneurysms or dissections in the lower portion of the aorta. It requires no large abdominal incisions and offers shorter procedure times and quicker recovery.
           </p>
         </div>
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-           TAVI – Transcatheter Aortic Valve Implantation
+            TAVI – Transcatheter Aortic Valve Implantation
           </h4>
           <p>
-           TAVI is a state-of-the-art procedure where a bioprosthetic valve is placed across the aortic valve using specialised equipment, eliminating the need for open-heart surgery. Patients usually recover well and are discharged within a few days.   
+            TAVI is a state-of-the-art procedure where a bioprosthetic valve is placed across the aortic valve using specialised equipment, eliminating the need for open-heart surgery. Patients usually recover well and are discharged within a few days.
           </p>
         </div>
         <div>
           <h4 className="font-bold text-[16px] text-[#2B3990] mb-2">
-           BMV – Balloon Mitral Valvotomy
+            BMV – Balloon Mitral Valvotomy
           </h4>
           <p>
-           BMV is a safe and effective catheter-based procedure for treating severe mitral valve stenosis. Patients are selected based on clinical evaluation and echocardiographic findings. Given the prevalence of rheumatic fever in our country, which can lead to mitral stenosis, BMV offers significant benefits.  
+            BMV is a safe and effective catheter-based procedure for treating severe mitral valve stenosis. Patients are selected based on clinical evaluation and echocardiographic findings. Given the prevalence of rheumatic fever in our country, which can lead to mitral stenosis, BMV offers significant benefits.
           </p>
         </div>
       </div>
@@ -109,7 +109,7 @@ const accordionData = [
     title: <>Electrophysiology</>,
     content: (
       <p className="text-sm mt-2">
-       Cardiac Electrophysiology is a subspecialty of cardiology focused on diagnosing and treating abnormal heart rhythms, whether too fast or too slow. Our Cardiac Electrophysiology centre is well-established and offers advanced treatments, including electrophysiological studies with 3D mapping, radiofrequency ablation, pacemaker implantation, Implantable Cardioverter Defibrillator (ICD), and cardiac resynchronization therapy. These procedures are carried out by highly skilled electrophysiologists to help manage arrhythmias and improve symptoms of heart failure effectively.
+        Cardiac Electrophysiology is a subspecialty of cardiology focused on diagnosing and treating abnormal heart rhythms, whether too fast or too slow. Our Cardiac Electrophysiology centre is well-established and offers advanced treatments, including electrophysiological studies with 3D mapping, radiofrequency ablation, pacemaker implantation, Implantable Cardioverter Defibrillator (ICD), and cardiac resynchronization therapy. These procedures are carried out by highly skilled electrophysiologists to help manage arrhythmias and improve symptoms of heart failure effectively.
       </p>
     ),
   },
@@ -125,8 +125,7 @@ const accordionData = [
     title: <>Non-Invasive Cardiology</>,
     content: (
       <p className="text-sm mt-2">
-        Includes diagnostic services like ECG, Echo, TMT, Holter monitoring,
-        ambulatory BP monitoring, Dobutamine stress Echo, and TEE.
+        This branch of cardiology provides thorough and essential care through diagnostic services such as electrocardiogram, echocardiogram, treadmill test, Holter monitoring, ambulatory blood pressure monitoring, Dobutamine stress echocardiogram, transesophageal echocardiogram, tilt table testing, and more, all under the expert supervision of qualified cardiologists.
       </p>
     ),
   },
@@ -134,11 +133,11 @@ const accordionData = [
     title: <>Cardiac Rehabilitation</>,
     content: (
       <p className="text-sm mt-2">
-        This branch of cardiology provides thorough and essential care through diagnostic services such as electrocardiogram, echocardiogram, treadmill test, Holter monitoring, ambulatory blood pressure monitoring, Dobutamine stress echocardiogram, transesophageal echocardiogram, tilt table testing, and more, all under the expert supervision of qualified cardiologists.  
+        The primary aim of this unit is to support cardiac patients in regaining strength and independence before leaving the hospital. By encouraging movement and physical activity during their stay, patients are better prepared to manage daily routines confidently after discharge.
       </p>
     ),
   },
-  
+
   {
     title: <>Preventive Cardiology</>,
     content: (
@@ -148,13 +147,13 @@ const accordionData = [
         </p>
 
         <p>
-         Our expert team offers lifestyle guidance, including personalised diet plans, exercise routines, and stress management support. Regular screenings and heart health check-ups are conducted to ensure early detection and intervention.
+          Our expert team offers lifestyle guidance, including personalised diet plans, exercise routines, and stress management support. Regular screenings and heart health check-ups are conducted to ensure early detection and intervention.
         </p>
 
         <p>
-        Whether you're at risk or recovering from a cardiac event, our preventive care services are designed to support long-term heart health and improve quality of life. Prevention is the first step toward a healthier heart. 
+          Whether you're at risk or recovering from a cardiac event, our preventive care services are designed to support long-term heart health and improve quality of life. Prevention is the first step toward a healthier heart.
         </p>
-       
+
       </div>
     ),
   },
@@ -163,12 +162,10 @@ const accordionData = [
 // FAQ Data
 const faq = [
   {
-    title: <>Which is the Best Heart Specialist Hospital in Erode?</>,
+    title: <>Which is the Best Heart specialist Hospital in Erode?  </>,
     content: (
       <p className="text-sm text-gray-700">
-        Sudha Multispeciality Hospital is recognized as the best cardiology
-        hospital in Erode, trusted for advanced technology, expert doctors, and
-        24/7 cardiac care.
+        The best heart specialist hospital should have advanced technology, experienced cardiologists, and comprehensive emergency care to handle critical cases. In Erode, Sudha Multispeciality Hospital is recognized as the best cardiology hospital, trusted for providing world-class cardiac care. With its reputation as the best heart care hospital in Erode, Sudha ensures accurate diagnosis and the best treatment for heart and related issues.
       </p>
     ),
   },
@@ -176,9 +173,7 @@ const faq = [
     title: <>When to see a heart doctor?</>,
     content: (
       <p className="text-sm text-gray-700">
-        If you have chest pain, irregular heartbeat, shortness of breath,
-        dizziness, or risk factors like diabetes, high cholesterol, or obesity,
-        consult a cardiologist.
+        You should see a heart doctor if you experience chest pain, irregular heartbeat, shortness of breath, dizziness, or unexplained fatigue. People with diabetes, high cholesterol, obesity, or a family history of heart disease should also undergo regular check-ups. At Sudha Multispeciality Hospital, the best hospital in Erode for heart treatment, expert cardiologists offer timely diagnosis and the best heart care for long-term wellness.
       </p>
     ),
   },
@@ -186,8 +181,7 @@ const faq = [
     title: <>How can I improve my heart health quickly?</>,
     content: (
       <p className="text-sm text-gray-700">
-        Exercise regularly, eat healthy, avoid smoking/alcohol, and manage
-        stress. Regular monitoring ensures better outcomes.
+        Quick ways to improve heart health include eating a balanced diet, exercising regularly, reducing stress, and avoiding smoking or alcohol. Regular monitoring is also essential to track heart performance. At Sudha Multispeciality Hospital, the best cardiology hospital in Erode, patients are guided by the best heart specialists to adopt healthy habits while receiving advanced treatment for heart and related issues.
       </p>
     ),
   },
@@ -195,8 +189,7 @@ const faq = [
     title: <>How can I prevent heart attacks?</>,
     content: (
       <p className="text-sm text-gray-700">
-        Control blood pressure, manage diabetes, follow a heart-healthy diet,
-        exercise, and undergo regular screenings.
+        Heart attack prevention relies on lifestyle changes such as controlling blood pressure, managing diabetes, exercising, and following a heart-healthy diet. Regular screenings help detect risks early and prevent complications. Sudha Multispeciality Hospital, known as the best heart care hospital in Erode, offers preventive cardiology programs and advanced treatment, making it the best hospital in Erode for heart treatment.
       </p>
     ),
   },
@@ -204,9 +197,7 @@ const faq = [
     title: <>Can heart diseases be cured?</>,
     content: (
       <p className="text-sm text-gray-700">
-        Some can be managed with lifestyle changes, while others need lifelong
-        care. Modern procedures like angioplasty and bypass improve quality of
-        life significantly.
+        Some heart diseases can be managed or reversed with lifestyle changes and modern treatments, while others may need lifelong care. Medical advancements such as angioplasty, bypass surgery, and valve repair help patients live longer and healthier lives. At Sudha Multispeciality Hospital, the best cardiology hospital in Erode, patients receive world-class care from the best heart specialists, ensuring the best treatment for heart and related issues.
       </p>
     ),
   },
@@ -214,8 +205,7 @@ const faq = [
     title: <>What is a normal heart rate?</>,
     content: (
       <p className="text-sm text-gray-700">
-        For adults: 60–100 bpm. Athletes may have a lower rate. See a doctor if
-        consistently outside this range.
+        For most adults, a normal resting heart rate is between 60 and 100 beats per minute, though athletes may have a lower rate. If your heart rate is consistently outside this range, medical consultation is advised. Sudha Multispeciality Hospital, the best heart care hospital in Erode, provides expert evaluation and treatment by the best heart specialists in Erode.
       </p>
     ),
   },
@@ -223,8 +213,7 @@ const faq = [
     title: <>What is the normal BP for heart patients?</>,
     content: (
       <p className="text-sm text-gray-700">
-        Typically around 120/80 mmHg, but varies individually. Regular
-        monitoring helps prevent complications.
+        A normal blood pressure for heart patients is usually around 120/80 mmHg, though the exact target may differ based on individual conditions. Regular monitoring helps control risks and prevent complications. At Sudha Multispeciality Hospital, the best hospital in Erode for heart treatment, cardiologists provide personalized guidance to maintain healthy blood pressure and ensure the best treatment for heart and related issues.
       </p>
     ),
   },
@@ -403,7 +392,7 @@ export default function SidebarTabs() {
                 <div className="mt-6 space-y-2">
                   <h2 className="text-[24px]">
                     Best Cardiology Hospital in {" "}
-                    <span className="text-[#2B3990]">Erode</span>
+                    <span className="text-[#2B3990]">Erode </span>
                     for The Best Heart Care
                   </h2>
                   <p>
@@ -423,6 +412,11 @@ export default function SidebarTabs() {
                   <li>
                     <span className="inline-block w-2 h-2 mr-2 rounded bg-[#2B3990]" />
                     World-class ICCUs
+                    Cardiac catheterization laboratories with advanced facilities and equipment for 24/7 emergency cardiovascular procedures.
+                  </li>
+                  <li>
+                    <span className="inline-block w-2 h-2 mr-2 rounded bg-[#2B3990]" />
+
                     Cardiac catheterization laboratories with advanced facilities and equipment for 24/7 emergency cardiovascular procedures.
                   </li>
                   <li>

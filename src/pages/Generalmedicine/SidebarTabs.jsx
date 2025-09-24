@@ -45,7 +45,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>The team of general physicians at Sudha Multispeciality Hospital are among the best in Erode, backed by years of expertise. They focus on delivering accurate diagnosis, effective treatment, and compassionate care, ensuring patients receive trusted medical support for overall well-being. </p>,
+    content: <p>The team of general physicians at Sudha Multispeciality Hospital are among the best in Erode, backed by years of expertise. They focus on delivering accurate diagnosis, effective treatment, and compassionate care, ensuring patients receive trusted medical support for overall well-being.  </p>,
   },
   {
     title: (
@@ -56,7 +56,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>Major surgeries in general surgery typically include procedures involving the abdomen, digestive organs, gallbladder, appendix, hernia repair, and certain tumor removals. At Sudha Multispeciality Hospital, experienced general surgeons provide advanced surgical care with high success rates, making it a leading center in Erode for surgical interventions.</p>,
+    content: <p>Major surgeries in general surgery typically include procedures involving the abdomen, digestive organs, gallbladder, appendix, hernia repair, and certain tumor removals. At Sudha Multispeciality Hospital, experienced general surgeons provide advanced surgical care with high success rates, making it a leading center in Erode for surgical interventions. </p>,
   },
   {
     title: (
@@ -67,7 +67,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>General surgeons manage conditions such as appendicitis, hernias, gallstones, bowel obstruction, certain cancers, and trauma injuries. Sudha Multispeciality Hospital, the best hospital in Erode for general treatments, offers surgical expertise and comprehensive care for these conditions. </p>,
+    content: <p>General surgeons manage conditions such as appendicitis, hernias, gallstones, bowel obstruction, certain cancers, and trauma injuries. Sudha Multispeciality Hospital, the best hospital in Erode for general treatments, offers surgical expertise and comprehensive care for these conditions.  </p>,
   },
   {
     title: (
@@ -78,7 +78,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>General physicians at Sudha Multispeciality Hospital handle a wide range of health issues, including infections, cold and cough, diabetes, high blood pressure, digestive problems, minor injuries, and preventive care. They also guide patients on lifestyle, diet, and exercise to maintain overall health. This makes Sudha one of the best hospitals in Erode for general treatments and consultations.</p>,
+    content: <p>General physicians at Sudha Multispeciality Hospital handle a wide range of health issues, including infections, cold and cough, diabetes, high blood pressure, digestive problems, minor injuries, and preventive care. They also guide patients on lifestyle, diet, and exercise to maintain overall health. This makes Sudha one of the best hospitals in Erode for general treatments and consultations. </p>,
   },
   {
     title: (
@@ -100,7 +100,7 @@ const faq = [
         </div>
       </>
     ),
-    content: <p>At Sudha Multispeciality Hospital, book your appointment online at your convenient time and have a personalised consultation and check-up at the hospital. As one of the best hospitals in Erode for general consultations and treatments, we offer personalised care with the best general physicians.  </p>,
+    content: <p>At Sudha Multispeciality Hospital, book your appointment online at your convenient time and have a personalised consultation and check-up at the hospital. As one of the best hospitals in Erode for general consultations and treatments, we offer personalised care with the best general physicians.   </p>,
   },
 ];
 
