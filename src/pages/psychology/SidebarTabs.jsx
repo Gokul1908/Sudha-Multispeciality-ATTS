@@ -20,7 +20,7 @@ import one from "@/assets/about/1.svg";
 const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
-  { id: "services", label: "Treatments & Services " },
+  { id: "services", label: "Services" },
   { id: "doctors", label: "Doctors" },
   { id: "faqs", label: "FAQs" },
 ];
@@ -409,13 +409,13 @@ export default function SidebarTabs() {
 
             </ul>
 
-           <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
-            Book an Appointment <ArrowUpRight className="w-5 h-5" />
-          </button>
-          <BookAppointmentModal
-            open={openModal}
-            onClose={() => setOpenModal(false)}
-          />
+            <button className="btn-white mt-5 flex items-center gap-2 mx-auto" onClick={() => setOpenModal(true)}>
+              Book an Appointment <ArrowUpRight className="w-5 h-5" />
+            </button>
+            <BookAppointmentModal
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            />
           </div>
 
           {/* Find a Doctor Box */}

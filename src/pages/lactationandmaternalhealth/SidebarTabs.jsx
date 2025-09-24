@@ -71,9 +71,10 @@ const accordionData = [
         </p>
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />One-on-one breastfeeding consultations  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> One-on-one breastfeeding consultations   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Breastfeeding education and pump usage support </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />One-on-one breastfeeding consultations
+            </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Latching technique guidance   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Breastfeeding education and pump usage support  </li>
 
 
           </ul>
@@ -97,7 +98,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-          Recovery after childbirth is vital for a mother’s physical and mental wellbeing. Our postnatal programs focus on uterine recovery, pain management, lactation support, and emotional health through regular monitoring and tailored advice. .
+          Recovery after childbirth is vital for a mother’s physical and mental wellbeing. Our postnatal programs focus on uterine recovery, pain management, lactation support, and emotional health through regular monitoring and tailored advice.
         </p>
         <div>
           <ul className="space-y-4">
@@ -410,15 +411,15 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Comprehensive Care for New Mothers by Lactation & Maternal Health Consultants in 
+                    Comprehensive Care for New Mothers by Lactation & Maternal Health Consultants in
                     <span className="text-[#2B3990]"> Erode</span>
                   </h2>
                   <p className="mb-4">
-                    At Sudha Multispeciality Hospital, we understand that maternal and infant health is a delicate journey that requires expert care and compassionate support. Our Lactation and Maternal Health department is dedicated to guiding mothers through every stage of pregnancy, childbirth, and breastfeeding. 
+                    At Sudha Multispeciality Hospital, we understand that maternal and infant health is a delicate journey that requires expert care and compassionate support. Our Lactation and Maternal Health department is dedicated to guiding mothers through every stage of pregnancy, childbirth, and breastfeeding.
                   </p>
 
                   <p className="mt-4 mb-4">
-                    As the best Mother and Child Care Hospital in Erode, our hospital is equipped with a team of certified lactation consultants, obstetricians, and maternal care specialists, we offer personalised, evidence-based support to ensure the wellbeing of both mother and baby. Whether it’s prenatal counselling, delivery support, postnatal recovery, or breastfeeding guidance, we are here every step of the way. 
+                    As the best Mother and Child Care Hospital in Erode, our hospital is equipped with a team of certified lactation consultants, obstetricians, and maternal care specialists, we offer personalised, evidence-based support to ensure the wellbeing of both mother and baby. Whether it’s prenatal counselling, delivery support, postnatal recovery, or breastfeeding guidance, we are here every step of the way.
                   </p>
                 </div>
               </>

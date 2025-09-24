@@ -31,7 +31,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Adult Cardiology" />  */}
-          Comprehensive Inpatient & Outpatient Nursing Care
+          Comprehensive Inpatient & Outpatient Nursing Care  
 
         </div>
       </>
@@ -43,12 +43,12 @@ const accordionData = [
         </p>
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Round-the-clock bedside support   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Monitoring vitals and reporting observations  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Monitoring vitals and reporting observations </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Round-the-clock bedside support     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Monitoring vitals and reporting observations  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Medication administration and injection support   </li>
 
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Post-operative and wound care   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Patient education and discharge assistance   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Post-operative and wound care </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Patient education and discharge assistance    </li>
 
 
           </ul>
@@ -74,13 +74,13 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Trained ICU nurses ensure precise monitoring and immediate action for critically ill patients, supporting all emergency and life-saving procedures.
+          Trained ICU nurses ensure precise monitoring and immediate action for critically ill patients, supporting all emergency and life-saving procedures. 
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Support for ventilator and critical equipment   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency medication management    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Support for ventilator and critical equipment    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency medication management    </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Sepsis and infection control protocols </li>
 
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Coordination with doctors for timely interventions </li>
@@ -464,11 +464,11 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Department-specific training for hands-on excellence
+                   NABH-compliant nurse-to-patient ratio maintained at all times  
                   </li>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Periodic staff meetings for quality and performance improvement
+                    Periodic staff meetings for quality and performance improvement  
                   </li>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
