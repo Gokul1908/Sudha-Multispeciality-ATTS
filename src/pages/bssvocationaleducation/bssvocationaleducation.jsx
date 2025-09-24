@@ -150,7 +150,7 @@ const VocationalEducation = () => {
         "Affordable fee structure ",
         "Practical, hands-on training sessions ",
         "Training at NABH-accredited hospital",
-        "Enhance ethical standards by developing and issuing clear guidelines.",
+       
         "Classes conducted by experienced faculty",
         "Assured job placement after course completion",
     ]
