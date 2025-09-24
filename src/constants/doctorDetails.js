@@ -1108,30 +1108,31 @@ export const doctorsData = [
         personalDetails: {
           title: "Personal Details",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. Thiruvenkata Lakshmanan is a dedicated Diabetologist and General Physician with strong expertise in emergency and trauma care. He is skilled in acute patient assessment, stabilization, chronic disease management, and advanced life support. With his compassionate approach and comprehensive medical knowledge, he ensures effective and holistic care for patients with both acute and long-term health needs. ",
         },
         clinicalExpertise: {
           title: "Clinical Expertise",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Emergency and trauma care management ",
+            "Acute patient assessment and stabilization ",
+            "Diabetic patient counselling and management ",
+            "Hypertension, thyroid, and lifestyle disease management ",
+            "ECG & ECHO interpretation and emergency cardiac care",
           ],
         },
         researchandpublications: {
-          title: "Research And Publications",
+          title: "Education ",
           list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+            "MBBS – Volgograd State Medical University, Russia  ",
+            "Certification in Clinical Biochemistry & Endocrinology for Diabetes Mellitus (CCBEDM) ",
+            "Post Graduate Diploma in Medico-Legal Ethics (PGDMLE) ",
           ],
         },
         awards: {
-          title: "Awards & Achievements",
+          title: "Certifications ",
           list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+            "Basic Cardiac Life Support (BCLS) ",
+            "Advanced Cardiac Life Support (ACLS) ",
           ],
         },
       },

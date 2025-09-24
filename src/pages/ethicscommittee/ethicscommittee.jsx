@@ -95,7 +95,7 @@ const roles = [
     "To ensure the research is conducted under the supervision of trained medical/biomedical persons with the required expertise. ",
     "To ensure that research will include solely patients or participants who have given voluntary and informed consent. ",
     "It may be ensured that no research projects shall be / can be started unless ethics clearance/approval is obtained.",
-    "It will review the proposals before start of the studies as well as monitor the research throughout the study until and after completion by examining the annual reports and final reports the commitee will also examine whether all regulatory requirements and laws are complied with or not.  "
+    "It will review the proposals before start of the studies as well as monitor the research throughout the study until and after completion by examining the annual reports and final reports the committee will also examine whether all regulatory requirements and laws are complied with or not.  "
 ]
 
 const TickCircle = () => (

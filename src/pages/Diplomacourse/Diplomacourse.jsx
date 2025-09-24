@@ -319,7 +319,7 @@ const Diplomacourse = () => {
                     Meet Our Expert Faculty
                 </h5>
                 <h2 className="text-[30px]">
-                    Expert Care from <br /> DNB-Qualified Doctors
+                   Experts Guiding the Next Generation <br/> of Medical Professionals.
                 </h2>
                 <div className='max-w-7xl mx-auto px-4 py-10 relative'>
                     <Faculties />

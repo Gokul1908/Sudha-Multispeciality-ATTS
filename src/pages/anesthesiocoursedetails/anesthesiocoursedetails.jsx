@@ -241,9 +241,10 @@ const AnesthesioCourseDetails = () => {
                             <ul className="pl-1 space-y-2 text-gray-700 text-sm sm:text-base">
                                 <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> NBEMS accredited since 2021 </li>
                                 <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Limited seats (2 per year) ensuring personalised training </li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Limited seats (2 per year) ensuring personalised training </li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Dedicated faculty mentorship and academic support</li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Dedicated faculty mentorship and academic support</li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Extensive clinical exposure and multidisciplinary case management 
+ </li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Dedicated faculty mentorship and academic support </li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Access to state-of-the-art infrastructure and technology</li>
 
                             </ul>
 
