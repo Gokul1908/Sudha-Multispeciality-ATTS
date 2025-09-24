@@ -408,15 +408,16 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Advanced Physiotherapy & Rehabilitation Services in
-                    <span className="text-[#2B3990]"> Erode</span>
+                   Advanced Physiotherapy Services at the Best Physiotherapy Hospital in  
+
+                    <span className="text-[#2B3990]"> Erode </span>
                   </h2>
                   <p className="mb-4">
-                    At Sudha Multispeciality Hospital in Erode, our Physiotherapy Department offers expert care in rehabilitation therapy, pain management, and mobility restoration for patients of all ages. Recognized for providing advanced physiotherapy in Erode, we treat a wide range of conditions including neurological disorders, orthopaedic injuries, post-surgical recovery, and chronic pain.
+                    Sudha Multispeciality Hospital in Erode, the best multispeciality hospital for Physiotherapy treatment, offers expert care in rehabilitation therapy, pain management, and mobility restoration for patients of all ages. Recognized for providing advanced physiotherapy in Erode, we treat a wide range of conditions including neurological disorders, orthopaedic injuries, post-surgical recovery, and chronic pain.
                   </p>
 
                   <p className="mt-4 mb-4">
-                    Our skilled physiotherapists design personalized physiotherapy treatment plans using modern techniques and technology, ensuring better outcomes and faster healing. Whether it's muscle stimulation, trauma rehabilitation, or post-operative therapy, we’re committed to delivering compassionate and evidence-based care for your complete recovery.
+                    With the best physiotherapists in Erode, Sudha Multispeciality Hospitals offers personalized physiotherapy treatment plans using modern techniques and technology, ensuring better outcomes and faster healing. Whether it's muscle stimulation, trauma rehabilitation, or post-operative therapy, we’re committed to delivering compassionate and evidence-based care for your complete recovery. 
                   </p>
                 </div>
               </>

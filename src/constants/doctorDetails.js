@@ -1129,10 +1129,10 @@ export const doctorsData = [
           ],
         },
         awards: {
-          title: "Certifications ",
+          title: "Certifications",
           list: [
             "Basic Cardiac Life Support (BCLS) ",
-            "Advanced Cardiac Life Support (ACLS) ",
+            "Advanced Cardiac Life Support (ACLS)",
           ],
         },
       },

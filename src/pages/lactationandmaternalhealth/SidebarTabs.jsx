@@ -355,9 +355,10 @@ export default function SidebarTabs() {
               Sudha Multispeciality Hospital
             </h3>
             <ul className="space-y-4 text-start mt-4">
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  Specialised Mother & Child Care Services  </li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  Holistic care for mothers from pregnancy to postpartum recovery. </li>
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Supportive environment for lactation education and nutritional planning.   </li>
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Personalized maternal health monitoring and wellness assessments.  </li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Personalized maternal health monitoring and wellness assessments.
+              </li>
 
             </ul>
 
@@ -409,15 +410,15 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Lactation Support & Postnatal Care for
-                    <span className="text-[#2B3990]"> New Mothers</span>
+                    Comprehensive Care for New Mothers by Lactation & Maternal Health Consultants in 
+                    <span className="text-[#2B3990]"> Erode</span>
                   </h2>
                   <p className="mb-4">
-                    At Sudha Multispeciality Hospital, we understand that maternal and infant health is a delicate journey that requires expert care and compassionate support. Our Lactation and Maternal Health department is dedicated to guiding mothers through every stage of pregnancy, childbirth, and breastfeeding.
+                    At Sudha Multispeciality Hospital, we understand that maternal and infant health is a delicate journey that requires expert care and compassionate support. Our Lactation and Maternal Health department is dedicated to guiding mothers through every stage of pregnancy, childbirth, and breastfeeding. 
                   </p>
 
                   <p className="mt-4 mb-4">
-                    With a team of certified lactation consultants, obstetricians, and maternal care specialists, we offer personalised, evidence-based support to ensure the wellbeing of both mother and baby. Whether it’s prenatal counselling, delivery support, postnatal recovery, or breastfeeding guidance, we are here every step of the way.
+                    As the best Mother and Child Care Hospital in Erode, our hospital is equipped with a team of certified lactation consultants, obstetricians, and maternal care specialists, we offer personalised, evidence-based support to ensure the wellbeing of both mother and baby. Whether it’s prenatal counselling, delivery support, postnatal recovery, or breastfeeding guidance, we are here every step of the way. 
                   </p>
                 </div>
               </>

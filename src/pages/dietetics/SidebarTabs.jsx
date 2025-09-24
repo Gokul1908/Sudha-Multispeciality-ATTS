@@ -419,16 +419,16 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Advanced Nutrition & Dietetics Support in
+                    Advanced Nutrition & Dietetics Support with the Best Dietitians in 
                     <span className="text-[#2B3990]"> Erode </span>
-                    at Sudha Multispeciality Hospital
+                    
                   </h2>
                   <p className="mb-4">
                     At Sudha Multispeciality Hospital, Erode, our Dietetics Department plays a vital role in promoting healing, managing chronic diseases, and enhancing overall well-being through personalized medical nutrition therapy. Our experienced dietitians work closely with patients across departments, offering tailored dietary guidance for outpatient care, inpatient recovery, and critical care cases.
                   </p>
 
                   <p className="mt-4 mb-4">
-                    Whether it's for managing diabetes, cardiovascular conditions, kidney disorders, cancer recovery, or nutritional needs during pregnancy, we provide evidence-based diet plans to suit every individual. The department ensures holistic dietary care for preventive health, disease management, and long-term wellness.
+                    As the best dietetics hospital in Erode, Sudha Multispeciality Hospital offers evidence-based diet plans tailored to individual needs, whether for managing diabetes, cardiovascular conditions, kidney disorders, cancer recovery, or nutritional care during pregnancy. The department ensures holistic dietary support for preventive health, disease management, and long-term wellness.
                   </p>
                 </div>
               </>
