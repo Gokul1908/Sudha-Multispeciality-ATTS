@@ -191,8 +191,8 @@ export default function Finddoctor() {
                 <Image src={doc.image} alt={doc.name} className="mx-auto w-full h-[300px] rounded-t-2xl object-cover" />
                 <div className="p-4 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-lg font-bold text-[#2B3990] truncate">{doc.name}</h3>
-                    <p className="text-sm mt-1 truncate">{doc.degrees}</p>
+                    <h3 className="text-md font-bold text-[#2B3990] ">{doc.name}</h3>
+                    <p className="text-sm mt-1 ">{doc.degrees}</p>
                     <p className="text-sm mt-1 line-clamp-2">{doc.qualification}</p>
                   </div>
                   <div className="mt-4">
@@ -231,8 +231,8 @@ export default function Finddoctor() {
                         <Image src={doc.image} alt={doc.name} width={300} height={300} className="mx-auto w-full h-[300px] rounded-t-2xl object-cover" />
                         <div className="p-4 flex flex-col justify-between">
                           <div>
-                            <h3 className="text-lg font-bold text-[#2B3990] truncate">{doc.name}</h3>
-                            <p className="text-sm mt-1 truncate">{doc.degrees}</p>
+                            <h3 className="text-md font-bold text-[#2B3990] ">{doc.name}</h3>
+                            <p className="text-sm mt-1 ">{doc.degrees}</p>
                             <p className="text-sm mt-1 line-clamp-2">{doc.qualification}</p>
                           </div>
                           <div className="mt-4">
