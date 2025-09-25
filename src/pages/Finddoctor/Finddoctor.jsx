@@ -236,9 +236,13 @@ export default function Finddoctor() {
                             <p className="text-sm mt-1 line-clamp-2">{doc.qualification}</p>
                           </div>
                           <div className="mt-4">
-                            <Link href={`/doctor-detail/${doc.id}`} className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2">
-                              View Profile <ArrowUpRight className="w-5 h-5" />
+                            <Link href="/contact-us" className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2">
+                             Book an Appointment <ArrowUpRight className="w-5 h-5" />
                             </Link>
+
+                             {/* <Link href={`/doctor-detail/${doc.id}`} className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2">
+                              View Profile <ArrowUpRight className="w-5 h-5" />
+                            </Link> */}
                           </div>
                         </div>
                       </div>
