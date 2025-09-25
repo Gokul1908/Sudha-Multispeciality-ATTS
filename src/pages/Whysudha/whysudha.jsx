@@ -12,7 +12,7 @@ import HospitalCard from "@/components/Hospital";
 import roboticSurgery from "@/assets/whysudha/robot-surgery.webp";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
-import one from "@/assets/aboutus/one.png";
+import one from "@/assets/aboutus/why-about-sudha.webp";
 import imgone from "@/assets/whysudha/1.svg";
 import imgtwo from "@/assets/whysudha/2.svg";
 import imgthree from "@/assets/whysudha/3.svg";

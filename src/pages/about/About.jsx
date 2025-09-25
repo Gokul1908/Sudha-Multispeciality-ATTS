@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Banner from "@/assets/about/our-growth-story.webp";
 import Link from "next/link";
-import one from "@/assets/aboutus/one.png";
+import one from "@/assets/aboutus/why-about-sudha.webp";
 import HospitalCard from "@/components/Hospital";
 import hospitalOne from "@/assets/home/cards/c1.svg";
 import hospitalTwo from "@/assets/home/cards/c2.svg";
@@ -194,7 +194,7 @@ function Aboutus() {
             <Image
               src={one}
               alt="Sudha Hospital Overview"
-              className="rounded-xl w-full object-cover"
+              className="rounded-3xl w-full object-cover"
               priority
             />
           </motion.div>
@@ -203,7 +203,7 @@ function Aboutus() {
 
 
 
-      <section className="relative bg-gradient-to-b from-[#2B3990] to-[#0D112A] px-4 py-16 text-white overflow-hidden">
+      {/* <section className="relative bg-gradient-to-b from-[#2B3990] to-[#0D112A] px-4 py-16 text-white overflow-hidden">
         <div className="max-w-7xl mx-auto  py-16  h-full">
           <div className=" max-w-4xl text-start">
             <h2 className="text-[30px] text-white">
@@ -218,7 +218,7 @@ function Aboutus() {
             <TimelineSlider />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="mt-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white text-gray-800 py-16 px-4 sm:px-6 lg:px-12 rounded-3xl">
