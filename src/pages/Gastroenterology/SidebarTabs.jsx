@@ -380,10 +380,7 @@ export default function SidebarTabs() {
                   <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-4">
-                  Sudha Multispeciality Hospital provides comprehensive gastroenterology care for a wide range of digestive system conditions. Our team of skilled
-                  gastroenterologists, surgeons, and support staff are equipped with advanced diagnostic and therapeutic tools to manage diseases affecting the esophagus,
-                  stomach, intestines, liver, pancreas, and gallbladder. From endoscopic procedures to minimally invasive surgeries, we ensure precise and effective care for both
-                  acute and chronic gastrointestinal issues. Our dedicated approach emphasizes early detection, accurate diagnosis, and personalised treatment to improve quality of life for every patient.
+                  Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode provides comprehensive gastroenterology care for a wide range of digestive system conditions. Our team is equipped with the best gastroenterologists in Erode, highly skilled surgeons, and advanced diagnostic and therapeutic tools to manage diseases affecting the esophagus, stomach, intestines, liver, pancreas, and gallbladder. From endoscopic procedures to minimally invasive surgeries, we ensure precise and effective care for both acute and chronic gastrointestinal issues. Our dedicated approach emphasizes early detection, accurate diagnosis, and personalised treatment to improve the quality of life for every patient.
                 </p>
               </>
             )}

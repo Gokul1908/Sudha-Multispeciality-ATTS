@@ -147,10 +147,7 @@ const accordionData = [
     content: (
       <>
         <p>
-          Dental implants offer permanent tooth replacement, restoring both
-          appearance and chewing function. We also address facial and jaw
-          corrections. Our oral surgery unit handles everything from simple
-          extractions to complex implant placements with precision and care.
+          Dental implants offer permanent tooth replacement, restoring both appearance and chewing function. We also address facial and jaw corrections. Our oral surgery unit handles everything from simple extractions to complex implant placements with precision and care. With sedation support and sterile surgical protocols, we ensure safety and patient comfort throughout.
         </p>
         <ul className="space-y-3 mt-3">
           {[
@@ -173,18 +170,16 @@ const accordionData = [
     content: (
       <>
         <p>
-          We bring together specialists from various dental disciplines to offer
-          targeted and age-appropriate care. Each specialist follows an
-          integrated treatment approach for optimal results.
+          We bring together specialists from various dental disciplines to offer targeted and age-appropriate care. Each specialist follows an integrated treatment approach for optimal results and long-term oral health maintenance.
         </p>
         <ul className="space-y-3 mt-3">
           {[
-            "Prosthodontics - Replacing missing teeth with crowns, dentures, and bridges",
-            "Orthodontics - Braces and aligners for teeth alignment",
-            "Pedodontics - Paediatric dental care",
-            "Endodontics - Root canal treatment",
-            "Periodontics - Gum disease treatment and maintenance",
-            "Laser Dentistry - Minimally invasive treatments",
+            "Prosthodontics – Replacing missing teeth with crowns, dentures, and bridges",
+            "Orthodontics – Braces and aligners for teeth alignment",
+            "Pedodontics – Paediatric dental care",
+            "Endodontics – Root canal treatment",
+            "Periodontics – Gum disease treatment and maintenance",
+            "Laser Dentistry – Minimally invasive treatments for soft tissue and gum procedures",
           ].map((item, i) => (
             <li key={i} className="flex items-center gap-2 text-sm font-semibold">
               <Image src={Checklight} alt="tick" width={20} height={20} />

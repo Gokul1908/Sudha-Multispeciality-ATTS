@@ -129,7 +129,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Audiometry for children and adults </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Tinnitus and vertigo assessments   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Newborn hearing screening </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Customized hearing rehabilitation   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Customized hearing rehabilitation    </li>
           </ul>
 
         </div>
@@ -152,11 +152,11 @@ const accordionData = [
         </p>
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Functional Endoscopic Sinus Surgery (FESS) </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Functional Endoscopic Sinus Surgery (FESS)   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Diagnostic Nasal Endoscopy   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Sinus and skull-base surgeries </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Surgery for a deviated nasal septum </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Management of CSF leak </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Management of CSF leak  </li>
 
           </ul>
 
@@ -373,7 +373,7 @@ export default function SidebarTabs() {
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[380px] rounded-2xl object-cover" />
                 <h2 className="text-[24px]  mt-4">
                   Best ENT Hospital in
-                  <span className="text-[#2B3990]"> Erode </span> offering Expert ENT Care.
+                  <span className="text-[#2B3990]"> Erode </span> offering Expert Care for Ear, Nose, and Throat.
                 </h2>
                 <p className="mb-4">
                   Our ENT department offers expert diagnosis and treatment for a wide spectrum of ENT disorders in both adults and children. Our department is equipped with advanced diagnostic and surgical technologies and highly skilled ENT specialists in Erode. As the best ENT hospital in Erode, Sudha Multispeciality Hospital offers best treatment for ear, nose and throat in the Erode region from common infections to complex surgeries.
