@@ -232,10 +232,10 @@ const accordionData = [
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Continuous monitoring for patients after bypass surgery, valve replacement, thoracic procedures, and more</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Equipped with ventilators, cardiac monitors, infusion pumps, and defibrillators </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Managed by experienced cardiothoracic surgeons, cardiac intensivists, and ICU-trained nurses  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Managed by experienced cardiothoracic surgeons, cardiac intensivists, and ICU-trained nurses </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Focus on pain control, infection prevention, and early recovery </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Equipped with ventilators, cardiac monitors, infusion pumps, and defibrillators</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Managed by experienced cardiothoracic surgeons, cardiac intensivists, and ICU-trained nurses </li>
+            
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Focus on pain control, infection prevention, and early recovery   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Round-the-clock care for optimum surgical outcomes and patient safety  </li>
 
           </ul>

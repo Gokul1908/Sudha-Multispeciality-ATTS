@@ -338,7 +338,7 @@ export default function SidebarTabs() {
             </h3>
             <hr className="border-light" />
             <ul className="space-y-4 text-start mt-4">
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24x7 emergency orthopaedic and trauma care with advanced ICU support</li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24/7 emergency orthopaedic and trauma care with advanced ICU support</li>
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> State-of-the-art operation theatres and orthopaedic trauma units</li>
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive care from paediatric to geriatric orthopaedic needs</li>
 
@@ -412,7 +412,7 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 ">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency & Trauma Services with immediate orthopaedic intervention
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24/7 Emergency & Trauma Services with immediate orthopaedic intervention
                   </li>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Hi-Tech SICU (Surgical ICU) with specialised orthopaedic care
@@ -487,7 +487,7 @@ export default function SidebarTabs() {
           </h3>
           <hr className="border-light" />
           <ul className="space-y-4 text-start mt-4">
-            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24x7 emergency orthopaedic and trauma care with advanced ICU support</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24/7 emergency orthopaedic and trauma care with advanced ICU support</li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> State-of-the-art operation theatres and orthopaedic trauma units</li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive care from paediatric to geriatric orthopaedic needs</li>
 

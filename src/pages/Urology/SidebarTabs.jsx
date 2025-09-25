@@ -126,7 +126,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Lithotripsy (ESWL) for non-invasive stone removal</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Ureteroscopy (URS) for small ureteric stones  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> PCNL for large or complex kidney stones </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  C-Arm guided imaging for precision </li>
+           
           </ul>
 
         </div>
