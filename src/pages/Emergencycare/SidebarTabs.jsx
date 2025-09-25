@@ -515,7 +515,7 @@ export default function SidebarTabs() {
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Regular staff training for rapid response and updated protocols  </li>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Regular staff training for rapid response and updated protocols </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Dedicated adult immunisation for emergency preventive care  </li>
                   <li className="flex gap-2 md:items-center items-start text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Home care support for palliative and chronic emergency patients    </li>
 

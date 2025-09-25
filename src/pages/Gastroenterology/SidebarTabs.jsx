@@ -97,7 +97,7 @@ const faq = [
       <>
         <div className="flex gap-3">
           {" "}
-          Can Diet and exercise help prevent gas trouble? (lifestyle changes)
+          Can Diet and exercise help prevent gas trouble?
         </div>
       </>
     ),

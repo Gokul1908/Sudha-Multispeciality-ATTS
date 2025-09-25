@@ -336,7 +336,7 @@ export default function SidebarTabs() {
             <ul className="space-y-4 text-start mt-4">
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />  24x7 radiology services with emergency and bedside imaging support</li>
               <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} /> Equipped with advanced CT scan, digital X-ray, and ultrasound systems</li>
-              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert radiologists and trained technicians ensuring accurate diagnosis treatments</li>
+              <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert radiologists and trained technicians ensure accurate diagnosis. treatments</li>
             </ul>
 
 
