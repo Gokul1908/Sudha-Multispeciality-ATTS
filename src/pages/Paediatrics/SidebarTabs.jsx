@@ -144,36 +144,36 @@ const accordionData = [
     ),
   },
 
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Paediatric Cardiology
-        </div>
-      </>
-    ),
-    content: (
-      <div className="text-sm space-y-3">
-        <p>
-          We specialise in diagnosis and offering treatments for heart conditions in newborns, children, and adolescents. With advanced diagnostic technologies and experienced specialists, we provide personalised care to ensure healthy heart function and overall well-being.
-        </p>
+  // {
+  //   title: (
+  //     <>
+  //       <div className="flex gap-3">
+  //         {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
+  //         Paediatric Cardiology
+  //       </div>
+  //     </>
+  //   ),
+  //   content: (
+  //     <div className="text-sm space-y-3">
+  //       <p>
+  //         We specialise in diagnosis and offering treatments for heart conditions in newborns, children, and adolescents. With advanced diagnostic technologies and experienced specialists, we provide personalised care to ensure healthy heart function and overall well-being.
+  //       </p>
 
 
-        <div>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Diagnosis and management of congenital heart defects </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Treatment of arrhythmias and heart rhythm disorders  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Echocardiography and ECG for detailed cardiac assessment </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Medical and surgical management of paediatric heart diseases </li>
+  //       <div>
+  //         <ul className="space-y-4">
+  //           <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Diagnosis and management of congenital heart defects </li>
+  //           <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Treatment of arrhythmias and heart rhythm disorders  </li>
+  //           <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Echocardiography and ECG for detailed cardiac assessment </li>
+  //           <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Medical and surgical management of paediatric heart diseases </li>
 
 
-          </ul>
+  //         </ul>
 
-        </div>
-      </div>
-    ),
-  },
+  //       </div>
+  //     </div>
+  //   ),
+  // },
 
   {
     title: (
@@ -445,7 +445,7 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <div className="space-y-2">
                 <h2 className="text-[24px] mt-5">Doctors</h2>
-                <DoctorSlider specialty="Paediatrician" max={2} counter={3} />
+                <DoctorSlider specialty="Paediatrician" max={4} counter={4} />
               </div>
             )}
 

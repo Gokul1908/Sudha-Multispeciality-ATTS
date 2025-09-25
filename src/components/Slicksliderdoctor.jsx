@@ -74,7 +74,7 @@ const maxClass = {
       <Slider {...settings}>
         {filteredDoctors.map((doc, index) => (
           <div key={index} className="pr-3">
-            <div className="bg-white h-[500px] max-w-[300px] rounded-2xl mx-auto md:ml-0 md:mr-auto text-start flex flex-col overflow-hidden">
+            <div className="bg-white w-full h-[500px] max-w-[300px] rounded-2xl mx-auto md:ml-0 md:mr-auto text-start flex flex-col overflow-hidden">
               
               {/* Doctor Image */}
               <Image
@@ -82,7 +82,7 @@ const maxClass = {
                 alt={doc.name}
                 width={300}
                 height={300}
-                className="w-full h-[300px] object-cover rounded-t-2xl"
+                className="w-[300px] h-[300px] object-cover rounded-t-2xl"
               />
 
               {/* Doctor Info */}
