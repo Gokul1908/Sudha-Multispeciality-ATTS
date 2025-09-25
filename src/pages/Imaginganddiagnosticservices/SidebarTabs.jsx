@@ -167,7 +167,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Neck CT to evaluate masses, lymph nodes, or soft tissue abnormalities   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Chest CT to assess lung pathologies, enlarged lymph nodes, and medical pathologies.</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Abdominal & Pelvis CT for organ assessment, kidney stones, injection bowel obstruction and tumours. </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Sinus CT to identify sinus blockages or infections</li>
+           
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Spine CT to detect disc herniation, spinal stenosis, or fractures  </li>
           </ul>
 

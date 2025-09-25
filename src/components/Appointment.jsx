@@ -114,7 +114,7 @@ const RegistrationForm = () => {
   };
   return (
     <div>
-      <h2 className="text-[20px] pb-5 ">Make an Appointment</h2>
+      <h2 className="text-[24px] pb-5 ">Make an Appointment</h2>
 
                 {/* Form */}
                 <form

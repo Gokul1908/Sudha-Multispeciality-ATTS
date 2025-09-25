@@ -180,7 +180,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          We ensure the health of both mother and baby through precise monitoring and diagnostic screening. Our prenatal testing detects potential genetic and growth-related concerns early, helping us manage high-risk pregnancies with confidence and care.
+          We provide complete care for women at every age, focusing on menstrual disorders, hormonal imbalances, PCOS, and menopause management. Our holistic approach combines modern medicine with lifestyle support for lasting reproductive health.
         </p>
 
         <div>
