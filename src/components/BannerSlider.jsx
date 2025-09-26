@@ -22,14 +22,14 @@ const slides = [
       "Sudha Multispeciality Hospital, a healthcare icon delivering quality healthcare for 40+ years.",
     buttonText: "Discover Our Service",
     video:
-      "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
+      "https://ship-crm-img.s3.eu-north-1.amazonaws.com/Sudha+Multispeciality+Promo_02.mp4",
   },
   {
     heading: "Motherly Care For Every Mother and Child",
     btnText: "Sudha Mother and Child Care",
     title: (
       <>
-        Mother And 
+        Mother And
         Child Care
       </>
     ),
@@ -45,7 +45,7 @@ const slides = [
     btnText: "Sudha Fertility Centre",
     title: (
       <>
-        Fertility 
+        Fertility
         Centre
       </>
     ),
@@ -61,7 +61,7 @@ const slides = [
     btnText: "Sudha Cancer Centre",
     title: (
       <>
-         Cancer 
+        Cancer
         Centre
       </>
     ),

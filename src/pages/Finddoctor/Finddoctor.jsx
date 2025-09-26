@@ -150,7 +150,7 @@ export default function Finddoctor() {
 
       {/* Filter Section */}
       <div className="max-w-7xl mx-auto pt-16 relative px-4 sm:px-0 z-20">
-        <div className="bg-white w-full md:w-[70%] lg:w-[50%] p-6 md:p-8 rounded-3xl -mt-28 mx-auto shadow-lg relative z-20">
+        <div className="bg-white w-full md:w-[70%] lg:w-[50%] p-6 md:p-8 rounded-3xl -mt-28  relative z-20">
           <h5 className="mb-4 text-[18px] sm:text-[20px] text-center md:text-left">
             Find top specialists by department and book your appointment now.
           </h5>

@@ -23,7 +23,7 @@ const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-   { label: "Specialities", href: "/specialities" },
+  { label: "Specialities", href: "/specialities" },
   { label: "Gastroentrology", href: "/specialities/gastroenterology" },
 ];
 
@@ -78,7 +78,7 @@ function Gastroenterology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Advanced Care for Every Stomach Concern 
+              Advanced Care for Every Stomach Concern
             </motion.p>
 
             {/* Button */}
